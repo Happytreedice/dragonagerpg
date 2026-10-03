@@ -1,0 +1,13 @@
+# packs/focuses/initiative.yaml
+_id: "12fE0LI7VcOgpZXN"
+name: "Initiative"
+type: "focus"
+img: "icons/skills/movement/arrow-upward-yellow.webp"
+system:
+  description:
+    value: "<p>Quick reactions that let you act before your enemies. Grants +2 to initiative rolls (3d6 + Dexterity); from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "dexterity"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

@@ -1,0 +1,19 @@
+# packs/spells/arcane-shield.yaml
+_id: "5WALSSxxnm51KoVL"
+name: "Arcane Shield"
+type: "spell"
+img: "icons/magic/defensive/shield-barrier-glowing-triangle-blue.webp"
+system:
+  description:
+    value: "<p>An arcane aura surrounds you and deflects attacks: for one round your Defense equals your Spellpower (10 + Magic + focus bonus). You can extend the spell as you cast it by spending 1 MP per additional round.</p>"
+  school: "spirit"
+  spellType: "defense"
+  manaCost: 4
+  manaCostNote: ""
+  castTime: "major"
+  tn: 14
+  requirement: "Arcane Bolt"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

@@ -1,0 +1,19 @@
+# packs/spells/chain-lightning.yaml
+_id: "4ykRHPmI4PNnUuQG"
+name: "Chain Lightning"
+type: "spell"
+img: "icons/magic/lightning/bolts-forked-large-blue.webp"
+system:
+  description:
+    value: "<p>Lightning leaps from your outstretched hand or staff to a target within 30 yards, then arcs to up to five secondary targets within 10 yards of it. Each target after the first costs 3 MP, and you must declare them before rolling.</p><p>The primary target takes [[/damage 3d6+@abilities.magic.value penetrating]]{3d6 + Magic} penetrating damage and each secondary target [[/damage 2d6+@abilities.magic.value penetrating]]{2d6 + Magic} penetrating damage. Any target that passes a [[/test con focus=Stamina]] test vs. your Spellpower takes one die less damage.</p>"
+  school: "primal"
+  spellType: "attack"
+  manaCost: 15
+  manaCostNote: "+"
+  castTime: "major"
+  tn: 17
+  requirement: "Tempest"
+  test: "Constitution (Stamina) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

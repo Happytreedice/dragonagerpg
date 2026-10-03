@@ -1,0 +1,20 @@
+# packs/specializations/guardian.yaml
+_id: "VM6BtdYEEr6EwJsP"
+name: "Guardian"
+type: "specialization"
+img: "icons/magic/holy/barrier-shield-winged-blue.webp"
+system:
+  description:
+    value: "<p>Guardians are trained to watch their allies' positions as closely as their own. To shield a companion, a guardian will often step into harm's way and take a blow meant for someone else. They make superb bodyguards and are especially prized by mages, who are vulnerable in melee.</p>"
+  classes:
+    - "warrior"
+  requirement: "Constitution 3 or higher and Dexterity 3 or higher; Weapon and Shield Style (Journeyman)"
+  degree: "novice"
+  degrees:
+    novice: "<p>With an activate action you enter <strong>Guardian</strong> mode and choose one ally to protect. While that ally stays adjacent to you, it gains +2 to its Armor Rating, but whenever it takes damage you take 2 penetrating damage. Switching to a different ally or leaving Guardian mode is a free action.</p>"
+    journeyman: "<p>Once you plant your feet, you cannot be moved. While you are in Guardian mode, the Skirmish and Knock Prone stunts have no effect on you.</p>"
+    master: "<p>Whoever strikes your ward pays for it. Once per round while in Guardian mode, when an enemy hits or damages your protected ally, you can immediately attack that enemy as a free action, first moving up to 2 yards to get adjacent if needed. This attack generates stunt points as normal.</p>"
+  class: "warrior"
+  source:
+    book: "Core Rulebook"
+    page: 73

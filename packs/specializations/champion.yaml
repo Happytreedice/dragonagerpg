@@ -1,0 +1,20 @@
+# packs/specializations/champion.yaml
+_id: "LySyDOeoQa1GMdrh"
+name: "Champion"
+type: "specialization"
+img: "icons/skills/social/intimidation-impressing.webp"
+system:
+  description:
+    value: "<p>Champions do more than fight: they are a presence everyone on the battlefield can feel. Comrades take heart from them amid the chaos of battle, while enemies lose their nerve. Champions can be found all over Thedas, and wise commanders recruit as many as they can.</p>"
+  classes:
+    - "warrior"
+  requirement: "Communication 3 or higher and Strength 3 or higher"
+  degree: "novice"
+  degrees:
+    novice: "<p>Your war cry unnerves your enemies. When you take the Charge action, you can let out a war cry: every enemy within 8 yards of the spot where your charge ends suffers -1 on attack rolls during its next turn.</p>"
+    journeyman: "<p>With an activate action you enter <strong>Rally</strong> mode. While it is active, allies within 8 yards gain +1 to Defense and +1 on Willpower (Morale) tests. Leaving the mode takes an activate action.</p>"
+    master: "<p>No one on the battlefield can ignore you. While you are in Rally mode, its Journeyman benefits reach allies within 12 yards, and those allies also gain +1 on Willpower (Courage) tests and +1 on melee damage.</p>"
+  class: "warrior"
+  source:
+    book: "Core Rulebook"
+    page: 72

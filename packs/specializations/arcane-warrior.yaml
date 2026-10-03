@@ -1,0 +1,20 @@
+# packs/specializations/arcane-warrior.yaml
+_id: "xBQ1vkV3qTnL0aNv"
+name: "Arcane Warrior"
+type: "specialization"
+img: "icons/magic/defensive/armor-shield-barrier-steel.webp"
+system:
+  description:
+    value: "<p>The mages of the ancient elves blended spellcraft with swordplay, channeling mana into their fighting skill. Most scholars believe the art vanished with the elven kingdoms, yet a few of its secrets endure. Arcane warriors are very rare, and the GM may decide that this specialization must be unlocked in play before a character can learn it.</p>"
+  classes:
+    - "mage"
+  requirement: "Magic 3 or higher and Dexterity 3 or higher"
+  degree: "novice"
+  degrees:
+    novice: "<p>You learn one new weapon group of your choice, and you can use your Magic instead of your Strength to meet a weapon's minimum Strength. With an activate action you enter <strong>Combat Magic</strong> mode: your melee weapon damage adds your Magic instead of your Strength, but every spell you cast in this mode costs 2 more MP. Leaving the mode also takes an activate action.</p>"
+    journeyman: "<p>The strain of any armor you wear is reduced by 3. You may also learn the Armor Training talent, even though it is normally a warrior talent.</p>"
+    master: "<p>While in Combat Magic mode, you can spend 5 MP to wrap yourself in a <strong>Fade Shroud</strong>, existing partly in the waking world and partly in the Fade. The shroud gives you +3 to Defense. You must pay 3 MP at the start of each of your turns to keep it; if you do not, the shroud ends at once, but Combat Magic mode stays active.</p>"
+  class: "mage"
+  source:
+    book: "Core Rulebook"
+    page: 66

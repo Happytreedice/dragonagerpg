@@ -1,0 +1,21 @@
+# packs/talents/trap-making.yaml
+_id: "KRh5Y2DniGneiytv"
+name: "Trap-Making"
+type: "talent"
+img: "icons/skills/trades/construction-carpentry-hammer.webp"
+system:
+  description:
+    value: "<p>You know how to design and build devices that injure or trap your enemies.</p>"
+  classes:
+    - "mage"
+    - "rogue"
+    - "warrior"
+  requirement: "Dexterity (Crafting) focus"
+  degree: "novice"
+  degrees:
+    novice: "<p>You can set and disarm simple traps that deal up to [[/damage 2d6]] base damage and have at most one additional effect. You also gain +1 to find and disarm traps set by others.</p>"
+    journeyman: "<p>You can set and disarm more dangerous and complex traps that deal up to [[/damage 4d6]] damage and have up to two additional effects. Your bonus to find and disarm traps rises to +2.</p>"
+    master: "<p>You can set and disarm fiendishly lethal traps that deal up to [[/damage 6d6]] damage with any number of additional effects. Your bonus to find and disarm traps rises to +3.</p>"
+  source:
+    book: "Core Rulebook"
+    page: 65

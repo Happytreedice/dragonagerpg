@@ -1,0 +1,13 @@
+# packs/focuses/qun.yaml
+_id: "1X8V24gfFDF3uuk5"
+name: "Qun"
+type: "focus"
+img: "icons/skills/trades/academics-book-study-purple.webp"
+system:
+  description:
+    value: "<p>Knowledge of the Qun, the philosophy, laws and way of life of the qunari. Grants +2 to Cunning tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "cunning"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

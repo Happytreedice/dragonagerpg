@@ -1,0 +1,20 @@
+# packs/specializations/shadow.yaml
+_id: "pBzo7nvMME4rZRr4"
+name: "Shadow"
+type: "specialization"
+img: "icons/magic/perception/silhouette-stealth-shadow.webp"
+system:
+  description:
+    value: "<p>Shadows are rogues who have perfected the art of stealth. They can hide almost anywhere and seem to gather darkness around themselves, tricking enemies into striking at empty air. Rumors of a shadow guild or secret magic are false; shadows simply train until their techniques are flawless.</p>"
+  classes:
+    - "rogue"
+  requirement: "Dexterity 4 or higher; Dexterity (Legerdemain) and Dexterity (Stealth) focuses"
+  degree: "novice"
+  degrees:
+    novice: "<p>With an activate action you enter <strong>Shadow</strong> mode. While in it you gain +1 on Dexterity (Stealth) and Dexterity (Legerdemain) tests, and enemies suffer -1 on damage rolls for melee and ranged attacks against you. Leaving the mode is a free action.</p>"
+    journeyman: "<p>While in Shadow mode, you can perform the <strong>Decoy</strong> stunt for 2 SP. Make a [[/test dex focus=Stealth]] test and note the result. Until your next turn, anyone who attacks you must first beat that result with a Perception (Seeing) test; those who fail still use up their action but miss automatically.</p>"
+    master: "<p>You strike at the perfect moment. When you Backstab an opponent while in Shadow mode, you add your Cunning to the damage.</p>"
+  class: "rogue"
+  source:
+    book: "Core Rulebook"
+    page: 71

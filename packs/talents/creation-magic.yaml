@@ -1,0 +1,19 @@
+# packs/talents/creation-magic.yaml
+_id: "GlkF5sZGK5OinVQY"
+name: "Creation Magic"
+type: "talent"
+img: "icons/magic/life/cross-flared-green.webp"
+system:
+  description:
+    value: "<p>You have unlocked the secrets of Creation magic.</p>"
+  classes:
+    - "mage"
+  requirement: "Magic (Creation) focus"
+  degree: "novice"
+  degrees:
+    novice: "<p>You can summon a wisp of light without spending mana. It hovers at your shoulder until you dismiss it, shedding bright light like a lantern in a 10-yard radius. Summoning and dismissing the wisp are free actions.</p>"
+    journeyman: "<p>Your knowledge of Creation runs deep. Each Creation spell costs you 1 MP less (minimum 1), and you learn one new Creation spell.</p>"
+    master: "<p>Creation magic flows through you, granting +1 to Defense. You also learn one new Creation spell.</p>"
+  source:
+    book: "Core Rulebook"
+    page: 61

@@ -1,0 +1,13 @@
+# packs/focuses/tracking.yaml
+_id: "1MkgkFEty93QVwsI"
+name: "Tracking"
+type: "focus"
+img: "icons/skills/targeting/crosshair-mark-rough-pink.webp"
+system:
+  description:
+    value: "<p>Reading tracks, following a trail and hunting down quarry. Grants +2 to Perception tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "perception"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

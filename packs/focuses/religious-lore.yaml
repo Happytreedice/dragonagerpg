@@ -1,0 +1,13 @@
+# packs/focuses/religious-lore.yaml
+_id: "mUMPFJukpDtyEQ9k"
+name: "Religious Lore"
+type: "focus"
+img: "icons/skills/trades/academics-scribe-quill-gray.webp"
+system:
+  description:
+    value: "<p>Knowledge of the Chantry, the Chant of Light and the religious teachings of the peoples of Thedas. Grants +2 to Cunning tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "cunning"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

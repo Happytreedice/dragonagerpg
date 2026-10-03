@@ -1,0 +1,19 @@
+# packs/spells/stinging-swarm.yaml
+_id: "S0ZLCDBoqy07FIs8"
+name: "Stinging Swarm"
+type: "spell"
+img: "icons/magic/nature/plant-poison-spit-green.webp"
+system:
+  description:
+    value: "<p>A cloud of biting, stinging insects forms around one enemy within 30 yards. At the start of each of its turns, for a number of rounds equal to half your Magic, the target takes [[/damage 2d6+@abilities.magic.value penetrating]]{2d6 + Magic} penetrating damage.</p><p>Each round it must also pass a [[/test con focus=Stamina]] test vs. your Spellpower or suffer -2 to all attack rolls and spellcasting tests. If the target dies before the swarm disperses, the swarm moves on to another enemy within 20 yards.</p>"
+  school: "creation"
+  spellType: "attack"
+  manaCost: 20
+  manaCostNote: ""
+  castTime: "major"
+  tn: 17
+  requirement: "Spellbloom"
+  test: "Constitution (Stamina) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

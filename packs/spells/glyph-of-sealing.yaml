@@ -1,0 +1,19 @@
+# packs/spells/glyph-of-sealing.yaml
+_id: "CwIopx1q9iqCWUXs"
+name: "Glyph of Sealing"
+type: "spell"
+img: "icons/magic/symbols/rune-sigil-red-orange.webp"
+system:
+  description:
+    value: "<p>You touch anything that can be closed, from a door or gate to a chest or jar, and inscribe a glyph that binds it shut. Only you, or one person you name while casting, can open it; anyone else must break the object itself to get past the seal.</p><p>The glyph lasts until the object is opened.</p>"
+  school: "creation"
+  spellType: "utility"
+  manaCost: 3
+  manaCostNote: ""
+  castTime: "1 minute"
+  tn: 11
+  requirement: ""
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

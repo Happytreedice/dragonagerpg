@@ -1,0 +1,13 @@
+# packs/focuses/arcane-lore.yaml
+_id: "DfeaVaOgvqN3jmkR"
+name: "Arcane Lore"
+type: "focus"
+img: "icons/skills/trades/academics-book-study-runes.webp"
+system:
+  description:
+    value: "<p>Knowledge of the nature of magic, the Fade, spirits and the magical traditions of Thedas. Grants +2 to Cunning tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "cunning"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

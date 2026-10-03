@@ -1,0 +1,19 @@
+# packs/spells/hemorrhage.yaml
+_id: "NjebKVLpAspaysyq"
+name: "Hemorrhage"
+type: "spell"
+img: "icons/magic/unholy/strike-beam-blood-large-red-purple.webp"
+system:
+  description:
+    value: "<p>You seize the blood of one visible target within 50 yards. The target takes [[/damage 4d6+@abilities.magic.value penetrating]]{4d6 + Magic} penetrating damage, or only [[/damage 2d6 penetrating]]{2d6} penetrating damage with a successful [[/test con focus=Stamina]] test vs. your Spellpower.</p><p>When you cast Hemorrhage, the Imposing Spell stunt costs only 2 SP.</p>"
+  school: "blood"
+  spellType: "attack"
+  manaCost: 15
+  manaCostNote: ""
+  castTime: "major"
+  tn: 19
+  requirement: "Blood Wound"
+  test: "Constitution (Stamina) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

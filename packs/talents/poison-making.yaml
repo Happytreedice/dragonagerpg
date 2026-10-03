@@ -1,0 +1,21 @@
+# packs/talents/poison-making.yaml
+_id: "nV4ee1fZWkMvmfmR"
+name: "Poison-Making"
+type: "talent"
+img: "icons/skills/toxins/cauldron-pot-bubbles-green.webp"
+system:
+  description:
+    value: "<p>You have undergone the dangerous training needed to brew and use poisons and other useful but hazardous concoctions.</p>"
+  classes:
+    - "mage"
+    - "rogue"
+    - "warrior"
+  requirement: "Cunning (Poison Lore) focus"
+  degree: "novice"
+  degrees:
+    novice: "<p>You can make poisons and use them without harming yourself. Choose two Novice poisons you know by heart; you can make other Novice poisons once you find and study their recipes.</p>"
+    journeyman: "<p>You have learned stronger and more dangerous concoctions, grenades included. Choose one Journeyman poison or grenade you know by heart; other Journeyman recipes must be found and studied first.</p>"
+    master: "<p>You have mastered the deadliest poisons in Thedas. Choose one Master poison you know by heart; other Master poisons must be found and studied first.</p>"
+  source:
+    book: "Core Rulebook"
+    page: 63

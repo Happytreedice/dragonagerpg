@@ -1,11 +1,10 @@
 import ItemBaseData from "./item-base.mjs";
-import { DARPG } from "../config.mjs";
 
 const fields = foundry.data.fields;
 
 /**
- * Данные титула (spec §15.2): ступень [Tier] 1–3, социальный модификатор
- * внутри своей структуры (+Tier) и ресурсы (доход, бойцы, влияние).
+ * Данные титула: ступень (Tier) 1–3, структура, внутри которой действует титул, и ресурсы
+ * (доход, бойцы, влияние).
  */
 export default class TitleData extends ItemBaseData {
 
@@ -17,5 +16,13 @@ export default class TitleData extends ItemBaseData {
       structure: new fields.StringField({ required: true, blank: true, initial: "" }),
       resources: new fields.StringField({ required: true, blank: true, initial: "" })
     });
+  }
+
+  /**
+   * Собственные поля не менялись; описание и источник мигрирует ItemBaseData.
+   * @inheritDoc
+   */
+  static migrateData(source, options) {
+    return super.migrateData(source, options);
   }
 }

@@ -1,0 +1,19 @@
+# packs/spells/earthquake.yaml
+_id: "i2CT4rZBek0cPUTO"
+name: "Earthquake"
+type: "spell"
+img: "icons/magic/earth/strike-body-stone-crumble.webp"
+system:
+  description:
+    value: "<p>The ground heaves and shakes in a 6-yard radius anywhere within 30 yards. Everyone in the area suffers -2 to Defense and -5 to Speed for one round and must pass a [[/test dex focus=Acrobatics]] test vs. your Spellpower or fall prone.</p><p>The earthquake lasts one round. You can extend it by one round at a time by paying 5 MP as a free action at the start of each of your following turns.</p>"
+  school: "primal"
+  spellType: "attack"
+  manaCost: 11
+  manaCostNote: "+"
+  castTime: "major"
+  tn: 17
+  requirement: "Stonefist"
+  test: "Dexterity (Acrobatics) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

@@ -1,0 +1,13 @@
+# packs/focuses/drinking.yaml
+_id: "8QT2tNQOZMchy37g"
+name: "Drinking"
+type: "focus"
+img: "icons/skills/wounds/injury-body-pain-gray.webp"
+system:
+  description:
+    value: "<p>Holding your liquor: drinking heavily without getting drunk or losing your wits. Grants +2 to Constitution tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "constitution"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

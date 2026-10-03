@@ -1,0 +1,21 @@
+# packs/talents/carousing.yaml
+_id: "X35dSYT47q857qkW"
+name: "Carousing"
+type: "talent"
+img: "icons/skills/social/peace-luck-insult.webp"
+system:
+  description:
+    value: "<p>You take having a good time very seriously.</p>"
+  classes:
+    - "mage"
+    - "rogue"
+    - "warrior"
+  requirement: "Communication 1 or higher and Constitution 1 or higher"
+  degree: "novice"
+  degrees:
+    novice: "<p>You can drink almost anyone under the table. In advanced [[/test con focus=Drinking]] tests, add 1 to the result of each Dragon Die, so you reach the success threshold sooner.</p>"
+    journeyman: "<p>The tavern is your second home. Choose the Gambling or Seduction focus: when you fail a Communication test with that focus, you may re-roll it, but you must keep the second result.</p>"
+    master: "<p>When you are carousing you feel unstoppable. Choose the Flirt or Tower of Will roleplaying stunt: you can perform it for 3 SP instead of 4. With Flirt you also gain +1 on its opposed test; with Tower of Will its bonus to opposed tests becomes +2.</p>"
+  source:
+    book: "Core Rulebook"
+    page: 60

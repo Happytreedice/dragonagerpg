@@ -1,0 +1,19 @@
+# packs/spells/sleep.yaml
+_id: "Hr3ygyxe2Mg0hw2U"
+name: "Sleep"
+type: "spell"
+img: "icons/magic/control/debuff-energy-hold-blue-yellow.webp"
+system:
+  description:
+    value: "<p>Heavy slumber falls on every enemy within 10 yards of a point you choose within 30 yards. Each must pass a [[/test wil focus=Self-Discipline]] test vs. your Spellpower or fall asleep where it stands; a sleeper tests again on each of its turns until it wakes.</p><p>Sleeping targets have Defense 10 but cannot be finished with a coup de grace. Any damage wakes a sleeper at once.</p>"
+  school: "entropy"
+  spellType: "attack"
+  manaCost: 15
+  manaCostNote: ""
+  castTime: "major"
+  tn: 19
+  requirement: "Horror"
+  test: "Willpower (Self-Discipline) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

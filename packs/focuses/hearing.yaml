@@ -1,0 +1,13 @@
+# packs/focuses/hearing.yaml
+_id: "8gkOBsdzplz9cYGH"
+name: "Hearing"
+type: "focus"
+img: "icons/commodities/biological/ear-grey-brown.webp"
+system:
+  description:
+    value: "<p>Keen hearing: picking out quiet or distant sounds. Grants +2 to Perception tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "perception"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

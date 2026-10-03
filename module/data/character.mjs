@@ -15,7 +15,10 @@ export default class CharacterData extends ActorBaseData {
     const schema = super.defineSchema();
     return Object.assign(schema, {
       level: new fields.NumberField({ required: true, integer: true, nullable: false, initial: 1, min: 1, max: 20 }),
-      class: new fields.StringField({ required: true, initial: "warrior", choices: Object.keys(DARPG.classes) }),
+      xp: new fields.NumberField({ required: true, integer: true, nullable: false, initial: 0, min: 0 }),
+      class: new fields.StringField({ required: true, initial: "warrior", choices: () => DARPG.classes }),
+      race: new fields.StringField({ required: true, initial: "human", choices: () => DARPG.races }),
+      // Название происхождения.
       background: new fields.StringField({ required: true, blank: true, initial: "" }),
       currency: new fields.SchemaField({
         gold: new fields.NumberField({ required: true, integer: true, nullable: false, initial: 0, min: 0 }),
@@ -23,5 +26,13 @@ export default class CharacterData extends ActorBaseData {
         copper: new fields.NumberField({ required: true, integer: true, nullable: false, initial: 0, min: 0 })
       })
     });
+  }
+
+  /**
+   * Поля персонажа не меняли форму (xp и race — новые, получают начальные значения).
+   * @inheritDoc
+   */
+  static migrateData(source, options) {
+    return super.migrateData(source, options);
   }
 }

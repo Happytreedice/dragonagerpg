@@ -1,0 +1,19 @@
+# packs/talents/two-hander-style.yaml
+_id: "kgkD5V09YBgkE2n1"
+name: "Two-Hander Style"
+type: "talent"
+img: "icons/skills/melee/maneuver-greatsword-yellow.webp"
+system:
+  description:
+    value: "<p>You are deadly with two-handed melee weapons.</p>"
+  classes:
+    - "warrior"
+  requirement: "Strength 3 or higher; Axes, Bludgeons, Heavy Blades or Spears weapon group"
+  degree: "novice"
+  degrees:
+    novice: "<p>The reach and force of your blows drive foes back: when you hit with a two-handed melee weapon, you can move the target 2 yards in any direction.</p>"
+    journeyman: "<p>You deliver devastating blows: while wielding a two-handed weapon, you can perform the Mighty Blow stunt for 1 SP instead of 2.</p>"
+    master: "<p>You and your weapon are one: when you wield a two-handed weapon, you may re-roll its damage, but you must keep the second result.</p>"
+  source:
+    book: "Core Rulebook"
+    page: 65

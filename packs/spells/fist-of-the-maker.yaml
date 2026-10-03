@@ -1,0 +1,19 @@
+# packs/spells/fist-of-the-maker.yaml
+_id: "m1Yd4yYvtSKwh64p"
+name: "Fist of the Maker"
+type: "spell"
+img: "icons/magic/holy/prayer-hands-glowing-yellow-white.webp"
+system:
+  description:
+    value: "<p>A circular blast of force with a 4-yard radius slams down on any visible point within 24 yards. Everyone caught in it is knocked prone and takes [[/damage 1d6 penetrating]]{1d6} penetrating damage; those who pass a [[/test con focus=Stamina]] test vs. your Spellpower are only knocked prone.</p>"
+  school: "spirit"
+  spellType: "attack"
+  manaCost: 5
+  manaCostNote: ""
+  castTime: "major"
+  tn: 15
+  requirement: "Force Mage Specialization"
+  test: "Constitution (Stamina) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

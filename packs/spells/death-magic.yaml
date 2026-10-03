@@ -1,0 +1,19 @@
+# packs/spells/death-magic.yaml
+_id: "kHxoSLOeghsqyxir"
+name: "Death Magic"
+type: "spell"
+img: "icons/magic/death/skull-energy-light-purple.webp"
+system:
+  description:
+    value: "<p>You feed on the fading life force of the dying. For a number of rounds equal to your Magic, every living creature that dies within 6 yards of you restores Health to you equal to its Constitution (minimum 1), up to your normal maximum Health.</p><p>Death Magic and Death Syphon cannot be active on you at the same time.</p>"
+  school: "entropy"
+  spellType: "enhancement"
+  manaCost: 7
+  manaCostNote: ""
+  castTime: "major"
+  tn: 15
+  requirement: "Drain Life"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

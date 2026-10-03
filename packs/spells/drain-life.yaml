@@ -1,0 +1,19 @@
+# packs/spells/drain-life.yaml
+_id: "9Qs1JOXebncgPubG"
+name: "Drain Life"
+type: "spell"
+img: "icons/magic/unholy/hand-light-green.webp"
+system:
+  description:
+    value: "<p>You tear the life force out of one visible target within 10 yards to heal yourself. The target takes [[/damage 1d6+@abilities.magic.value penetrating]]{1d6 + Magic} penetrating damage, or only [[/damage 1d6 penetrating]]{1d6} penetrating damage with a successful [[/test con focus=Stamina]] test vs. your Spellpower.</p><p>You regain Health equal to the damage dealt, up to your normal maximum Health.</p>"
+  school: "entropy"
+  spellType: "utility"
+  manaCost: 4
+  manaCostNote: ""
+  castTime: "major"
+  tn: 12
+  requirement: ""
+  test: "Constitution (Stamina) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

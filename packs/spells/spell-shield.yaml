@@ -1,0 +1,19 @@
+# packs/spells/spell-shield.yaml
+_id: "PikTGEzqjygga857"
+name: "Spell Shield"
+type: "spell"
+img: "icons/magic/defensive/shield-hex-blue.webp"
+system:
+  description:
+    value: "<p>You use your own magical power to ward yourself against other spells. For a number of rounds equal to your Magic, any spell cast on you, helpful or harmful, has no effect, but you must spend mana points equal to its base cost; for example, an Arcane Bolt deals you no damage but costs you 2 MP.</p><p>If you cannot pay, the shield collapses and the spell takes effect normally.</p>"
+  school: "spirit"
+  spellType: "defense"
+  manaCost: 4
+  manaCostNote: ""
+  castTime: "major"
+  tn: 13
+  requirement: ""
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

@@ -1,0 +1,20 @@
+# packs/specializations/ranger.yaml
+_id: "aeNmXC5SV7TGcKyU"
+name: "Ranger"
+type: "specialization"
+img: "icons/magic/nature/wolf-paw-glow-orange.webp"
+system:
+  description:
+    value: "<p>Rangers are not the noble guardians of the wild from tavern songs but skilled woodsmen who turn their knowledge of nature to their own advantage. They lure animals, some of them frighteningly large, to fight on their side and care little if a beast dies once it has served its purpose. The Dalish call such rangers cruel; rangers think of themselves as practical.</p>"
+  classes:
+    - "rogue"
+  requirement: "Communication 3 or higher and Perception 3 or higher; Communication (Animal Handling) focus"
+  degree: "novice"
+  degrees:
+    novice: "<p>You can lure animals from the surrounding area to fight for you. Make a [[/test com focus=\"Animal Handling\" tn=13]] test; luring takes 2d6 minutes, reduced by 1 minute per degree of success (the Dragon Die). On a success a common animal answers your call and fights for you for one combat encounter or up to 30 minutes.</p>"
+    journeyman: "<p>Long days in the wilds have made you a master of ambush. When you attack an opponent who is surprised, you deal +2 damage.</p>"
+    master: "<p>You can also lure larger and more dangerous animals, such as black bears, brontos, halla and giant spiders. This uses the same [[/test com focus=\"Animal Handling\" tn=13]] test and timing as the Novice degree, and the animal serves you for just as long.</p>"
+  class: "rogue"
+  source:
+    book: "Core Rulebook"
+    page: 71

@@ -1,0 +1,19 @@
+# packs/talents/pole-weapon-style.yaml
+_id: "gFP6LvAUAnV4ncbM"
+name: "Pole Weapon Style"
+type: "talent"
+img: "icons/skills/melee/strike-polearm-glowing-white.webp"
+system:
+  description:
+    value: "<p>Pole weapons are unwieldy, but not in your hands. You can fight in this style with a two-handed spear or any weapon of the Polearms group.</p>"
+  classes:
+    - "warrior"
+  requirement: "Polearms or Spears weapon group"
+  degree: "novice"
+  degrees:
+    novice: "<p>You make full use of your weapon's reach. Enemies up to 4 yards away count as adjacent for your melee attacks, though you do not count as adjacent to them unless they also have this talent. You can even attack past an ally standing between you and a foe, a common tactic.</p>"
+    journeyman: "<p>Once braced, you are immovable. With an activate action you set yourself: until the end of the encounter, an opponent who wants to use the Skirmish stunt or the Novice degree of Two-Hander Style to move you must first win an opposed attack roll, or the stunt points are wasted and you stay put.</p>"
+    master: "<p>You get the most out of your weapon's design. With a military fork or two-handed spear you can perform the Pierce Armor stunt for 1 SP instead of 2, and with a glaive or halberd the Knock Prone stunt for 1 SP instead of 2. In addition, mounted combatants do not gain their usual +1 bonus for fighting a foe on foot when they attack you.</p>"
+  source:
+    book: "Core Rulebook"
+    page: 63

@@ -1,0 +1,19 @@
+# packs/spells/glyph-of-paralysis.yaml
+_id: "kqTbLQvJjlaEwKnN"
+name: "Glyph of Paralysis"
+type: "spell"
+img: "icons/magic/symbols/rune-sigil-green-purple.webp"
+system:
+  description:
+    value: "<p>You inscribe a trap glyph on the ground. The first enemy to come within 2 yards of it triggers the glyph and must pass a [[/test con focus=Stamina]] test vs. your Spellpower or be paralyzed for a base duration of [[/r 1d3]] rounds.</p>"
+  school: "creation"
+  spellType: "attack"
+  manaCost: 3
+  manaCostNote: ""
+  castTime: "1 minute"
+  tn: 10
+  requirement: ""
+  test: "Constitution (Stamina) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

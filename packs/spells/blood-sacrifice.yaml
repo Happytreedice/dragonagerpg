@@ -1,0 +1,19 @@
+# packs/spells/blood-sacrifice.yaml
+_id: "xBqcMGmHuKzEsxZj"
+name: "Blood Sacrifice"
+type: "spell"
+img: "icons/magic/unholy/strike-beam-blood-red-gray.webp"
+system:
+  description:
+    value: "<p>You draw the life force from one willing, visible ally within 20 yards to restore your own Health; the ally must have blood, so a golem, for example, cannot serve. You regain 1 Health for every 1 Health the ally loses, up to 25.</p><p>This can kill the donor if their Health falls to 0. The donor recovers the lost Health normally.</p>"
+  school: "blood"
+  spellType: "enhancement"
+  manaCost: 5
+  manaCostNote: ""
+  castTime: "major"
+  tn: 14
+  requirement: "Blood Mage Specialization"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

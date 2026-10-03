@@ -1,0 +1,21 @@
+# packs/talents/horsemanship.yaml
+_id: "HXxaCSe099yrfksl"
+name: "Horsemanship"
+type: "talent"
+img: "icons/skills/movement/feet-spurred-boots-brown.webp"
+system:
+  description:
+    value: "<p>You are an accomplished rider, at ease with horses and other mounts.</p>"
+  classes:
+    - "mage"
+    - "rogue"
+    - "warrior"
+  requirement: "Dexterity (Riding) focus"
+  degree: "novice"
+  degrees:
+    novice: "<p>You leap into the saddle in an instant: mounting a steed is a free action for you.</p>"
+    journeyman: "<p>You ride like the wind: your mount gains +2 Speed while you ride it.</p>"
+    master: "<p>You seem born to the saddle. You gain +1 to Defense while mounted, and when you fail a [[/test dex focus=Riding]] test you may re-roll it, but you must keep the second result.</p>"
+  source:
+    book: "Core Rulebook"
+    page: 61

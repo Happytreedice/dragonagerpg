@@ -1,10 +1,13 @@
 import VueApplicationMixin from "../vue/vue-application-mixin.mjs";
+import { ARRAY_ACTIONS, defaultArrayEntry, mutateArray } from "./array-actions.mjs";
 
 const { ActorSheetV2 } = foundry.applications.sheets;
 
 /**
  * Общая логика листов актёров: тесты, фокусы, управление предметами.
  * Рендер — через Vue (VueApplicationMixin); контекст и действия те же, что раньше.
+ * Массивы system.* (фокусы, атаки НИП, списки статблока) правятся действиями
+ * module/sheets/array-actions.mjs.
  */
 export default class BaseActorSheet extends VueApplicationMixin(ActorSheetV2) {
 
@@ -15,6 +18,7 @@ export default class BaseActorSheet extends VueApplicationMixin(ActorSheetV2) {
     window: { resizable: true },
     form: { submitOnChange: true },
     actions: {
+      ...ARRAY_ACTIONS,
       rollAbility: BaseActorSheet.#onRollAbility,
       rollFocus: BaseActorSheet.#onRollFocus,
       addFocus: BaseActorSheet.#onAddFocus,
@@ -38,12 +42,13 @@ export default class BaseActorSheet extends VueApplicationMixin(ActorSheetV2) {
     const context = await super._prepareContext(options);
     const actor = this.actor;
     const system = actor.system;
+    const config = CONFIG.DARPG;
 
-    // Характеристики и фокусы
+    // Характеристики и фокусы (все поля элемента: name, ability, improved)
     context.system = system;
-    context.config = CONFIG.DARPG;
-    context.abilities = Object.entries(CONFIG.DARPG.abilities)
-      .map(([id, label]) => ({ id, label, value: system.abilities[id].value }));
+    context.config = config;
+    context.abilities = Object.entries(config.abilities)
+      .map(([id, label]) => ({ id, label, value: system.abilities[id]?.value ?? 0 }));
     context.focuses = system.focuses.map((focus, index) => ({ ...focus, index }));
 
     // Предметы по типам, в порядке сортировки
@@ -64,15 +69,17 @@ export default class BaseActorSheet extends VueApplicationMixin(ActorSheetV2) {
     context.gear = [...byType.equipment, ...byType.consumable].sort((a, b) => (a.sort ?? 0) - (b.sort ?? 0));
 
     // Заклинания, сгруппированные по школам магии (вкладка «Гримуар»)
-    context.spellsBySchool = Object.keys(CONFIG.DARPG.schools).map(school => ({
-      school, label: CONFIG.DARPG.schools[school],
+    context.spellsBySchool = Object.keys(config.schools).map(school => ({
+      school, label: config.schools[school],
       spells: byType.spell.filter(s => s.system.school === school)
     })).filter(g => g.spells.length);
 
-    // Фокусы, сгруппированные по характеристикам (вкладка «Таланты»)
-    context.focusesByAbility = Object.keys(CONFIG.DARPG.abilities).map((ability, i) => ({
-      ability, label: CONFIG.DARPG.abilities[ability],
-      focuses: system.focuses.map((f, index) => ({ ...f, index })).filter(f => f.ability === ability && f.name?.trim())
+    // Фокусы, сгруппированные по характеристикам (вкладка «Таланты»). Показываются
+    // ВСЕ фокусы, включая новые безымянные: каждый элемент массива обязан быть в форме,
+    // иначе отправка формы заменит пропущенный элемент значением по умолчанию.
+    context.focusesByAbility = Object.keys(config.abilities).map(ability => ({
+      ability, label: config.abilities[ability],
+      focuses: context.focuses.filter(f => f.ability === ability)
     })).filter(g => g.focuses.length);
 
     // Проценты заполнения сфер жизненных сил (README §5.2, «liquid fill»)
@@ -83,7 +90,7 @@ export default class BaseActorSheet extends VueApplicationMixin(ActorSheetV2) {
 
     // Обогащённая биография для prose-mirror
     context.enrichedBiography = await foundry.applications.ux.TextEditor.implementation.enrichHTML(
-      system.biography,
+      system.biography ?? "",
       { relativeTo: actor, rollData: actor.getRollData(), secrets: actor.isOwner }
     );
     return context;
@@ -104,11 +111,11 @@ export default class BaseActorSheet extends VueApplicationMixin(ActorSheetV2) {
   }
 
   /**
-   * Индекс фокуса по ближайшему элементу с data-index.
+   * Индекс элемента массива по ближайшему элементу с data-index.
    * @param {HTMLElement} target
    * @returns {number}
    */
-  _getFocusIndex(target) {
+  _getIndex(target) {
     return Number(target.closest("[data-index]")?.dataset.index ?? -1);
   }
 
@@ -124,25 +131,25 @@ export default class BaseActorSheet extends VueApplicationMixin(ActorSheetV2) {
 
   /** Тест с предвыбранным фокусом. @this {BaseActorSheet} */
   static #onRollFocus(event, target) {
-    const index = this._getFocusIndex(target);
+    const index = this._getIndex(target);
     const focus = this.actor.system.focuses[index];
     if ( focus?.name?.trim() ) this.actor.rollAbility(focus.ability, { defaultFocus: focus.name });
   }
 
-  /** Добавить пустой фокус. @this {BaseActorSheet} */
+  /** Добавить пустой фокус (элемент по умолчанию — из схемы system.focuses). @this {BaseActorSheet} */
   static #onAddFocus() {
-    const focuses = this.actor.system.toObject().focuses;
-    focuses.push({ name: "", ability: "communication" });
-    this.actor.update({ "system.focuses": focuses });
+    return mutateArray(this, "system.focuses", focuses => {
+      focuses.push(defaultArrayEntry(this.actor, "system.focuses"));
+    });
   }
 
   /** Удалить фокус по индексу. @this {BaseActorSheet} */
   static #onDeleteFocus(event, target) {
-    const index = this._getFocusIndex(target);
-    const focuses = this.actor.system.toObject().focuses;
-    if ( (index < 0) || (index >= focuses.length) ) return;
-    focuses.splice(index, 1);
-    this.actor.update({ "system.focuses": focuses });
+    const index = this._getIndex(target);
+    return mutateArray(this, "system.focuses", focuses => {
+      if ( (index < 0) || (index >= focuses.length) ) return false;
+      focuses.splice(index, 1);
+    });
   }
 
   /** Создать предмет заданного типа. @this {BaseActorSheet} */

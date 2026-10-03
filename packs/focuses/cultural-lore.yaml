@@ -1,0 +1,13 @@
+# packs/focuses/cultural-lore.yaml
+_id: "3PxuxymJlmfxLExN"
+name: "Cultural Lore"
+type: "focus"
+img: "icons/skills/trades/academics-study-reading-book.webp"
+system:
+  description:
+    value: "<p>Knowledge of the customs, traditions and ways of life of the peoples and cultures of Thedas. Grants +2 to Cunning tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "cunning"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

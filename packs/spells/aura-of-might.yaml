@@ -1,0 +1,19 @@
+# packs/spells/aura-of-might.yaml
+_id: "MqGrqi01q0IkQU7T"
+name: "Aura of Might"
+type: "spell"
+img: "icons/magic/control/buff-strength-muscle-damage-orange.webp"
+system:
+  description:
+    value: "<p>Magic surges through the Arcane Warrior, granting +2 to melee damage for one minute. The bonus combines with bonuses from other spells, but not with another casting of Aura of Might.</p>"
+  school: "spirit"
+  spellType: "enhancement"
+  manaCost: 5
+  manaCostNote: ""
+  castTime: "major"
+  tn: 14
+  requirement: "Arcane Warrior Specialization"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

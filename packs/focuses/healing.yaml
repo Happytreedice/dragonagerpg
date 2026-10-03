@@ -1,0 +1,13 @@
+# packs/focuses/healing.yaml
+_id: "3vC4ryyiOWeWIMca"
+name: "Healing"
+type: "focus"
+img: "icons/skills/wounds/injury-stitched-flesh-red.webp"
+system:
+  description:
+    value: "<p>Medical know-how: dressing wounds, treating illness and giving first aid. The heal action is a [[/test cun focus=Healing tn=11]]: on a success the patient regains Health equal to the Dragon Die plus your Cunning and cannot benefit from it again until damaged anew. Grants +2 to Cunning tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "cunning"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

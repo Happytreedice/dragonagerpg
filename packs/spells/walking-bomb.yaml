@@ -1,0 +1,19 @@
+# packs/spells/walking-bomb.yaml
+_id: "x8zfy1HrXjfvZcGd"
+name: "Walking Bomb"
+type: "spell"
+img: "icons/magic/unholy/projectile-helix-blood-red.webp"
+system:
+  description:
+    value: "<p>You fill the blood of one opponent within 10 yards with a caustic poison that deals [[/damage 1d6+1 penetrating]]{1d6+1} penetrating damage in the round you cast it. At the start of each of the target's turns while the spell lasts, it tests [[/test con focus=Stamina]] vs. your Spellpower: a success ends the spell, a failure deals another [[/damage 1d6+1 penetrating]]{1d6+1} penetrating damage.</p><p>If this damage drops the target to 0 Health, it explodes in a shower of blood and flesh, dealing [[/damage 2d6]] damage to everyone within 4 yards.</p>"
+  school: "spirit"
+  spellType: "attack"
+  manaCost: 4
+  manaCostNote: ""
+  castTime: "major"
+  tn: 13
+  requirement: ""
+  test: "Constitution (Stamina) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

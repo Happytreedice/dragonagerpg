@@ -1,0 +1,20 @@
+# packs/specializations/blood-mage.yaml
+_id: "oJnhshrVkjaaK9Sl"
+name: "Blood Mage"
+type: "specialization"
+img: "icons/magic/death/blood-corruption-vomit-red.webp"
+system:
+  description:
+    value: "<p>The Tevinter Imperium once conquered Thedas with blood magic. The Chantry forbids the practice outright: blood mages are maleficars, hunted by templars wherever they are found. Even so, some Grey Wardens are said to have turned to blood magic, reasoning that any weapon is fair against the darkspawn.</p>"
+  classes:
+    - "mage"
+  requirement: "Constitution 3 or higher and Magic 3 or higher"
+  degree: "novice"
+  degrees:
+    novice: "<p>You can fuel spells with your own blood. First enter <strong>Blood Magic</strong> mode with an activate action. When you cast a spell in this mode, you can inflict [[/damage 1d6 penetrating]]{1d6} penetrating damage on yourself and gain mana equal to the damage taken; that mana can be spent only on the current spell, and any excess is lost. While in the mode you cannot be healed by potions or Creation spells, and you can cast Blood spells only in this mode. Leaving the mode takes an activate action.</p>"
+    journeyman: "<p>You can power your spells with the blood of a willing ally instead of your own. This works like the Novice degree, except that the ally takes the damage, and the ally must be within 6 yards of you when you cast the spell.</p>"
+    master: "<p>You can draw on anyone's blood. As a minor action, choose a target within 6 yards and make an opposed test: your [[/test mag focus=Blood]] against the target's Willpower (Faith) or Willpower (Self-Discipline). If you win, you can use the target's blood as in the Journeyman degree. If the target is adjacent to you and helpless (unconscious or bound, for example), the blood you draw from it inflicts [[/damage 2d6 penetrating]]{2d6} penetrating damage.</p>"
+  class: "mage"
+  source:
+    book: "Core Rulebook"
+    page: 66

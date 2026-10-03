@@ -1,0 +1,20 @@
+# packs/specializations/legionnaire-scout.yaml
+_id: "k9kpeuzjIJKD4B9q"
+name: "Legionnaire Scout"
+type: "specialization"
+img: "icons/magic/light/light-lantern-lit-white.webp"
+system:
+  description:
+    value: "<p>The dwarven Legion of the Dead is famed for its courage, and its scouts are the boldest of all. Ranging ahead of their comrades or working alone in the Deep Roads, they must be both careful and fearless. They learn to bear terrible hardship without complaint, forging their will into armor against pain, despair and misfortune.</p>"
+  classes:
+    - "rogue"
+  requirement: "Willpower 3 or higher and Constitution 3 or higher; dwarf of the Legion of the Dead only"
+  degree: "novice"
+  degrees:
+    novice: "<p>You will endure any hardship for your people and your mission. You gain +2 on any ability test made to resist pain, hunger, fear or despair.</p>"
+    journeyman: "<p>You are hard to bring down. The Mighty Blow and Lethal Blow stunts cost more when used against you: 3 SP for Mighty Blow and 6 SP for Lethal Blow.</p>"
+    master: "<p>Sheer willpower lets you shrug off grievous wounds. You gain a bonus to your Armor Rating equal to half your Willpower (rounded up, minimum 2). This bonus stacks with any armor you wear and applies even when you wear none.</p>"
+  class: "rogue"
+  source:
+    book: "Core Rulebook"
+    page: 70

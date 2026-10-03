@@ -1,0 +1,19 @@
+# packs/spells/flaming-weapons.yaml
+_id: "2qcfeyIYGwYPGyne"
+name: "Flaming Weapons"
+type: "spell"
+img: "icons/magic/fire/dagger-rune-enchant-flame-orange.webp"
+system:
+  description:
+    value: "<p>The readied melee weapons of all allies within 10 yards of you burst into flame and deal an extra [[/damage 1d6]] damage on every successful hit. The effect lasts one minute; you can extend it as you cast it by spending 3 MP per additional minute.</p><p>The flames do not harm the weapons, and the spell can be combined with Frost Weapons.</p>"
+  school: "primal"
+  spellType: "enhancement"
+  manaCost: 6
+  manaCostNote: ""
+  castTime: "major"
+  tn: 15
+  requirement: "Flame Blast"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

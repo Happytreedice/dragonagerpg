@@ -1,0 +1,13 @@
+# packs/focuses/stamina.yaml
+_id: "W8IomdEhCjQ50f4B"
+name: "Stamina"
+type: "focus"
+img: "icons/skills/wounds/injury-pain-body-orange.webp"
+system:
+  description:
+    value: "<p>Withstanding hunger, cold, poison, disease and physical exhaustion. Grants +2 to Constitution tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "constitution"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

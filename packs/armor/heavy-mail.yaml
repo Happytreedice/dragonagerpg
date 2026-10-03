@@ -1,0 +1,16 @@
+# packs/armor/heavy-mail.yaml
+_id: "3rDDIwiQ1WP1zwBP"
+name: "Heavy Mail"
+type: "armor"
+img: "icons/equipment/chest/breastplate-scale-grey.webp"
+system:
+  description:
+    value: "<p>A full coat of mail with protection for the arms and legs, worn over thick padding.</p><ul><li><strong>Armor Rating 7:</strong> subtract it from the damage of every hit you take; penetrating damage ignores armor.</li><li><strong>Armor Penalty -3:</strong> with the Armor Training talent it reduces only your Speed; without that talent it applies to your Dexterity, and so to Dexterity tests, Defense and Speed.</li><li><strong>Strain 4:</strong> a mage wearing this armor spends 4 extra mana points on every spell.</li></ul>"
+  armorType: "heavyMail"
+  armorRating: 7
+  armorPenalty: 3
+  strain: 4
+  cost: "75 sp"
+  source:
+    book: "Core Rulebook"
+    page: 76

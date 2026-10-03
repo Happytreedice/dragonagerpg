@@ -1,0 +1,13 @@
+# packs/focuses/running.yaml
+_id: "eLcRal1fKo4LXIED"
+name: "Running"
+type: "focus"
+img: "icons/skills/movement/feet-spurred-boots-brown.webp"
+system:
+  description:
+    value: "<p>Running over long distances without wearing yourself out. Grants +2 to Constitution tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "constitution"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

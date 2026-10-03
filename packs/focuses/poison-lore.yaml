@@ -1,0 +1,13 @@
+# packs/focuses/poison-lore.yaml
+_id: "68P0so1d8uc5uhP2"
+name: "Poison Lore"
+type: "focus"
+img: "icons/skills/toxins/poison-skull-herbs-bottle-pink.webp"
+system:
+  description:
+    value: "<p>Knowledge of poisons: their ingredients, effects and antidotes. Grants +2 to Cunning tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "cunning"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

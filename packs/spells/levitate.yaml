@@ -1,0 +1,19 @@
+# packs/spells/levitate.yaml
+_id: "SnEIhEwrK7qFHXvR"
+name: "Levitate"
+type: "spell"
+img: "icons/magic/control/debuff-energy-hold-levitate-teal-blue.webp"
+system:
+  description:
+    value: "<p>Telekinetic force lets you move an inanimate object as if an invisible pair of hands held it. When you cast the spell, divide your Magic between the object's effective Dexterity and Strength (neither can be below 0); its Speed equals three times your Magic (minimum 1).</p><p>You must keep the object in sight, or the spell ends, and you cannot levitate anything aware and able to move on its own. To pull an object from someone's grip, make an opposed test: their [[/test str focus=Might]] against your [[/test mag focus=Spirit]]. Maintaining the spell costs 1 MP at the start of each of your turns.</p>"
+  school: "spirit"
+  spellType: "utility"
+  manaCost: 5
+  manaCostNote: ""
+  castTime: "major"
+  tn: 15
+  requirement: "Mind Blast"
+  test: "Strength (Might) vs. Magic (Spirit)"
+  source:
+    book: "Core Rulebook"
+    page: null

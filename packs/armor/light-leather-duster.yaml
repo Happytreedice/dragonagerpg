@@ -1,0 +1,16 @@
+# packs/armor/light-leather-duster.yaml
+_id: "KhqpfNkG5zWYzYFU"
+name: "Light Leather Duster"
+type: "armor"
+img: "icons/equipment/chest/breastplate-collared-leather-brown.webp"
+system:
+  description:
+    value: "<p>A long, sturdy leather coat favored by travelers and sellswords. It protects as well as light leather armor.</p><ul><li><strong>Armor Rating 3:</strong> subtract it from the damage of every hit you take; penetrating damage ignores armor.</li><li><strong>Armor Penalty:</strong> none.</li><li><strong>Strain 1:</strong> a mage wearing this armor spends 1 extra mana point on every spell.</li></ul><p>A duster can be improved: tailoring turns it into a Tailored Leather Duster (+45 sp), and a Lining with Concealed Pockets can be added (+25 sp).</p>"
+  armorType: "lightLeather"
+  armorRating: 3
+  armorPenalty: 0
+  strain: 1
+  cost: "15 sp"
+  source:
+    book: "Core Rulebook"
+    page: 76

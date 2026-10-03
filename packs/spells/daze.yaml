@@ -1,0 +1,19 @@
+# packs/spells/daze.yaml
+_id: "O62g4sM5NyjrpmwE"
+name: "Daze"
+type: "spell"
+img: "icons/magic/control/debuff-energy-hold-yellow.webp"
+system:
+  description:
+    value: "<p>You befuddle one visible target within 10 yards. If it passes a [[/test wil focus=Self-Discipline]] test vs. your Spellpower, it is merely confused and suffers -1 to all ability tests until the start of your next turn. If it fails, it suffers the same penalty and also cannot take any actions on its next turn.</p>"
+  school: "entropy"
+  spellType: "attack"
+  manaCost: 2
+  manaCostNote: ""
+  castTime: "major"
+  tn: 11
+  requirement: ""
+  test: "Willpower (Self-Discipline) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

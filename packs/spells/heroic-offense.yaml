@@ -1,0 +1,19 @@
+# packs/spells/heroic-offense.yaml
+_id: "0NxNy7LYPfMSVVMY"
+name: "Heroic Offense"
+type: "spell"
+img: "icons/magic/control/buff-strength-muscle-damage-red.webp"
+system:
+  description:
+    value: "<p>With a touch you fill one ally with martial might: the ally gains +1 to Strength until the end of the encounter.</p>"
+  school: "creation"
+  spellType: "enhancement"
+  manaCost: 3
+  manaCostNote: ""
+  castTime: "major"
+  tn: 11
+  requirement: ""
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

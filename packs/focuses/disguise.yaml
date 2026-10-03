@@ -1,0 +1,13 @@
+# packs/focuses/disguise.yaml
+_id: "ilXe36eSIzWkZyxi"
+name: "Disguise"
+type: "focus"
+img: "icons/skills/social/theft-pickpocket-bribery-brown.webp"
+system:
+  description:
+    value: "<p>Changing your appearance and passing yourself off as someone else. Grants +2 to Communication tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "communication"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

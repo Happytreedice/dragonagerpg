@@ -1,0 +1,13 @@
+# packs/focuses/self-discipline.yaml
+_id: "CUGqbMN1e6VkCwX4"
+name: "Self-Discipline"
+type: "focus"
+img: "icons/magic/holy/meditation-chi-focus-blue.webp"
+system:
+  description:
+    value: "<p>Self-control: resisting temptation, fear and mental pressure. Grants +2 to Willpower tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "willpower"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

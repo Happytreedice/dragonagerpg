@@ -1,0 +1,13 @@
+# packs/focuses/light-blades.yaml
+_id: "56DBW7qKmGVSGHrQ"
+name: "Light Blades"
+type: "focus"
+img: "icons/skills/melee/strike-dagger-white-orange.webp"
+system:
+  description:
+    value: "<p>Fighting with light blades such as the dagger, shortsword and throwing knife. Grants +2 to attack rolls with weapons of the Light Blades group and to other Dexterity tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "dexterity"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

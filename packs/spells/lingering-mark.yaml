@@ -1,0 +1,19 @@
+# packs/spells/lingering-mark.yaml
+_id: "azySRC8LgIA6Sz5p"
+name: "Lingering Mark"
+type: "spell"
+img: "icons/magic/death/undead-ghosts-trio-blue.webp"
+system:
+  description:
+    value: "<p>A stronger form of Spirit Mark: you mark one enemy within 40 yards for the spirits to torment. For a number of rounds equal to your Magic, the target takes [[/damage 2d6+@abilities.willpower.value penetrating]]{2d6 + Willpower} penetrating damage each turn, using your Willpower. On its turn it can end the mark with a successful [[/test mag focus=Entropy]] or [[/test wil focus=Morale]] test vs. your Spellpower.</p><p>If the target dies while marked, its spirit rises to fight for you, for longer and more fiercely than one raised by Spirit Mark, with +2 to attack and damage rolls.</p><section class=\"secret\"><p>Verify against the printed book: how many turns the spirit raised by Lingering Mark fights for you.</p></section>"
+  school: "entropy"
+  spellType: "attack"
+  manaCost: 21
+  manaCostNote: ""
+  castTime: "major"
+  tn: 19
+  requirement: "Necromancer Specialization, Entropy Magic (Journeyman), Spirit Mark"
+  test: "Magic (Entropy) or Willpower (Morale) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

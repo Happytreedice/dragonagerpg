@@ -1,0 +1,19 @@
+# packs/spells/haste.yaml
+_id: "Bl2BbU1rHWiuDEot"
+name: "Haste"
+type: "spell"
+img: "icons/magic/movement/trail-streak-impact-blue.webp"
+system:
+  description:
+    value: "<p>You fill one ally with unnatural speed, letting them act faster than any foe. You may target yourself.</p><p>Haste lasts one round. You can extend it by one round at a time by paying 10 MP as a free action at the start of each of your following turns.</p><section class=\"secret\"><p>Verify against the printed book: the exact game benefit of the extra speed (actions, Speed or initiative) is not recorded in this entry.</p></section>"
+  school: "creation"
+  spellType: "enhancement"
+  manaCost: 10
+  manaCostNote: ""
+  castTime: "major"
+  tn: 17
+  requirement: "Heroic Defense"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

@@ -1,0 +1,19 @@
+# packs/spells/grease.yaml
+_id: "e0LCmLPjfJEdvHh7"
+name: "Grease"
+type: "spell"
+img: "icons/magic/water/pseudopod-swirl-blue.webp"
+system:
+  description:
+    value: "<p>A slick pool of grease up to 10 yards across appears anywhere within 30 yards. Anyone in the area when you cast the spell, or who enters or moves within it, must pass a [[/test dex focus=Acrobatics]] test vs. your Spellpower or fall prone; prone characters can still crawl normally.</p><p>The grease is flammable. Any contact with fire ignites it, dealing [[/damage 1d6 penetrating]]{1d6} penetrating damage at once to everyone in the area; the fire then burns for a number of rounds equal to your Magic, dealing [[/damage 1d6 penetrating]]{1d6} penetrating damage each turn to everyone inside.</p>"
+  school: "creation"
+  spellType: "utility"
+  manaCost: 7
+  manaCostNote: ""
+  castTime: "major"
+  tn: 15
+  requirement: "Spell Wisp"
+  test: "Dexterity (Acrobatics) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

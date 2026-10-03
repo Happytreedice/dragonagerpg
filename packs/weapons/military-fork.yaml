@@ -1,0 +1,25 @@
+# packs/weapons/military-fork.yaml
+_id: "Y3UrohWfX0kvAn6H"
+name: "Military Fork"
+type: "weapon"
+img: "icons/weapons/polearms/glaive-simple-hooked.webp"
+system:
+  description:
+    value: "<p>A two-pronged war fork, handy for dragging riders out of the saddle.</p><p><strong>Attack:</strong> Strength (Polearms). <strong>Damage:</strong> [[/damage 2d6]] + Strength.</p><p><strong>Minimum Strength:</strong> 2. With lower Strength the weapon deals only [[/damage 1d6-1]] + Strength.</p>"
+  weaponGroup: "polearms"
+  type: "melee"
+  damage:
+    dice: "2d6"
+    ability: "strength"
+  minStrength: 2
+  range:
+    short: null
+    long: null
+  reload: ""
+  twoHanded: true
+  cost: "18 sp"
+  penetrating: false
+  quantity: 1
+  source:
+    book: "Core Rulebook"
+    page: 74

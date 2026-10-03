@@ -1,0 +1,19 @@
+# packs/spells/paralyze.yaml
+_id: "keiaxpU6gmaOQfah"
+name: "Paralyze"
+type: "spell"
+img: "icons/magic/control/debuff-chains-shackle-movement-red.webp"
+system:
+  description:
+    value: "<p>Ghostly wisps of entropic energy close around one opponent within 30 yards. If it fails a [[/test con focus=Stamina]] test vs. your Spellpower, it is paralyzed: it cannot move or take actions and loses its Dexterity bonus to Defense, though it cannot be finished with a coup de grace unless it is unconscious or dying. A paralyzed target tests again at the start of each of its turns.</p><p>If it passes, its Speed is reduced by a quarter, rounded in its favor. Both effects last until the end of the encounter, although a paralyzed target breaks free with a later successful test.</p>"
+  school: "entropy"
+  spellType: "attack"
+  manaCost: 7
+  manaCostNote: ""
+  castTime: "major"
+  tn: 16
+  requirement: "Weakness"
+  test: "Constitution (Stamina) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

@@ -1,0 +1,13 @@
+# packs/focuses/climbing.yaml
+_id: "YLR69N5DwRD5uOwA"
+name: "Climbing"
+type: "focus"
+img: "icons/skills/movement/arrows-up-trio-red.webp"
+system:
+  description:
+    value: "<p>Scaling walls, cliffs and other sheer surfaces. Grants +2 to Strength tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "strength"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

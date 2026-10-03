@@ -1,0 +1,19 @@
+# packs/spells/arcane-bolt.yaml
+_id: "WuFJ3gMRgiDyZeM6"
+name: "Arcane Bolt"
+type: "spell"
+img: "icons/magic/light/beam-rays-blue.webp"
+system:
+  description:
+    value: "<p>A bolt of arcane energy streaks from your hand or staff at one visible target within 30 yards. It deals [[/damage 2d6]] damage plus the Dragon Die of your casting roll. If the target passes a [[/test dex focus=Acrobatics]] test vs. your Spellpower, it takes only [[/damage 1d6]] damage.</p>"
+  school: "spirit"
+  spellType: "attack"
+  manaCost: 2
+  manaCostNote: ""
+  castTime: "major"
+  tn: 10
+  requirement: ""
+  test: "Dexterity (Acrobatics) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

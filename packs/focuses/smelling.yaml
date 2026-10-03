@@ -1,0 +1,13 @@
+# packs/focuses/smelling.yaml
+_id: "GZYEskiq13u3S2Nk"
+name: "Smelling"
+type: "focus"
+img: "icons/magic/perception/eye-slit-orange.webp"
+system:
+  description:
+    value: "<p>A keen sense of smell: telling scents apart and drawing conclusions from them. Grants +2 to Perception tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "perception"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

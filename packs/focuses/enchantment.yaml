@@ -1,0 +1,13 @@
+# packs/focuses/enchantment.yaml
+_id: "f88vz82klQvgMf0Y"
+name: "Enchantment"
+type: "focus"
+img: "icons/skills/trades/plating-metal-welding-steel.webp"
+system:
+  description:
+    value: "<p>The art of imbuing items with magical power through lyrium; only dwarves and the Tranquil can work enchantments. Grants +2 to Cunning tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "cunning"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

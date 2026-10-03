@@ -1,0 +1,19 @@
+# packs/spells/fireball.yaml
+_id: "UVNwODfucvmL041Y"
+name: "Fireball"
+type: "spell"
+img: "icons/magic/fire/explosion-fireball-medium-orange.webp"
+system:
+  description:
+    value: "<p>You fling a spark of flame at any point within 50 yards, where it bursts into a fireball with a 4-yard radius. Everyone caught in the blast takes [[/damage 3d6+@abilities.magic.value]]{3d6 + Magic} damage and is knocked prone unless they pass a [[/test dex focus=Acrobatics]] test vs. your Spellpower.</p>"
+  school: "primal"
+  spellType: "attack"
+  manaCost: 11
+  manaCostNote: ""
+  castTime: "major"
+  tn: 17
+  requirement: "Flaming Weapons"
+  test: "Dexterity (Acrobatics) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

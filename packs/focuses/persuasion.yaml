@@ -1,0 +1,13 @@
+# packs/focuses/persuasion.yaml
+_id: "Fn1yhvdNZekFD278"
+name: "Persuasion"
+type: "focus"
+img: "icons/skills/social/diplomacy-peace-alliance.webp"
+system:
+  description:
+    value: "<p>Winning others over to your side with sound arguments and eloquence. Grants +2 to Communication tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "communication"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

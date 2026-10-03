@@ -1,0 +1,13 @@
+# packs/focuses/axes.yaml
+_id: "nbXFPwNytYDld1bc"
+name: "Axes"
+type: "focus"
+img: "icons/skills/melee/strike-axe-red.webp"
+system:
+  description:
+    value: "<p>Fighting with axes such as the battle axe, throwing axe and two-handed axe. Grants +2 to attack rolls with weapons of the Axes group and to other Strength tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "strength"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

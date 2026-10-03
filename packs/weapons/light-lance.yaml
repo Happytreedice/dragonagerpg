@@ -1,0 +1,25 @@
+# packs/weapons/light-lance.yaml
+_id: "jPmBqk8G6YakHKs8"
+name: "Light Lance"
+type: "weapon"
+img: "icons/weapons/polearms/spear-flared-bronze-teal.webp"
+system:
+  description:
+    value: "<p>A lighter lance made for fast-moving cavalry.</p><p><strong>Attack:</strong> Strength (Lances). <strong>Damage:</strong> [[/damage 1d6+3]] + Strength.</p><p><strong>Minimum Strength:</strong> 1. With lower Strength the weapon deals only [[/damage 1d6-1]] + Strength.</p>"
+  weaponGroup: "lances"
+  type: "melee"
+  damage:
+    dice: "1d6+3"
+    ability: "strength"
+  minStrength: 1
+  range:
+    short: null
+    long: null
+  reload: ""
+  twoHanded: false
+  cost: "12 sp"
+  penetrating: false
+  quantity: 1
+  source:
+    book: "Core Rulebook"
+    page: 74

@@ -1,0 +1,20 @@
+# packs/talents/thrown-weapon-style.yaml
+_id: "ujNDempNfjZKQhcB"
+name: "Thrown Weapon Style"
+type: "talent"
+img: "icons/skills/ranged/daggers-thrown-salvo-orange.webp"
+system:
+  description:
+    value: "<p>You are skilled with thrown weapons.</p>"
+  classes:
+    - "rogue"
+    - "warrior"
+  requirement: "Axes, Light Blades or Spears weapon group"
+  degree: "novice"
+  degrees:
+    novice: "<p>Your aim is uncanny: you gain +1 on attack rolls with thrown weapons.</p>"
+    journeyman: "<p>You ready thrown weapons in a flash: reloading (readying) a thrown weapon is a free action for you instead of a minor action.</p>"
+    master: "<p>You know how to get past an enemy's armor. When you perform the Pierce Armor stunt with a thrown weapon, the attack deals penetrating damage instead (normally the stunt only halves the target's armor rating, while penetrating damage ignores armor entirely).</p>"
+  source:
+    book: "Core Rulebook"
+    page: 65

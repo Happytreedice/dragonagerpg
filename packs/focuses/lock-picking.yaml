@@ -1,0 +1,13 @@
+# packs/focuses/lock-picking.yaml
+_id: "Vgmkzdecu2svqbFl"
+name: "Lock Picking"
+type: "focus"
+img: "icons/skills/trades/security-lockpicking-chest-blue.webp"
+system:
+  description:
+    value: "<p>Opening locks with picks and getting past other fastenings. Grants +2 to Dexterity tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "dexterity"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

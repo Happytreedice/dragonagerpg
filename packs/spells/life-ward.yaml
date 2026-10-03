@@ -1,0 +1,19 @@
+# packs/spells/life-ward.yaml
+_id: "MxAv42kndqNfKmkw"
+name: "Life Ward"
+type: "spell"
+img: "icons/magic/holy/prayer-hands-glowing-yellow.webp"
+system:
+  description:
+    value: "<p>You weave a protective ward of mystic energy around one ally within 6 yards, or around yourself. The first time the subject's Health drops below 10 during this encounter, they immediately regain [[/heal 2d6]] Health.</p><p>The ward triggers only once per casting and fades at the end of the encounter if unused. A character can carry only one Life Ward at a time.</p>"
+  school: "creation"
+  spellType: "utility"
+  manaCost: 5
+  manaCostNote: ""
+  castTime: "major"
+  tn: 16
+  requirement: "Spirit Healer Specialization (Master)"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

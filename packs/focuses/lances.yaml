@@ -1,0 +1,13 @@
+# packs/focuses/lances.yaml
+_id: "48lA3MwbbvC9leGo"
+name: "Lances"
+type: "focus"
+img: "icons/skills/melee/spear-tips-double-purple.webp"
+system:
+  description:
+    value: "<p>Fighting from horseback with lances such as the heavy lance, light lance and jousting lance. Grants +2 to attack rolls with weapons of the Lances group and to other Strength tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "strength"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

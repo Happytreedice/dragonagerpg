@@ -1,0 +1,14 @@
+# packs/armor/heavy-shield.yaml
+_id: "zfDHWosoMsnXCm6Y"
+name: "Heavy Shield"
+type: "shield"
+img: "icons/equipment/shield/heater-steel-boss-red.webp"
+system:
+  description:
+    value: "<p>A tall infantry shield that can cover nearly the whole body.</p><ul><li><strong>Shield Bonus +3:</strong> added to your Defense (10 + Dexterity + shield bonus).</li></ul><p>The full +3 requires the Weapon and Shield Style talent; without it the shield grants only +1.</p>"
+  shieldType: "heavy"
+  shieldBonus: 3
+  cost: "60 sp"
+  source:
+    book: "Core Rulebook"
+    page: 76

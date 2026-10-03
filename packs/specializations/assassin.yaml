@@ -1,0 +1,20 @@
+# packs/specializations/assassin.yaml
+_id: "SdJ8al5TScluzG0v"
+name: "Assassin"
+type: "specialization"
+img: "icons/skills/toxins/symbol-poison-drop-skull-green.webp"
+system:
+  description:
+    value: "<p>Assassins have made killing an art, using blades, poisons and guile alike. The most famous are the Antivan Crows, who will kill anyone for the right price, and much of the real political power in Antiva lies in their hands.</p>"
+  classes:
+    - "rogue"
+  requirement: "Cunning 3 or higher and Dexterity 3 or higher"
+  degree: "novice"
+  degrees:
+    novice: "<p>You study a nearby foe for weaknesses. With an activate action, you can <strong>mark for death</strong> one visible target within 10 yards; all melee and ranged attacks against that target gain +1 damage. The mark lasts until the end of the encounter, until the target dies or until you mark a new target. You can have only one mark at a time, and you cannot mark the same target twice in one encounter.</p>"
+    journeyman: "<p>Your strikes are sudden and precise. When you use your Dirty Fighting power, the target must pass a [[/test con focus=Stamina tn=17]] test to resist it. In addition, once per encounter you can use Dirty Fighting as a free action.</p>"
+    master: "<p>You know exactly where your target is weakest. When you Backstab a target you have marked for death, you deal an extra [[/damage 1d6]] damage.</p>"
+  class: "rogue"
+  source:
+    book: "Core Rulebook"
+    page: 69

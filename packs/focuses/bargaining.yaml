@@ -1,0 +1,13 @@
+# packs/focuses/bargaining.yaml
+_id: "IIJvLqMkL9d4VIxX"
+name: "Bargaining"
+type: "focus"
+img: "icons/skills/social/trading-justice-scale-gold.webp"
+system:
+  description:
+    value: "<p>Haggling over prices and striking favorable deals. Grants +2 to Communication tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "communication"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

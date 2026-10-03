@@ -1,0 +1,16 @@
+# packs/armor/heavy-leather.yaml
+_id: "sjjxO9DGie5vBYnY"
+name: "Heavy Leather"
+type: "armor"
+img: "icons/equipment/chest/breastplate-layered-leather-black.webp"
+system:
+  description:
+    value: "<p>Thick, hardened leather reinforced with extra layers and studs. It guards better than light leather but stiffens the wearer a little.</p><ul><li><strong>Armor Rating 4:</strong> subtract it from the damage of every hit you take; penetrating damage ignores armor.</li><li><strong>Armor Penalty -1:</strong> with the Armor Training talent it reduces only your Speed; without that talent it applies to your Dexterity, and so to Dexterity tests, Defense and Speed.</li><li><strong>Strain 2:</strong> a mage wearing this armor spends 2 extra mana points on every spell.</li></ul>"
+  armorType: "heavyLeather"
+  armorRating: 4
+  armorPenalty: 1
+  strain: 2
+  cost: "30 sp"
+  source:
+    book: "Core Rulebook"
+    page: 76

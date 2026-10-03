@@ -1,0 +1,13 @@
+# packs/focuses/driving.yaml
+_id: "6EWncqqZ5fUWg5gk"
+name: "Driving"
+type: "focus"
+img: "icons/skills/movement/feet-winged-boots-brown.webp"
+system:
+  description:
+    value: "<p>Handling carts, wagons and teams of draft animals. Grants +2 to Strength tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "strength"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

@@ -1,0 +1,19 @@
+# packs/spells/animate-dead.yaml
+_id: "8kt54iYYJ7ZhsKH0"
+name: "Animate Dead"
+type: "spell"
+img: "icons/magic/death/hand-dirt-undead-zombie.webp"
+system:
+  description:
+    value: "<p>Powerful spirit energy flows into a corpse you touch and hauls it up to obey your will. It stays animated for a number of minutes equal to your Magic, or until you release it.</p><p>Use the Skeleton statistics for the animated corpse; in special cases the GM may give it unique statistics reflecting who it was in life.</p>"
+  school: "spirit"
+  spellType: "utility"
+  manaCost: 12
+  manaCostNote: ""
+  castTime: "1 minute"
+  tn: 17
+  requirement: "Virulent Walking Bomb"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

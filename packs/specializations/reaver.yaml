@@ -1,0 +1,20 @@
+# packs/specializations/reaver.yaml
+_id: "808s7tYGzqDnCST1"
+name: "Reaver"
+type: "specialization"
+img: "icons/magic/death/hand-withered-gray.webp"
+system:
+  description:
+    value: "<p>Reavers have learned to turn blood magic inward, becoming terrifying warriors. Becoming one requires a secret ritual in which the warrior drinks the blood of a dragon or a similar creature, such as a wyvern. The ritual grants the power to draw strength from pain and death, but its ties to blood magic carry a risk of demonic corruption.</p>"
+  classes:
+    - "warrior"
+  requirement: "Strength 3 or higher and Constitution 3 or higher; arcane ritual of drinking the blood of a dragon or dragon-like creature"
+  degree: "novice"
+  degrees:
+    novice: "<p>Your attacks drain the life of your foes. Once per encounter, as a minor action, you can activate this ability: for a number of consecutive turns equal to your Willpower, each successful attack restores Health to you equal to the damage it dealt or the target's Constitution, whichever is lower.</p>"
+    journeyman: "<p>You can turn your rage and pain into an aura that wounds your enemies. With an activate action you raise an <strong>aura of pain</strong>. While it is active, once per turn you can take [[/damage 1d6 penetrating]]{1d6} penetrating damage yourself to deal [[/damage 1d6+@abilities.willpower.value penetrating]]{1d6 + Willpower} penetrating damage to every enemy within 6 yards. Keeping the aura going is a free action.</p>"
+    master: "<p>Each kill drives you on. Immediately after you kill an opponent in combat, you can make a free attack against another enemy within reach; if there is none, you can instead take a free Move action toward a new target. If this free attack kills an enemy, it does not grant another free attack or move.</p>"
+  class: "warrior"
+  source:
+    book: "Core Rulebook"
+    page: 73

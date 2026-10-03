@@ -1,0 +1,13 @@
+# packs/focuses/research.yaml
+_id: "ldjMAbuBtmOuJzrV"
+name: "Research"
+type: "focus"
+img: "icons/skills/trades/academics-investigation-study-blue.webp"
+system:
+  description:
+    value: "<p>Tracking down information in books, archives and libraries. Grants +2 to Cunning tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "cunning"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

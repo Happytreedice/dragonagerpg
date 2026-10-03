@@ -1,0 +1,19 @@
+# packs/spells/tempest.yaml
+_id: "KxgTmg42lnQPhF6J"
+name: "Tempest"
+type: "spell"
+img: "icons/magic/lightning/bolt-strike-clouds-blue.webp"
+system:
+  description:
+    value: "<p>A small thunderstorm with a 4-yard radius breaks out at any point within 40 yards. Lightning strikes everyone in the area for [[/damage 2d6+@abilities.magic.value penetrating]]{2d6 + Magic} penetrating damage, or only [[/damage 1d6 penetrating]]{1d6} penetrating damage with a successful [[/test con focus=Stamina]] test vs. your Spellpower.</p><p>The tempest lasts one round. You can extend it by one round at a time by paying 10 MP as a free action at the start of each of your following turns. Each time you do, everyone in the area suffers its effects again at once.</p>"
+  school: "primal"
+  spellType: "attack"
+  manaCost: 11
+  manaCostNote: "+"
+  castTime: "major"
+  tn: 17
+  requirement: "Lightning"
+  test: "Constitution (Stamina) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

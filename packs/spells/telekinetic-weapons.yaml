@@ -1,0 +1,19 @@
+# packs/spells/telekinetic-weapons.yaml
+_id: "IwlP65CTmnJBRcNW"
+name: "Telekinetic Weapons"
+type: "spell"
+img: "icons/magic/control/energy-stream-link-large-teal.webp"
+system:
+  description:
+    value: "<p>The readied melee weapons of all allies within 10 yards of you throb with arcane force and deal extra damage equal to your Magic. Any attack with an affected weapon that generates stunt points can use the Pierce Armor stunt for 1 SP less.</p><p>The enchantment lasts one minute; you can extend it as you cast it by spending 6 MP per additional minute. It does not harm the weapons and can be combined with Flaming Weapons and Frost Weapons.</p>"
+  school: "spirit"
+  spellType: "enhancement"
+  manaCost: 8
+  manaCostNote: "+"
+  castTime: "major"
+  tn: 17
+  requirement: "Force Field"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

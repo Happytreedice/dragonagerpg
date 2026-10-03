@@ -1,0 +1,19 @@
+# packs/spells/vicious-beast-form.yaml
+_id: "NJbFxEw0a1DcXzCw"
+name: "Vicious Beast Form"
+type: "spell"
+img: "icons/magic/nature/plant-maneater-purple.webp"
+system:
+  description:
+    value: "<p>You transform into a fearsome creature, such as a giant spider or a drake, for a number of minutes equal to your Magic, and you can extend the form by paying 10 MP per additional minute. You keep your own Cunning, Magic and Willpower, but otherwise use the creature's game statistics.</p><p>This spell cannot give you the form of a high dragon or a varterral.</p>"
+  school: "creation"
+  spellType: "utility"
+  manaCost: 25
+  manaCostNote: "+"
+  castTime: "major"
+  tn: 12
+  requirement: "Shapeshifter Specialization (Master)"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

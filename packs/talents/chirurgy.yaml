@@ -1,0 +1,21 @@
+# packs/talents/chirurgy.yaml
+_id: "FAuolsRuJzzw8C5t"
+name: "Chirurgy"
+type: "talent"
+img: "icons/skills/wounds/injury-stitched-flesh-red.webp"
+system:
+  description:
+    value: "<p>You are trained to treat wounds and illness. The heal action is a [[/test cun focus=Healing tn=11]] test; on a success the patient normally regains Health equal to the Dragon Die + the healer's Cunning, and this talent makes it faster and stronger.</p>"
+  classes:
+    - "mage"
+    - "rogue"
+    - "warrior"
+  requirement: "Cunning (Healing) focus"
+  degree: "novice"
+  degrees:
+    novice: "<p>Your care is quick and sure: the heal action is a minor action for you.</p>"
+    journeyman: "<p>You have a healer's hands. When you take the heal action, the patient regains [[/heal @dragonDie*2+@abilities.cunning.value]]{(Dragon Die x 2) + Cunning} Health.</p>"
+    master: "<p>Your medical skill is legendary. When you take the heal action, the patient regains [[/heal @dragonDie*3+@abilities.cunning.value]]{(Dragon Die x 3) + Cunning} Health.</p>"
+  source:
+    book: "Core Rulebook"
+    page: 60

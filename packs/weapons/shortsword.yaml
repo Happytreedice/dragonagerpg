@@ -1,0 +1,25 @@
+# packs/weapons/shortsword.yaml
+_id: "UBRp32XJpzQek5sp"
+name: "Shortsword"
+type: "weapon"
+img: "icons/weapons/swords/shortsword-broad.webp"
+system:
+  description:
+    value: "<p>A short, quick blade favored for fast fighting at close quarters.</p><p><strong>Attack:</strong> Dexterity (Light Blades). <strong>Damage:</strong> [[/damage 1d6+2]] + Strength.</p><p><strong>Minimum Strength:</strong> -1. With lower Strength the weapon deals only [[/damage 1d6-1]] + Strength.</p>"
+  weaponGroup: "lightBlades"
+  type: "melee"
+  damage:
+    dice: "1d6+2"
+    ability: "strength"
+  minStrength: -1
+  range:
+    short: null
+    long: null
+  reload: ""
+  twoHanded: false
+  cost: "14 sp"
+  penetrating: false
+  quantity: 1
+  source:
+    book: "Core Rulebook"
+    page: 74

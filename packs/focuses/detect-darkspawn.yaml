@@ -1,0 +1,13 @@
+# packs/focuses/detect-darkspawn.yaml
+_id: "D5Adsqd1ofldcNG4"
+name: "Detect Darkspawn"
+type: "focus"
+img: "icons/magic/perception/hand-eye-black.webp"
+system:
+  description:
+    value: "<p>An innate sense for the presence of darkspawn; only Grey Wardens can have this focus. Grants +2 to Perception tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "perception"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

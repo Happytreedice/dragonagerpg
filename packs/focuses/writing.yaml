@@ -1,0 +1,13 @@
+# packs/focuses/writing.yaml
+_id: "bcQYQDaXcmMvp8oR"
+name: "Writing"
+type: "focus"
+img: "icons/skills/trades/academics-merchant-scribe.webp"
+system:
+  description:
+    value: "<p>Composing letters, documents and literary works. Grants +2 to Cunning tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "cunning"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

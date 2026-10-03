@@ -1,0 +1,13 @@
+# packs/focuses/military-lore.yaml
+_id: "YGIM2kAS6rblaZTa"
+name: "Military Lore"
+type: "focus"
+img: "icons/skills/melee/weapons-crossed-swords-black.webp"
+system:
+  description:
+    value: "<p>Knowledge of tactics, strategy, the organization of armies and the conduct of war. Grants +2 to Cunning tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "cunning"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

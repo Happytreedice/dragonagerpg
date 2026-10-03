@@ -1,0 +1,19 @@
+# packs/spells/inferno.yaml
+_id: "8q4VaIDOdEUqrvTO"
+name: "Inferno"
+type: "spell"
+img: "icons/magic/fire/explosion-fireball-large-red-orange.webp"
+system:
+  description:
+    value: "<p>Calling on the primal elements, you raise a column of fire 6 yards in radius and 12 yards high anywhere within range. Anyone, friend or foe, who enters the inferno or starts their turn in it takes [[/damage 3d6+@abilities.magic.value]]{3d6 + Magic} damage; a character who passes a [[/test dex focus=Acrobatics]] test vs. your Spellpower takes only [[/damage 2d6]] damage but falls prone.</p><p>Anyone who leaves the column keeps burning, taking [[/damage 1d6]] damage at the start of each of their turns until they pass a [[/test dex focus=Acrobatics]] test vs. your Spellpower to put out the flames. The inferno lasts one round. You can extend it by one round at a time by paying 10 MP as a free action at the start of each of your following turns.</p><section class=\"secret\"><p>Verify against the printed book: the range of this spell (the source text says only \"within range\").</p></section>"
+  school: "primal"
+  spellType: "attack"
+  manaCost: 20
+  manaCostNote: ""
+  castTime: "major"
+  tn: 19
+  requirement: "Fireball"
+  test: "Dexterity (Acrobatics) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

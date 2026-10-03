@@ -1,0 +1,19 @@
+# packs/spells/stone-s-embrace.yaml
+_id: "RVllBTgTxENVoTf1"
+name: "Stone's Embrace"
+type: "spell"
+img: "icons/magic/earth/barrier-stone-pillar-purple.webp"
+system:
+  description:
+    value: "<p>The ground swallows the legs of a number of enemies equal to your Magic, all within 30 yards, and holds them fast unless they pass a [[/test str focus=Might]] test vs. your Spellpower. A trapped enemy stays stuck until it succeeds at that test, which it can attempt as a minor action on its turn.</p>"
+  school: "primal"
+  spellType: "attack"
+  manaCost: 15
+  manaCostNote: ""
+  castTime: "major"
+  tn: 17
+  requirement: "Pit"
+  test: "Strength (Might) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

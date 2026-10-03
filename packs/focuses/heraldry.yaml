@@ -1,0 +1,13 @@
+# packs/focuses/heraldry.yaml
+_id: "lTrjBs4SzEv1dhl4"
+name: "Heraldry"
+type: "focus"
+img: "icons/skills/social/orb-gold-claw-yellow.webp"
+system:
+  description:
+    value: "<p>Knowledge of coats of arms and noble houses, their histories and ties. Grants +2 to Cunning tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "cunning"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

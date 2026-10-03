@@ -1,0 +1,20 @@
+# packs/specializations/duelist.yaml
+_id: "G7yhLOykUkEZQe6x"
+name: "Duelist"
+type: "specialization"
+img: "icons/skills/melee/blade-tips-double-blue.webp"
+system:
+  description:
+    value: "<p>Duelists rule the alleys of cities such as Denerim and Val Royeaux, where quick blades and quicker wits count for more than brute strength. They scorn heavy shields and fight with two blades, classically a rapier paired with a main gauche or a spiked buckler.</p>"
+  classes:
+    - "rogue"
+  requirement: "Dexterity 3 or higher and Perception 3 or higher; Dual Weapon Style (Novice)"
+  degree: "novice"
+  degrees:
+    novice: "<p>You learn the <strong>Dueling</strong> weapon group. When you fight in the Dual Weapon Style with Dexterity-based melee weapons, you gain both +1 on attack rolls and +1 to Defense against melee attacks, instead of choosing one of the two bonuses.</p>"
+    journeyman: "<p>Your precise strikes find the painful spots. While fighting in the Dual Weapon Style, you deal +1 damage with melee attacks.</p>"
+    master: "<p>Your blades slip through gaps in armor. When you perform the Pierce Armor stunt, your damage becomes penetrating, so the target's armor gives it no protection.</p>"
+  class: "rogue"
+  source:
+    book: "Core Rulebook"
+    page: 70

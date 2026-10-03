@@ -1,0 +1,16 @@
+# packs/armor/light-plate.yaml
+_id: "R4uZh1E8f30pLJXv"
+name: "Light Plate"
+type: "armor"
+img: "icons/equipment/chest/breastplate-cuirass-steel-grey.webp"
+system:
+  description:
+    value: "<p>Steel plates that shield the chest, shoulders and other vital spots, strapped over padding.</p><ul><li><strong>Armor Rating 8:</strong> subtract it from the damage of every hit you take; penetrating damage ignores armor.</li><li><strong>Armor Penalty -4:</strong> with the Armor Training talent it reduces only your Speed; without that talent it applies to your Dexterity, and so to Dexterity tests, Defense and Speed.</li><li><strong>Strain 5:</strong> a mage wearing this armor spends 5 extra mana points on every spell.</li></ul>"
+  armorType: "lightPlate"
+  armorRating: 8
+  armorPenalty: 4
+  strain: 5
+  cost: "100 sp"
+  source:
+    book: "Core Rulebook"
+    page: 76

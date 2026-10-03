@@ -1,0 +1,19 @@
+# packs/talents/entropy-magic.yaml
+_id: "CnFkteqBuN4a8vGM"
+name: "Entropy Magic"
+type: "talent"
+img: "icons/magic/death/hand-withered-gray.webp"
+system:
+  description:
+    value: "<p>You have unlocked the secrets of Entropy magic.</p>"
+  classes:
+    - "mage"
+  requirement: "Magic (Entropy) focus"
+  degree: "novice"
+  degrees:
+    novice: "<p>You gain deathsight: when a character you can see drops to 0 Health, you know exactly how many rounds they have left before they die.</p>"
+    journeyman: "<p>Each Entropy spell costs you 1 MP less (minimum 1), and you learn one new Entropy spell.</p>"
+    master: "<p>Entropy is so strong in you that enemies who attack you in melee suffer -1 to Strength. You also learn one new Entropy spell.</p>"
+  source:
+    book: "Core Rulebook"
+    page: 61

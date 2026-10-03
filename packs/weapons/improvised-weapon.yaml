@@ -1,0 +1,25 @@
+# packs/weapons/improvised-weapon.yaml
+_id: "yXx6faimLrkHlX3L"
+name: "Improvised Weapon"
+type: "weapon"
+img: "icons/weapons/clubs/club-simple-barbed-black.webp"
+system:
+  description:
+    value: "<p>Whatever comes to hand in a pinch: a stool, a bottle, a table leg.</p><p><strong>Attack:</strong> Dexterity (Brawling). <strong>Damage:</strong> [[/damage 1d6-1]] + Strength.</p>"
+  weaponGroup: "brawling"
+  type: "melee"
+  damage:
+    dice: "1d6-1"
+    ability: "strength"
+  minStrength: null
+  range:
+    short: null
+    long: null
+  reload: ""
+  twoHanded: false
+  cost: ""
+  penetrating: false
+  quantity: 1
+  source:
+    book: "Core Rulebook"
+    page: 74

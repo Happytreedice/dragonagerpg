@@ -1,0 +1,19 @@
+# packs/spells/telekinetic-burst.yaml
+_id: "3DeU8eJuEB9vdLAr"
+name: "Telekinetic Burst"
+type: "spell"
+img: "icons/magic/control/energy-stream-link-large-white.webp"
+system:
+  description:
+    value: "<p>A burst of force with a 4-yard radius erupts at any visible point within 24 yards. Each target that fails a [[/test str focus=Might]] test vs. your Spellpower is hurled to the nearest edge of the burst and knocked prone; a target that slams into a wall takes [[/damage 1d6]] damage from a wooden wall or [[/damage 2d6]] from a stone one.</p><p>Targets that pass are not moved, but they are still knocked prone.</p>"
+  school: "spirit"
+  spellType: "attack"
+  manaCost: 5
+  manaCostNote: ""
+  castTime: "major"
+  tn: 15
+  requirement: "Fist of the Maker"
+  test: "Strength (Might) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

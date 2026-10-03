@@ -1,0 +1,19 @@
+# packs/spells/summon-beast.yaml
+_id: "8naumY5FKuxg2Lqt"
+name: "Summon Beast"
+type: "spell"
+img: "icons/magic/nature/plant-sprout-hands-vines.webp"
+system:
+  description:
+    value: "<p>You call an ordinary wild animal from the surrounding area. It stays loyal to you until the next sunrise or sunset, understands your spoken commands and obeys them as well as it can. You may name the kind of animal you want, but the GM decides which beasts are available.</p><p>Summoned beasts do not fight to the death: once a beast has lost more than half its Health it will probably flee, unless you pass a [[/test com focus=Leadership]] test or it passes a [[/test wil focus=Morale]] test. The GM sets these TNs by the situation; they are rarely below 13.</p>"
+  school: "creation"
+  spellType: "utility"
+  manaCost: 22
+  manaCostNote: ""
+  castTime: "1 hour"
+  tn: 17
+  requirement: "Creation Magic (Journeyman)"
+  test: "Magic (Entropy) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

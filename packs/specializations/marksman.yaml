@@ -1,0 +1,20 @@
+# packs/specializations/marksman.yaml
+_id: "x7Pz5lvxbnzgSosJ"
+name: "Marksman"
+type: "specialization"
+img: "icons/skills/ranged/arrow-flying-broadhead-metal.webp"
+system:
+  description:
+    value: "<p>Marksmen are sharpshooters who bring enemies down from a distance. Apart from their exceptional skill with missile and thrown weapons they may have little in common: a Dalish archer, a Fereldan scout, a Chasind raider and an Antivan cutthroat can all be marksmen. Each favors a particular kind of weapon, often a signature piece, and anyone who steals it invites terrible revenge.</p>"
+  classes:
+    - "rogue"
+  requirement: "Dexterity 3 or higher and Perception 3 or higher; Archery Style (Journeyman) or Thrown Weapon Style (Journeyman)"
+  degree: "novice"
+  degrees:
+    novice: "<p>Your shots hit hard enough to knock foes off their feet. With a ranged attack you can perform the Knock Prone stunt for 1 SP instead of 2, and you can push the target 2 yards straight back before it falls prone.</p>"
+    journeyman: "<p>You rain missiles on your foes. You can perform the <strong>Volley</strong> stunt for 5 SP to make two more ranged attacks against the same or other visible targets within 10 yards. Each attack needs a loaded weapon, so you may need up to two Rapid Reload stunts, and doubles on these extra attacks generate no stunt points.</p>"
+    master: "<p>You can find a weak spot on any foe. When you perform the Pierce Armor stunt with a ranged attack, your damage becomes penetrating.</p>"
+  class: "rogue"
+  source:
+    book: "Core Rulebook"
+    page: 70

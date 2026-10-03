@@ -1,0 +1,13 @@
+# packs/focuses/musical-lore.yaml
+_id: "S6DOfop15zj0DgeA"
+name: "Musical Lore"
+type: "focus"
+img: "icons/skills/trades/music-notes-sound-blue.webp"
+system:
+  description:
+    value: "<p>Theoretical knowledge of music: composition, instruments and musical traditions. Grants +2 to Cunning tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "cunning"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

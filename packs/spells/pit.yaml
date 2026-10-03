@@ -1,0 +1,19 @@
+# packs/spells/pit.yaml
+_id: "M7hEKPAXXIWRgTRh"
+name: "Pit"
+type: "spell"
+img: "icons/magic/earth/projectile-boulder-dust.webp"
+system:
+  description:
+    value: "<p>You magically gouge a pit up to 4 yards wide, 4 yards long and 4 yards deep in bare earth or nearby stone. Creatures standing on the affected ground must pass a [[/test dex focus=Acrobatics]] test vs. your Spellpower or fall prone into the pit. Climbing out takes a minor action.</p>"
+  school: "primal"
+  spellType: "utility"
+  manaCost: 14
+  manaCostNote: ""
+  castTime: "major"
+  tn: 15
+  requirement: "Primal Magic (Journeyman)"
+  test: "Dexterity (Acrobatics) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

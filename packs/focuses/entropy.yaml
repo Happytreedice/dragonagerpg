@@ -1,0 +1,13 @@
+# packs/focuses/entropy.yaml
+_id: "aknvJ9EXOJ0M8rsG"
+name: "Entropy"
+type: "focus"
+img: "icons/magic/death/hand-withered-gray.webp"
+system:
+  description:
+    value: "<p>Mastery of the Entropy school of magic: curses, weakening and decay. Grants +2 to casting rolls and Spellpower for Entropy spells; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "magic"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

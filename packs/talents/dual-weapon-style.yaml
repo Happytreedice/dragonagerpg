@@ -1,0 +1,20 @@
+# packs/talents/dual-weapon-style.yaml
+_id: "tsjOmZm1c83ZZU6t"
+name: "Dual Weapon Style"
+type: "talent"
+img: "icons/skills/melee/weapons-crossed-daggers-orange.webp"
+system:
+  description:
+    value: "<p>You fight with a weapon in each hand: the primary weapon in your main hand and the secondary weapon in your off hand. Neither weapon may be two-handed, and the secondary weapon's minimum Strength counts as 2 higher than normal. Unless an ability says otherwise, you attack with the primary weapon.</p>"
+  classes:
+    - "rogue"
+    - "warrior"
+  requirement: "Dexterity 2 or higher"
+  degree: "novice"
+  degrees:
+    novice: "<p>With an activate action you gain, until the end of the encounter, either +1 on melee attack rolls or +1 to Defense against melee attacks. Another activate action switches between the two bonuses.</p>"
+    journeyman: "<p>You can perform the Lightning Attack stunt for 2 SP instead of 3, but the extra attack must be made with your secondary weapon.</p>"
+    master: "<p>You strike with both weapons. After you make a melee attack with your primary weapon (other than a charge), you can attack with your secondary weapon as a minor action. This second attack generates no stunt points, and only half your Strength (rounded down) is added to its damage.</p>"
+  source:
+    book: "Core Rulebook"
+    page: 61

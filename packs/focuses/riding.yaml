@@ -1,0 +1,13 @@
+# packs/focuses/riding.yaml
+_id: "ObIBj3ry4HmFLgJw"
+name: "Riding"
+type: "focus"
+img: "icons/skills/movement/feet-winged-sandals-tan.webp"
+system:
+  description:
+    value: "<p>Handling a mount with confidence, both on the road and in battle. Grants +2 to Dexterity tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "dexterity"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

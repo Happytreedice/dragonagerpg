@@ -1,0 +1,13 @@
+# packs/focuses/cartography.yaml
+_id: "4bAwrRzFz9APpzIh"
+name: "Cartography"
+type: "focus"
+img: "icons/skills/trades/academics-astronomy-navigation-purple.webp"
+system:
+  description:
+    value: "<p>Reading and drawing maps, plans and charts. Grants +2 to Cunning tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "cunning"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

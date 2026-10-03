@@ -1,0 +1,21 @@
+# packs/talents/observation.yaml
+_id: "wZ4dCxJRPZ6AUJIi"
+name: "Observation"
+type: "talent"
+img: "icons/skills/wounds/injury-eyes-blood-red.webp"
+system:
+  description:
+    value: "<p>You have a keen eye for detail.</p>"
+  classes:
+    - "mage"
+    - "rogue"
+    - "warrior"
+  requirement: "Perception 3 or higher"
+  degree: "novice"
+  degrees:
+    novice: "<p>You notice what others miss. Choose the Empathy or Seeing focus: when you fail a Perception test with that focus, you may re-roll it, but you must keep the second result.</p>"
+    journeyman: "<p>Pondering what you observe often leads to insight. You can perform the That Makes Me Wonder exploration stunt for 2 SP instead of 3.</p>"
+    master: "<p>Nothing escapes your gaze. You can perform the Object of Your Attention exploration stunt for 2 SP instead of 3, and its bonus to further tests about the object rises from +1 to +2.</p>"
+  source:
+    book: "Core Rulebook"
+    page: 62

@@ -1,0 +1,25 @@
+# packs/weapons/mace.yaml
+_id: "lpbSzjkeeJrUt3Zw"
+name: "Mace"
+type: "weapon"
+img: "icons/weapons/maces/mace-flanged-steel.webp"
+system:
+  description:
+    value: "<p>A flanged metal mace built to break bones.</p><p><strong>Attack:</strong> Strength (Bludgeons). <strong>Damage:</strong> [[/damage 2d6]] + Strength.</p><p><strong>Minimum Strength:</strong> 1. With lower Strength the weapon deals only [[/damage 1d6-1]] + Strength.</p>"
+  weaponGroup: "bludgeons"
+  type: "melee"
+  damage:
+    dice: "2d6"
+    ability: "strength"
+  minStrength: 1
+  range:
+    short: null
+    long: null
+  reload: ""
+  twoHanded: false
+  cost: "12 sp"
+  penetrating: false
+  quantity: 1
+  source:
+    book: "Core Rulebook"
+    page: 74

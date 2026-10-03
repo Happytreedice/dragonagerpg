@@ -1,0 +1,19 @@
+# packs/spells/heroic-aura.yaml
+_id: "QccCRDwuMYm31okR"
+name: "Heroic Aura"
+type: "spell"
+img: "icons/magic/defensive/shield-barrier-glowing-blue.webp"
+system:
+  description:
+    value: "<p>You surround one subject within 30 yards, or yourself, with an arcane aura that turns attacks aside. The subject gains +2 to Defense until the end of the encounter.</p>"
+  school: "creation"
+  spellType: "defense"
+  manaCost: 6
+  manaCostNote: ""
+  castTime: "major"
+  tn: 15
+  requirement: "Heroic Offense"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

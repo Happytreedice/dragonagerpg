@@ -1,0 +1,13 @@
+# packs/focuses/engineering.yaml
+_id: "7J3NJyEzRclICHiM"
+name: "Engineering"
+type: "focus"
+img: "icons/skills/trades/construction-carpentry-hammer.webp"
+system:
+  description:
+    value: "<p>Understanding mechanisms, structures and siege engines, and how to build and repair them. Grants +2 to Cunning tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "cunning"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

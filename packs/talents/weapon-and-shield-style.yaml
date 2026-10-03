@@ -1,0 +1,19 @@
+# packs/talents/weapon-and-shield-style.yaml
+_id: "evyJeg7Q4pYpC7rU"
+name: "Weapon and Shield Style"
+type: "talent"
+img: "icons/skills/melee/shield-block-bash-yellow.webp"
+system:
+  description:
+    value: "<p>You are trained to fight with a one-handed melee weapon and a shield.</p>"
+  classes:
+    - "warrior"
+  requirement: "Strength 2 or higher"
+  degree: "novice"
+  degrees:
+    novice: "<p>You can use shields of every shape and size and gain their full Defense bonus. (Without this talent, a shield gives at most +1 to Defense.)</p>"
+    journeyman: "<p>You get the most out of your shield: you can perform the Defensive Stance stunt for 1 SP instead of 2.</p>"
+    master: "<p>Foes must work hard to break through your guard: the Defense bonus of any shield you use increases by 1.</p>"
+  source:
+    book: "Core Rulebook"
+    page: 65

@@ -1,0 +1,20 @@
+# packs/specializations/bard.yaml
+_id: "dABADqAhCQgsuHuD"
+name: "Bard"
+type: "specialization"
+img: "icons/magic/nature/instrument-recorder-leaves.webp"
+system:
+  description:
+    value: "<p>Bards pass themselves off as simple minstrels, but many are spies, saboteurs and sometimes assassins, shaped by the politics of Orlais. Intrigue is a way of life there, so bards are common in Orlais and rare elsewhere.</p><p>Starting a song is a major action, and keeping it going in later rounds is a free action. You can keep only one song going at a time.</p>"
+  classes:
+    - "rogue"
+  requirement: "Communication 3 or higher and Dexterity 3 or higher; Music talent (Novice)"
+  degree: "novice"
+  degrees:
+    novice: "<p>You can sing the <strong>Song of Valor</strong>. While you keep it going, allies within 12 yards gain +1 on attack rolls.</p>"
+    journeyman: "<p>You can sing the <strong>Song of Friendship</strong>. While it lasts, you and your allies gain +1 on Communication (Etiquette), Communication (Investigation), Communication (Persuasion) and Communication (Seduction) tests.</p>"
+    master: "<p>You can sing the <strong>Song of Captivation</strong>. Once per round while the song continues, you can try to captivate one enemy within 16 yards with an opposed test: your [[/test com focus=Performance]] against the target's Willpower (Self-Discipline). If you win, the target is captivated and cannot act against you while the captivation lasts.</p>"
+  class: "rogue"
+  source:
+    book: "Core Rulebook"
+    page: 69

@@ -1,0 +1,13 @@
+# packs/focuses/might.yaml
+_id: "4qilBv2FfU0gNPmk"
+name: "Might"
+type: "focus"
+img: "icons/skills/melee/hand-grip-sword-strike-orange.webp"
+system:
+  description:
+    value: "<p>Raw physical power: lifting heavy loads, shoving and other feats of brute strength. Grants +2 to Strength tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "strength"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

@@ -1,0 +1,20 @@
+# packs/specializations/templar.yaml
+_id: "uCF3fiY7tu9oJcGC"
+name: "Templar"
+type: "specialization"
+img: "icons/magic/holy/prayer-hands-glowing-yellow.webp"
+system:
+  description:
+    value: "<p>Templars are the military arm of the Chantry. Their chief duties are watching over the Circle of Magi and hunting down apostates and maleficars. They are given small doses of lyrium to awaken and sustain their special abilities.</p>"
+  classes:
+    - "warrior"
+  requirement: "Magic 3 or higher and Strength 3 or higher"
+  degree: "novice"
+  degrees:
+    novice: "<p>You have learned mental techniques that shield you from magic. You gain +2 on tests to resist spells and other magical attacks. If you already have such a resistance bonus (as a dwarf does, for example), this degree instead raises that bonus by 1.</p>"
+    journeyman: "<p>Your blows drain a spellcaster's power. When you deal damage with a melee attack to a mage or any other creature that uses mana, the target also loses mana points equal to [[/r 1d6]] + your Magic.</p>"
+    master: "<p>You can cleanse an area of magic. As a major action, you end every ongoing spell within 6 yards, whether cast by friend or foe; any spell still being cast in that area fails, and the actions spent on it are wasted. The concentration this takes gives you -2 to Defense until the start of your next turn.</p>"
+  class: "warrior"
+  source:
+    book: "Core Rulebook"
+    page: 74

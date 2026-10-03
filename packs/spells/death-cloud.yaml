@@ -1,0 +1,19 @@
+# packs/spells/death-cloud.yaml
+_id: "sNnl9o2e6rMd15Ir"
+name: "Death Cloud"
+type: "spell"
+img: "icons/magic/air/fog-gas-smoke-dense-pink.webp"
+system:
+  description:
+    value: "<p>A cloud of entropic energy with a 5-yard radius billows up at any point within 50 yards. Anyone, friend or foe, who enters the cloud or starts their turn inside it takes [[/damage 3d6+@abilities.magic.value penetrating]]{3d6 + Magic} penetrating damage, or only [[/damage 2d6 penetrating]]{2d6} penetrating damage with a successful [[/test con focus=Stamina]] test vs. your Spellpower.</p><p>The cloud lasts one round. You can extend it by one round at a time by paying 10 MP as a free action at the start of each of your following turns.</p>"
+  school: "entropy"
+  spellType: "attack"
+  manaCost: 20
+  manaCostNote: "+"
+  castTime: "major"
+  tn: 21
+  requirement: "Curse of Mortality"
+  test: "Constitution (Stamina) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

@@ -1,0 +1,13 @@
+# packs/focuses/historical-lore.yaml
+_id: "9VXUElBCxFDQZpc8"
+name: "Historical Lore"
+type: "focus"
+img: "icons/skills/trades/academics-study-archaeology-bones.webp"
+system:
+  description:
+    value: "<p>Knowledge of the history of Thedas, its major events and past ages. Grants +2 to Cunning tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "cunning"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

@@ -1,0 +1,13 @@
+# packs/focuses/animal-handling.yaml
+_id: "ly6r76rKUQTvQHmJ"
+name: "Animal Handling"
+type: "focus"
+img: "icons/skills/social/diplomacy-offering-ritual.webp"
+system:
+  description:
+    value: "<p>Calming, training and reading animals so that they do as you wish. Grants +2 to Communication tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "communication"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

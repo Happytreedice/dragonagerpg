@@ -1,0 +1,13 @@
+# packs/focuses/brewing.yaml
+_id: "edg3g8U2ZNsSQpX2"
+name: "Brewing"
+type: "focus"
+img: "icons/skills/trades/baking-bread-rolls-green.webp"
+system:
+  description:
+    value: "<p>Knowing the recipes and methods for brewing beer, ale and other drinks. Grants +2 to Cunning tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "cunning"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

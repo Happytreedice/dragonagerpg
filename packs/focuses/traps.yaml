@@ -1,0 +1,13 @@
+# packs/focuses/traps.yaml
+_id: "fYl2KjYpqfL46Beg"
+name: "Traps"
+type: "focus"
+img: "icons/skills/trades/security-locksmith-key-gray.webp"
+system:
+  description:
+    value: "<p>Setting and disarming traps and other tricky mechanisms. Grants +2 to Dexterity tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "dexterity"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

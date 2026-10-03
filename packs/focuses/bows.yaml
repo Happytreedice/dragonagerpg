@@ -1,0 +1,13 @@
+# packs/focuses/bows.yaml
+_id: "AqYFN3bvH5e5pM4w"
+name: "Bows"
+type: "focus"
+img: "icons/skills/ranged/bow-arrows-blue.webp"
+system:
+  description:
+    value: "<p>Shooting bows and crossbows, such as the short bow, long bow and crossbow. Grants +2 to attack rolls with weapons of the Bows group and to other Dexterity tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "dexterity"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

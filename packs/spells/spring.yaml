@@ -1,0 +1,19 @@
+# packs/spells/spring.yaml
+_id: "uGYkYlCeO8Ol43kS"
+name: "Spring"
+type: "spell"
+img: "icons/magic/water/orb-water-transparent.webp"
+system:
+  description:
+    value: "<p>You trace glyphs on natural earth or stone and strike them with your hand or staff, and a spring wells up there, pouring out a number of gallons of water per minute equal to your Magic. The water is fresh, clean and perfectly ordinary.</p><p>The spring flows for a number of hours equal to your Magic, or until you stop it.</p>"
+  school: "creation"
+  spellType: "utility"
+  manaCost: 4
+  manaCostNote: ""
+  castTime: "1 minute"
+  tn: 13
+  requirement: "Creation Magic (Journeyman)"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

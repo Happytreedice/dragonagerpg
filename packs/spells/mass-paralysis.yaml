@@ -1,0 +1,19 @@
+# packs/spells/mass-paralysis.yaml
+_id: "yWwVbpwOBNlxptOI"
+name: "Mass Paralysis"
+type: "spell"
+img: "icons/magic/control/debuff-chains-shackles-movement-purple.webp"
+system:
+  description:
+    value: "<p>Tendrils of entropic energy wrap every enemy within 20 yards of you. Each must pass a [[/test con focus=Stamina]] test vs. your Spellpower or be paralyzed: its Speed drops to 2 yards per turn, it loses its Dexterity bonus to Defense and it cannot take actions. A paralyzed target tests again at the start of each of its turns.</p><p>A target that passes the first test instead loses its Dexterity from its Speed until it passes a later test. The spell ends after a number of rounds equal to your Magic.</p>"
+  school: "entropy"
+  spellType: "attack"
+  manaCost: 22
+  manaCostNote: ""
+  castTime: "major"
+  tn: 21
+  requirement: "Miasma"
+  test: "Constitution (Stamina) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

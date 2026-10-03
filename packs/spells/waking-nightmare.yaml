@@ -1,0 +1,19 @@
+# packs/spells/waking-nightmare.yaml
+_id: "LSTT6mLz3MXXazit"
+name: "Waking Nightmare"
+type: "spell"
+img: "icons/magic/perception/eye-slit-red-orange.webp"
+system:
+  description:
+    value: "<p>You trap one enemy within 20 yards in a waking nightmare. Until it passes a [[/test wil focus=Self-Discipline]] test vs. your Spellpower, it is delirious and attacks your enemies as best it can. A target that was asleep when you cast the spell suffers -3 on its first test.</p><p>The target tests again on each of its following turns until it snaps out of it.</p>"
+  school: "entropy"
+  spellType: "attack"
+  manaCost: 20
+  manaCostNote: ""
+  castTime: "major"
+  tn: 17
+  requirement: "Sleep"
+  test: "Willpower (Self-Discipline) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

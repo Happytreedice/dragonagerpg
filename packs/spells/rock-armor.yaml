@@ -1,0 +1,19 @@
+# packs/spells/rock-armor.yaml
+_id: "6d6uqwm9YMPUxkCr"
+name: "Rock Armor"
+type: "spell"
+img: "icons/magic/defensive/armor-stone-skin.webp"
+system:
+  description:
+    value: "<p>Your skin hardens like stone, giving you an Armor Rating equal to your Magic. The spell lasts 1 hour; each MP you spend beyond the first 3 adds another hour, to a maximum of 6 hours.</p><p>You can cast Rock Armor only on yourself, and it gives no benefit while you wear ordinary armor.</p>"
+  school: "primal"
+  spellType: "defense"
+  manaCost: 3
+  manaCostNote: "-8"
+  castTime: "1 minute"
+  tn: 10
+  requirement: ""
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

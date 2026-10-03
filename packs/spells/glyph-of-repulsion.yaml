@@ -1,0 +1,19 @@
+# packs/spells/glyph-of-repulsion.yaml
+_id: "o1TLxryeOuk0PKxJ"
+name: "Glyph of Repulsion"
+type: "spell"
+img: "icons/magic/control/energy-stream-link-large-blue.webp"
+system:
+  description:
+    value: "<p>You hastily scrawl an arcane symbol on the ground before you and strike it hard, releasing a wave of force. Every enemy within 10 yards is thrown 10 yards away from you.</p><p>Each of them must also pass a [[/test con focus=Stamina]] or [[/test dex focus=Acrobatics]] test vs. your Spellpower or be knocked prone.</p>"
+  school: "creation"
+  spellType: "attack"
+  manaCost: 10
+  manaCostNote: ""
+  castTime: "major"
+  tn: 15
+  requirement: "Glyph of Warding"
+  test: "Constitution (Stamina) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

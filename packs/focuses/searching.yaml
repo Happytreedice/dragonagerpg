@@ -1,0 +1,13 @@
+# packs/focuses/searching.yaml
+_id: "rQeajX1mFe7YP51k"
+name: "Searching"
+type: "focus"
+img: "icons/skills/targeting/crosshair-scope-sniper-green.webp"
+system:
+  description:
+    value: "<p>Thoroughly examining a place and finding what is hidden there. Grants +2 to Perception tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "perception"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

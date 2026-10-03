@@ -4,8 +4,7 @@ import { DARPG } from "../config.mjs";
 const fields = foundry.data.fields;
 
 /**
- * Данные расходника: зелья, яды, гранаты. Активация — minor-действие Activate.
- * spec §12.5 (зелья), §13.1 (яды), §13.2 (гранаты).
+ * Данные расходника: зелья, яды, гранаты. Активация — малое действие.
  */
 export default class ConsumableData extends ItemBaseData {
 
@@ -13,11 +12,22 @@ export default class ConsumableData extends ItemBaseData {
   static defineSchema() {
     const schema = super.defineSchema();
     return Object.assign(schema, {
-      consumableType: new fields.StringField({ required: true, initial: "potion", choices: Object.keys(DARPG.consumableTypes) }),
-      // Урон/эффект как формула для энричера, напр. «3d6» (граната) или «2d6+@abilities.constitution.value» (зелье).
+      consumableType: new fields.StringField({ required: true, initial: "potion", choices: () => DARPG.consumableTypes }),
+      // Бросок урона/лечения, если есть: «3d6», «2d6 + @abilities.constitution.value».
       formula: new fields.StringField({ required: true, blank: true, initial: "" }),
-      quantity: new fields.NumberField({ required: true, integer: true, nullable: false, initial: 1, min: 0 }),
-      price: this.priceField()
+      // Степень рецепта для ядов и гранат; "" — не применяется.
+      degree: new fields.StringField({ required: true, blank: true, initial: "", choices: () => DARPG.degrees }),
+      quantity: this.quantityField(),
+      cost: this.costField()
     });
+  }
+
+  /**
+   * Старая форма: price → cost (degree появилась впервые — начальное "").
+   * @inheritDoc
+   */
+  static migrateData(source, options) {
+    this._migrateCost(source);
+    return super.migrateData(source, options);
   }
 }

@@ -1,0 +1,20 @@
+# packs/specializations/shapeshifter.yaml
+_id: "qP8TcNq9O8kcfKLq"
+name: "Shapeshifter"
+type: "specialization"
+img: "icons/magic/nature/elemental-plant-humanoid.webp"
+system:
+  description:
+    value: "<p>Shapeshifting is an old form of magic that the Circle of Magi does not teach, preserved by a few mages in isolated corners of Thedas. The notorious witches of the Korcari Wilds are said to practice it, and rumor holds that their matriarch, Flemeth, can become a great dragon.</p>"
+  classes:
+    - "mage"
+  requirement: "Constitution 3 or higher and Magic 3 or higher"
+  degree: "novice"
+  degrees:
+    novice: "<p>You learn the Shapeshifter spell Small Animal Form. While in animal form you cannot speak or cast spells, though spells you cast before changing stay in effect and you can keep paying to maintain them. Each form spell states which of your own scores you keep; the rest of your statistics come from the animal.</p>"
+    journeyman: "<p>You learn the Shapeshifter spell Large Animal Form.</p>"
+    master: "<p>You learn the Shapeshifter spell Vicious Beast Form.</p>"
+  class: "mage"
+  source:
+    book: "Core Rulebook"
+    page: 68

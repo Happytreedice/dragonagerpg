@@ -1,0 +1,19 @@
+# packs/spells/group-heal.yaml
+_id: "8Uii84pPNEdM4GwC"
+name: "Group Heal"
+type: "spell"
+img: "icons/magic/life/heart-cross-strong-green.webp"
+system:
+  description:
+    value: "<p>Healing energy washes over a number of targets equal to twice your Magic, all within 10 yards; you may include yourself. Each target regains [[/heal 1d6]] Health for every 3 MP you spend, up to [[/heal 3d6]] for 9 MP.</p>"
+  school: "creation"
+  spellType: "utility"
+  manaCost: 3
+  manaCostNote: "-9"
+  castTime: "major"
+  tn: 15
+  requirement: "Spirit Healer Specialization"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

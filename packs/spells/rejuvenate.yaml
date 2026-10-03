@@ -1,0 +1,19 @@
+# packs/spells/rejuvenate.yaml
+_id: "TFhggCCItd1Ogd5L"
+name: "Rejuvenate"
+type: "spell"
+img: "icons/magic/life/heart-glowing-red.webp"
+system:
+  description:
+    value: "<p>You send restoring energy into one ally within 10 yards. The ally immediately regains [[/heal 1d6]] Health, and another [[/heal 1d6]] at the start of each of their turns for a number of rounds equal to your Magic.</p>"
+  school: "creation"
+  spellType: "utility"
+  manaCost: 5
+  manaCostNote: ""
+  castTime: "major"
+  tn: 15
+  requirement: "Heal"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

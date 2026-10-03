@@ -1,0 +1,13 @@
+# packs/focuses/grenades.yaml
+_id: "hRBqlaLut2iXYcI9"
+name: "Grenades"
+type: "focus"
+img: "icons/skills/ranged/bomb-grenade-thrown-orange.webp"
+system:
+  description:
+    value: "<p>Throwing grenades and other alchemical missiles accurately. Grants +2 to Dexterity tests where it applies, such as the attack roll to throw a grenade; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "dexterity"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

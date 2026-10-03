@@ -1,0 +1,19 @@
+# packs/spells/pull-of-the-abyss.yaml
+_id: "yNaJWACZnq5GTEW0"
+name: "Pull of the Abyss"
+type: "spell"
+img: "icons/magic/control/debuff-energy-snare-purple-blue.webp"
+system:
+  description:
+    value: "<p>Telekinetic force drags your enemies together and slows them. You create a 6-yard-radius area of force centered on any point within 30 yards, and everyone in it makes a [[/test str focus=Might]] test.</p><ul><li><strong>Failure:</strong> the target is pulled to the center and, for 1 round, cannot run, suffers -6 to Speed and takes -2 to attack rolls and spellcasting rolls.</li><li><strong>Success:</strong> the target is not moved but takes -1 to attack rolls and spellcasting rolls for 1 round.</li></ul><section class=\"secret\"><p>Verify against the printed book: the stat line gives the test as Strength (Might) vs. Willpower, while the effect text sets it against the caster's Spellpower.</p></section>"
+  school: "spirit"
+  spellType: "attack"
+  manaCost: 8
+  manaCostNote: ""
+  castTime: "major"
+  tn: 17
+  requirement: "Force Mage Specialization, Telekinetic Burst"
+  test: "Strength (Might) vs. Willpower"
+  source:
+    book: "Core Rulebook"
+    page: null

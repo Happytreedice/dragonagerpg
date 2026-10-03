@@ -1,0 +1,19 @@
+# packs/spells/decompose.yaml
+_id: "5v9Wj7p1h2yo02Tj"
+name: "Decompose"
+type: "spell"
+img: "icons/magic/acid/dissolve-bone-white.webp"
+system:
+  description:
+    value: "<p>You trace mystic glyphs over any piece of non-living organic matter and hasten its natural decay. From the moment the casting ends, every second counts as a day for the target: a minute ages it about two months, an hour almost ten years, and so on until it crumbles to dust.</p><p>A Glyph of Preservation can halt the process, though the target keeps decaying while that glyph is being cast. Decompose cannot be dispelled, and its effects cannot be undone.</p><section class=\"secret\"><p>Verify against the printed book: how much the target decays while a Glyph of Preservation is cast (the old text said about ten years; at one day per second, a 5-minute casting is about ten months).</p></section>"
+  school: "entropy"
+  spellType: "utility"
+  manaCost: 5
+  manaCostNote: ""
+  castTime: "1 minute"
+  tn: 12
+  requirement: "Entropy Magic (Journeyman)"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

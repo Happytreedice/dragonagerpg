@@ -1,0 +1,13 @@
+# packs/focuses/dueling.yaml
+_id: "DaOicWRwwI0VXDtP"
+name: "Dueling"
+type: "focus"
+img: "icons/skills/melee/swords-parry-block-yellow.webp"
+system:
+  description:
+    value: "<p>Elegant fencing with dueling weapons such as the rapier, main gauche and spiked buckler. Grants +2 to attack rolls with weapons of the Dueling group and to other Dexterity tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "dexterity"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

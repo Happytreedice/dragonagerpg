@@ -1,0 +1,19 @@
+# packs/spells/wrack.yaml
+_id: "4ef9EDcSnVinCY6E"
+name: "Wrack"
+type: "spell"
+img: "icons/magic/unholy/hand-marked-pink.webp"
+system:
+  description:
+    value: "<p>You send faint tendrils of entropic energy into a target who must be within 2 yards when you cast the spell. As long as you concentrate, you can inflict excruciating, twisting pain on the victim whenever you wish. To resist answering your questions or giving in to your demands, the victim must pass a [[/test wil focus=Self-Discipline]] test vs. your Spellpower.</p><p>While the pain lasts, the victim suffers -3 on all tests, but the spell deals no damage. You can maintain only one Wrack at a time. Interrogators favor it, since it does no real physical harm and leaves no marks.</p>"
+  school: "blood"
+  spellType: "utility"
+  manaCost: 3
+  manaCostNote: ""
+  castTime: "1 minute"
+  tn: 13
+  requirement: "Blood Mage Specialization"
+  test: "Willpower (Self-Discipline) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

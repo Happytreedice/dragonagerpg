@@ -1,0 +1,13 @@
+# packs/focuses/cryptography.yaml
+_id: "5rt3hSs3r3feQg6A"
+name: "Cryptography"
+type: "focus"
+img: "icons/skills/trades/academics-investigation-puzzles.webp"
+system:
+  description:
+    value: "<p>Devising and breaking ciphers, codes and secret messages. Grants +2 to Cunning tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "cunning"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

@@ -1,0 +1,19 @@
+# packs/spells/fade-shield.yaml
+_id: "OCWDJzoDU9c72rKn"
+name: "Fade Shield"
+type: "spell"
+img: "icons/magic/defensive/barrier-shield-dome-deflect-teal.webp"
+system:
+  description:
+    value: "<p>You shift partly into the Fade to bolster your arcane defenses. For one round you gain +2 to Spellpower and your Defense equals your Spellpower. You can extend the spell as you cast it by spending 2 MP per additional round.</p>"
+  school: "spirit"
+  spellType: "defense"
+  manaCost: 6
+  manaCostNote: ""
+  castTime: "major"
+  tn: 15
+  requirement: "Arcane Shield"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

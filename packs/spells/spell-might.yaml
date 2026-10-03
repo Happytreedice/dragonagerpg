@@ -1,0 +1,19 @@
+# packs/spells/spell-might.yaml
+_id: "5UXy1kdVtmB2mdkB"
+name: "Spell Might"
+type: "spell"
+img: "icons/magic/light/explosion-star-glow-yellow.webp"
+system:
+  description:
+    value: "<p>You tap deep reserves of magical power: until the end of the encounter you gain +2 to Spellpower and +2 SP on every roll that generates stunt points. While Spell Might is active, every other spell you cast costs 2 MP more.</p><p>You can end the spell as a free action at the start of your turn.</p>"
+  school: "spirit"
+  spellType: "enhancement"
+  manaCost: 11
+  manaCostNote: ""
+  castTime: "major"
+  tn: 15
+  requirement: "Mana Cleanse"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

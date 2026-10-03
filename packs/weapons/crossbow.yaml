@@ -1,0 +1,25 @@
+# packs/weapons/crossbow.yaml
+_id: "1vl7k2OygxGqpGxL"
+name: "Crossbow"
+type: "weapon"
+img: "icons/weapons/crossbows/crossbow-heavy-black.webp"
+system:
+  description:
+    value: "<p>A sturdy crossbow that drives its bolts with tremendous force, at the cost of a slow reload.</p><p><strong>Attack:</strong> Dexterity (Bows). <strong>Damage:</strong> [[/damage 2d6+1]] + Perception.</p><p><strong>Range:</strong> 30 yards, or up to 60 yards at -2 to the attack roll; no attack beyond 60 yards. <strong>Reload:</strong> major action.</p><p><strong>Minimum Strength:</strong> 1. With lower Strength the weapon deals only [[/damage 1d6-1]] + Perception.</p><section class=\"secret\"><p>Verify against the printed book: whether this weapon needs two hands (stored as one-handed).</p></section>"
+  weaponGroup: "bows"
+  type: "ranged"
+  damage:
+    dice: "2d6+1"
+    ability: "perception"
+  minStrength: 1
+  range:
+    short: 30
+    long: 60
+  reload: "major"
+  twoHanded: false
+  cost: "20 sp"
+  penetrating: false
+  quantity: 1
+  source:
+    book: "Core Rulebook"
+    page: 74

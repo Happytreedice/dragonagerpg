@@ -1,0 +1,21 @@
+# packs/talents/music.yaml
+_id: "k44hkTBfEUUseId2"
+name: "Music"
+type: "talent"
+img: "icons/skills/trades/music-notes-sound-blue.webp"
+system:
+  description:
+    value: "<p>You have a natural gift for music.</p>"
+  classes:
+    - "mage"
+    - "rogue"
+    - "warrior"
+  requirement: "Communication (Performance) or Cunning (Musical Lore) focus"
+  degree: "novice"
+  degrees:
+    novice: "<p>You can play an instrument and sing, and you can read and write music.</p>"
+    journeyman: "<p>Your musical journey continues: you can play a number of instruments equal to your Communication.</p>"
+    master: "<p>You are a true virtuoso. You can play every instrument common in Thedas, and you can master a more exotic one with [[/r 1d6]] weeks of practice.</p>"
+  source:
+    book: "Core Rulebook"
+    page: 62

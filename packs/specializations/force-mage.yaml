@@ -1,0 +1,20 @@
+# packs/specializations/force-mage.yaml
+_id: "DhTXbelkzUqeMvti"
+name: "Force Mage"
+type: "specialization"
+img: "icons/magic/movement/trail-streak-impact-blue.webp"
+system:
+  description:
+    value: "<p>Force mages love magic in its rawest form. Where other mages conjure fire or lightning, they batter their foes with barely restrained magical force, and their telekinetic spells hurl enemies about while the mage stands unmoved.</p>"
+  classes:
+    - "mage"
+  requirement: "Magic 3 or higher and Willpower 3 or higher"
+  degree: "novice"
+  degrees:
+    novice: "<p>You learn the Force Mage spell Fist of the Maker.</p>"
+    journeyman: "<p>You learn the Force Mage spell Telekinetic Burst.</p>"
+    master: "<p>Your command of force magic makes you hard to move. When an opponent performs the Skirmish or Knock Prone stunt against you, you can cancel its effect by spending mana: 1 MP to negate Skirmish or 2 MP to negate Knock Prone.</p>"
+  class: "mage"
+  source:
+    book: "Core Rulebook"
+    page: 66

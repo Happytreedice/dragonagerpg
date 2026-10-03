@@ -1,0 +1,13 @@
+# packs/focuses/seeing.yaml
+_id: "pGshMC2eg89ykLTN"
+name: "Seeing"
+type: "focus"
+img: "icons/skills/targeting/crosshair-ringed-gray.webp"
+system:
+  description:
+    value: "<p>Sharp eyesight: spotting small details and seeing over long distances. Grants +2 to Perception tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "perception"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

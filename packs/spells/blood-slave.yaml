@@ -1,0 +1,19 @@
+# packs/spells/blood-slave.yaml
+_id: "tQgMxQ6tdmv6lZ4u"
+name: "Blood Slave"
+type: "spell"
+img: "icons/magic/unholy/silhouette-robe-evil-power.webp"
+system:
+  description:
+    value: "<p>One of the most feared powers of blood magic: you seize complete control of an enemy's body unless it passes a [[/test wil focus=Self-Discipline]] test vs. your Spellpower. If it fails, you dictate its actions on its next turn.</p><p>At the start of each of its later turns the target can test again to break free, and the spell ends once it succeeds. If the target is resisting, its attacks under your control suffer -2, because you steer its body only clumsily.</p>"
+  school: "blood"
+  spellType: "attack"
+  manaCost: 20
+  manaCostNote: ""
+  castTime: "major"
+  tn: 19
+  requirement: "Hemorrhage"
+  test: "Willpower (Self-Discipline) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

@@ -1,0 +1,13 @@
+# packs/focuses/intimidation.yaml
+_id: "y0SFAaUTjAv75D4j"
+name: "Intimidation"
+type: "focus"
+img: "icons/skills/social/intimidation-impressing.webp"
+system:
+  description:
+    value: "<p>Cowing and browbeating others through force of will and brute strength. Grants +2 to Strength tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "strength"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

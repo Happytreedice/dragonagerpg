@@ -1,8 +1,26 @@
 md core book="md5books/Dragonage Core Rulebook/Dragonage Core Rulebook.md"
 В КАЧЕСТВЕ ПРИМЕРА ДЛЯ ПОДРАЖАНИЯ БРАТЬ foundrydata/Data/systems/dnd5e
 ================================================================================
-      СТАТУС РЕАЛИЗАЦИИ (обновлено 2026-07-13)
+      СТАТУС РЕАЛИЗАЦИИ (обновлено 2026-10-03)
 ================================================================================
+STAGE 1 ПЕРЕРАБОТКИ (v0.1.0, 2026-10-03): схема данных + YAML + сборка + адаптация кода.
+  - Модели module/data/* по контракту схемы: description {value}, source {book, page},
+    cost-строки книги («18 sp»); оружие weaponGroup/type/damage{dice,ability}/minStrength/
+    range{short,long}/reload/penetrating; броня armorType/armorRating/armorPenalty/strain;
+    щит shieldType/shieldBonus; заклинание manaCost(+manaCostNote)/castTime/tn/requirement/
+    test; таланты degrees{novice,journeyman,master}; НИП attacks[].attackRoll, списки
+    favoredStunts/talents/weaponGroups/equipment, weakness/immunity перенесены в powers.
+    У каждой модели static migrateData: старые документы (до 0.1.0) мигрируют при загрузке (в памяти);
+    в базу мира миграцию один раз записывает активный ГМ (module/world-migration.mjs, полная замена
+    system; версия — скрытая настройка darpg.dataVersion), иначе сервер сливал бы правки в старую форму.
+  - CONFIG.DARPG: таблицы-объекты weaponGroups{label,ability}, armorTypes, shieldTypes,
+    classes, races, difficulties (подпись — .label; помощники DARPG.label/DARPG.choices).
+  - Компендиумы: исходники YAML рядом с LevelDB (packs/<pack>/<slug>.yaml), контент —
+    английский; npm run build:packs | format:packs | validate | extract:packs -- <DIR>
+    (tools/packs.mjs, tools/validate.mjs). Подписи паков — ключи DARPG.Pack.* (ru/en).
+    Папки компендиума YAML не хранит: extract такой пак не извлекает (ошибка, а не тихая потеря).
+  - Механика Stage 2 (меню стантов, фокус инициативы, скорость расы, Armor Training,
+    напряжение при касте, мисхапы, повышение уровня) — НЕ реализована.
 ЭТАП 1-5 (ядро, механика 3d6+Драконий куб, листы ApplicationV2, i18n ru/en): ГОТОВО.
 ЭТАП 6 (компендиумы): ГОТОВО. Собрано 16 паков LevelDB, 508 документов:
   classes(3), backgrounds(30), focuses(82), talents(33), specializations(21),
@@ -13,7 +31,7 @@ md core book="md5books/Dragonage Core Rulebook/Dragonage Core Rulebook.md"
   Добавлены типы Item: focus, background, class, stunt, consumable, rune,
   honorific, title (+поле source). Модель npc расширена до полного статблока
   (§21): threat/creatureType/size, defense/armorRating/speed, attacks[], powers,
-  favoredStunts, weakness/immunity; лист npc.hbs показывает статблок целиком.
+  favoredStunts, weakness/immunity (с 0.1.0 — в powers); лист npc.hbs показывает статблок целиком.
   build-darpg-packs.mjs умеет писать Actor-паки (встроенные предметы — п.10).
   Кликабельные проверки/броски в описаниях — энричеры darpg [[/test]] [[/damage]]
   [[/heal]] (module/enrichers.mjs); dnd5e-энричеры не используются.

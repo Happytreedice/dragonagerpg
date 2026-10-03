@@ -1,0 +1,16 @@
+# packs/armor/light-mail.yaml
+_id: "6P2cdRgqeT9c5eu7"
+name: "Light Mail"
+type: "armor"
+img: "icons/equipment/chest/breastplate-scale-leather.webp"
+system:
+  description:
+    value: "<p>A shirt of interlocking metal rings worn over a padded tunic.</p><ul><li><strong>Armor Rating 5:</strong> subtract it from the damage of every hit you take; penetrating damage ignores armor.</li><li><strong>Armor Penalty -2:</strong> with the Armor Training talent it reduces only your Speed; without that talent it applies to your Dexterity, and so to Dexterity tests, Defense and Speed.</li><li><strong>Strain 3:</strong> a mage wearing this armor spends 3 extra mana points on every spell.</li></ul>"
+  armorType: "lightMail"
+  armorRating: 5
+  armorPenalty: 2
+  strain: 3
+  cost: "50 sp"
+  source:
+    book: "Core Rulebook"
+    page: 76

@@ -3,8 +3,7 @@ import ItemBaseData from "./item-base.mjs";
 const fields = foundry.data.fields;
 
 /**
- * Данные хонорифика (spec §15.2): механическое прозвание с узким социальным
- * (или иным) бонусом, обычно ±1 (макс ±3).
+ * Данные хонорифика: прозвание с узким (обычно социальным) бонусом ±1 … ±3.
  */
 export default class HonorificData extends ItemBaseData {
 
@@ -12,8 +11,16 @@ export default class HonorificData extends ItemBaseData {
   static defineSchema() {
     const schema = super.defineSchema();
     return Object.assign(schema, {
-      // Краткая сводка бонуса (напр. «+1 к COM(Убеждение) против верующих»).
+      // Однострочная сводка бонуса.
       effect: new fields.StringField({ required: true, blank: true, initial: "" })
     });
+  }
+
+  /**
+   * Собственные поля не менялись; описание и источник мигрирует ItemBaseData.
+   * @inheritDoc
+   */
+  static migrateData(source, options) {
+    return super.migrateData(source, options);
   }
 }

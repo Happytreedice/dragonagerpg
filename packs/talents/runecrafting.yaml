@@ -1,0 +1,21 @@
+# packs/talents/runecrafting.yaml
+_id: "n8pD31zwYwtbwJl1"
+name: "Runecrafting"
+type: "talent"
+img: "icons/skills/trades/smithing-anvil-silver-red.webp"
+system:
+  description:
+    value: "<p>You are a trained enchanter who can inscribe runes on armor and weapons. You must be a dwarf or one of the Tranquil, so a mage can learn this talent only as a Tranquil.</p>"
+  classes:
+    - "mage"
+    - "rogue"
+    - "warrior"
+  requirement: "Dwarf or Tranquil; Cunning 3 or higher; Cunning (Enchantment) focus"
+  degree: "novice"
+  degrees:
+    novice: "<p>You can inscribe a Novice rune on a piece of armor or a weapon in 2 hours. A successful [[/test cun focus=Enchantment tn=13]] test speeds the work: each point of the Dragon Die cuts 15 minutes from the time.</p>"
+    journeyman: "<p>You can inscribe a Journeyman rune in 3 hours. A successful [[/test cun focus=Enchantment tn=15]] test cuts 15 minutes from the time per point of the Dragon Die.</p>"
+    master: "<p>You can inscribe a Master rune in 4 hours. A successful [[/test cun focus=Enchantment tn=17]] test cuts 15 minutes from the time per point of the Dragon Die.</p>"
+  source:
+    book: "Core Rulebook"
+    page: 64

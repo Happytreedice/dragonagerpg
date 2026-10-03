@@ -1,0 +1,20 @@
+# packs/specializations/spirit-warrior.yaml
+_id: "jJpJaBPFjpeLjv0x"
+name: "Spirit Warrior"
+type: "specialization"
+img: "icons/magic/holy/angel-winged-humanoid-blue.webp"
+system:
+  description:
+    value: "<p>Like spirit healers, spirit warriors know that not every denizen of the Fade is malevolent. They strike bargains with spirits, receiving special powers in return for letting the spirit see the physical world through their eyes. Spirit warriors are not mages, but templars often treat them like apostates because their powers look so much like magic.</p>"
+  classes:
+    - "warrior"
+  requirement: "Magic 3 or higher and Willpower 3 or higher"
+  degree: "novice"
+  degrees:
+    novice: "<p>With an activate action you enter <strong>Spirit Warrior</strong> mode, gaining +1 to Defense and +1 on Magic tests made to resist spells and other magical attacks. Leaving the mode is a free action.</p>"
+    journeyman: "<p>While in Spirit Warrior mode, your melee and ranged attacks count as magical, so they deal full damage to incorporeal creatures such as shades. Against demons and other creatures of the Fade, they also deal extra damage equal to your Willpower.</p>"
+    master: "<p>While in Spirit Warrior mode, you can perform the <strong>Fade Burst</strong> stunt for 4 SP. A wave of energy deals [[/damage 1d6 penetrating]]{1d6} penetrating damage to all enemies within 4 yards of you; demons and other Fade creatures take [[/damage 1d6+@abilities.willpower.value penetrating]]{1d6 + Willpower} penetrating damage instead.</p>"
+  class: "warrior"
+  source:
+    book: "Core Rulebook"
+    page: 74

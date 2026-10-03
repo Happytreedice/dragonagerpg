@@ -1,0 +1,13 @@
+# packs/focuses/polearms.yaml
+_id: "L2nRgdCZTwiZwYQg"
+name: "Polearms"
+type: "focus"
+img: "icons/skills/melee/weapons-crossed-poleaxes-white.webp"
+system:
+  description:
+    value: "<p>Fighting with polearms such as the glaive, halberd and military fork. Grants +2 to attack rolls with weapons of the Polearms group and to other Strength tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "strength"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

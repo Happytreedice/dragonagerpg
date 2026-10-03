@@ -1,0 +1,19 @@
+# packs/spells/weather-weaving.yaml
+_id: "kiLd7V1Jg9wlx6Nn"
+name: "Weather Weaving"
+type: "spell"
+img: "icons/magic/air/weather-clouds-rain.webp"
+system:
+  description:
+    value: "<p>You shape the weather across an area whose radius in miles equals your Magic. You may choose any natural weather that is possible there at that time of year, so no snow at midsummer and no rain in a desert. The new weather takes shape over the eight hours after the casting, which limits how sharp a change can be; casting the spell again over several days can strengthen the effect.</p><p>Once set, the weather follows its natural course; you do not steer it from minute to minute.</p>"
+  school: "primal"
+  spellType: "utility"
+  manaCost: 8
+  manaCostNote: ""
+  castTime: "1 hour"
+  tn: 16
+  requirement: "Primal Magic (Master)"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

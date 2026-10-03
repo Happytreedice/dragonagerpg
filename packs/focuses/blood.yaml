@@ -1,0 +1,13 @@
+# packs/focuses/blood.yaml
+_id: "3YSC9lukuHbYvDwX"
+name: "Blood"
+type: "focus"
+img: "icons/skills/wounds/blood-drip-droplet-red.webp"
+system:
+  description:
+    value: "<p>Mastery of blood magic, the forbidden school that draws power from life force. Grants +2 to casting rolls and Spellpower for Blood spells; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "magic"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

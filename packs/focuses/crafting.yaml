@@ -1,0 +1,13 @@
+# packs/focuses/crafting.yaml
+_id: "zzHEO4YZLzTunQkw"
+name: "Crafting"
+type: "focus"
+img: "icons/skills/trades/construction-carpentry-hammer-gray.webp"
+system:
+  description:
+    value: "<p>Skilled handiwork in making and mending things. Grants +2 to Dexterity tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "dexterity"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

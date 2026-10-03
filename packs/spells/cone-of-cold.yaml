@@ -1,0 +1,19 @@
+# packs/spells/cone-of-cold.yaml
+_id: "HNBuHC1agRhmBBlL"
+name: "Cone of Cold"
+type: "spell"
+img: "icons/magic/water/projectile-ice-faceted-blue.webp"
+system:
+  description:
+    value: "<p>A blast of freezing cold bursts from your hands in an area 8 yards long and 2 yards wide. Everyone in it takes [[/damage 2d6+@abilities.magic.value penetrating]]{2d6 + Magic} penetrating damage and suffers -10 to Speed for a number of rounds equal to half your Magic.</p><p>A target that passes a [[/test con focus=Stamina]] test vs. your Spellpower takes only [[/damage 1d6+@abilities.magic.value penetrating]]{1d6 + Magic} penetrating damage and suffers -5 to Speed for the same duration.</p>"
+  school: "primal"
+  spellType: "attack"
+  manaCost: 15
+  manaCostNote: ""
+  castTime: "major"
+  tn: 17
+  requirement: "Frost Weapons"
+  test: "Constitution (Stamina) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

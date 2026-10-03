@@ -1,0 +1,13 @@
+# packs/focuses/morale.yaml
+_id: "qywREVazpVZ0UMYj"
+name: "Morale"
+type: "focus"
+img: "icons/magic/holy/barrier-shield-winged-blue.webp"
+system:
+  description:
+    value: "<p>Keeping your nerve in battle and resisting panic and the urge to flee; it appears most often on adversaries. Grants +2 to Willpower tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "willpower"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

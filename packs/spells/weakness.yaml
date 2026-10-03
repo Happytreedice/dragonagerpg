@@ -1,0 +1,19 @@
+# packs/spells/weakness.yaml
+_id: "FlyQH3gHceDFeqJo"
+name: "Weakness"
+type: "spell"
+img: "icons/magic/control/debuff-energy-hold-green.webp"
+system:
+  description:
+    value: "<p>Your magic saps the vigor of one visible enemy within 20 yards, leaving it slow and sluggish. For a number of rounds equal to the Dragon Die of your casting roll, the target suffers -1 to Strength and Dexterity and -5 to Speed. If it passes a [[/test mag focus=Spirit]] test vs. your Spellpower, it suffers only the Speed penalty.</p>"
+  school: "entropy"
+  spellType: "attack"
+  manaCost: 3
+  manaCostNote: ""
+  castTime: "major"
+  tn: 11
+  requirement: ""
+  test: "Magic (Spirit) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

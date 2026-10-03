@@ -1,0 +1,19 @@
+# packs/spells/spell-wisp.yaml
+_id: "3H9Gfqr9MlRTr8dh"
+name: "Spell Wisp"
+type: "spell"
+img: "icons/magic/light/explosion-star-glow-blue.webp"
+system:
+  description:
+    value: "<p>You call up a small wisp that hovers near you for up to an hour and bolsters your magic: while it accompanies you, you gain +1 to Spellpower. The wisp is intangible and can be neither attacked nor touched.</p>"
+  school: "creation"
+  spellType: "utility"
+  manaCost: 3
+  manaCostNote: ""
+  castTime: "1 minute"
+  tn: 11
+  requirement: ""
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

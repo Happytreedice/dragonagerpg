@@ -1,0 +1,19 @@
+# packs/spells/elemental-mastery.yaml
+_id: "qHm1HS1a8g2si4MS"
+name: "Elemental Mastery"
+type: "spell"
+img: "icons/magic/symbols/elements-air-earth-fire-water.webp"
+system:
+  description:
+    value: "<p>You deepen your bond with the primal forces of the elements. For one minute, every Primal attack spell you cast deals +2 damage, including damage dealt through enchanted items such as weapons under Flaming Weapons or Frost Weapons.</p><p>You can extend the duration as you cast it by spending 4 MP per additional minute.</p>"
+  school: "primal"
+  spellType: "enhancement"
+  manaCost: 5
+  manaCostNote: ""
+  castTime: "major"
+  tn: 15
+  requirement: "Primal Magic (Master)"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

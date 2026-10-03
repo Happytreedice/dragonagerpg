@@ -1,0 +1,19 @@
+# packs/spells/wind-weaving.yaml
+_id: "lGfXfYW5q3lOAaYN"
+name: "Wind Weaving"
+type: "spell"
+img: "icons/magic/air/wind-stream-blue-gray.webp"
+system:
+  description:
+    value: "<p>You make the wind blow in any direction you like, as strongly as a stiff gust: enough to snuff out candles and small open flames and scatter light debris such as leaves or paper. You can command the wind for up to an hour, but each change of its direction or strength takes a major action.</p><p>Among other uses, the spell lets sailing ships travel without depending on fickle weather.</p>"
+  school: "primal"
+  spellType: "utility"
+  manaCost: 5
+  manaCostNote: ""
+  castTime: "1 minute"
+  tn: 14
+  requirement: "Primal Magic (Novice)"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

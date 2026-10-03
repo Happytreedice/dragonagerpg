@@ -1,9 +1,7 @@
 import ItemBaseData from "./item-base.mjs";
 
-const fields = foundry.data.fields;
-
 /**
- * Данные прочего снаряжения.
+ * Данные прочего снаряжения (общий инвентарь, шедевры и превосходные предметы).
  */
 export default class EquipmentData extends ItemBaseData {
 
@@ -11,9 +9,18 @@ export default class EquipmentData extends ItemBaseData {
   static defineSchema() {
     const schema = super.defineSchema();
     return Object.assign(schema, {
-      quantity: new fields.NumberField({ required: true, integer: true, nullable: false, initial: 1, min: 0 }),
-      weight: new fields.NumberField({ required: true, nullable: false, initial: 0, min: 0 }),
-      price: this.priceField()
+      quantity: this.quantityField(),
+      cost: this.costField()
     });
+  }
+
+  /**
+   * Старая форма: price → cost; weight упразднён.
+   * @inheritDoc
+   */
+  static migrateData(source, options) {
+    this._migrateCost(source);
+    delete source.weight;
+    return super.migrateData(source, options);
   }
 }

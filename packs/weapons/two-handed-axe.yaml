@@ -1,0 +1,25 @@
+# packs/weapons/two-handed-axe.yaml
+_id: "UGiFU1CS21QDJpGD"
+name: "Two-handed Axe"
+type: "weapon"
+img: "icons/weapons/axes/axe-double-black.webp"
+system:
+  description:
+    value: "<p>A massive axe swung with both hands, able to fell a foe with a single blow.</p><p><strong>Attack:</strong> Strength (Axes). <strong>Damage:</strong> [[/damage 3d6]] + Strength.</p><p><strong>Minimum Strength:</strong> 3. With lower Strength the weapon deals only [[/damage 1d6-1]] + Strength.</p>"
+  weaponGroup: "axes"
+  type: "melee"
+  damage:
+    dice: "3d6"
+    ability: "strength"
+  minStrength: 3
+  range:
+    short: null
+    long: null
+  reload: ""
+  twoHanded: true
+  cost: "20 sp"
+  penetrating: false
+  quantity: 1
+  source:
+    book: "Core Rulebook"
+    page: 74

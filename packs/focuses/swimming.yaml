@@ -1,0 +1,13 @@
+# packs/focuses/swimming.yaml
+_id: "n8lramtzEZ6jMeDQ"
+name: "Swimming"
+type: "focus"
+img: "icons/skills/movement/feet-winged-boots-blue.webp"
+system:
+  description:
+    value: "<p>Swimming and staying afloat with confidence, even in strong currents or heavy clothing. Grants +2 to Constitution tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "constitution"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

@@ -1,0 +1,19 @@
+# packs/talents/primal-magic.yaml
+_id: "DSE5BUH7F3VlPEnz"
+name: "Primal Magic"
+type: "talent"
+img: "icons/magic/fire/flame-burning-hand-orange.webp"
+system:
+  description:
+    value: "<p>You have unlocked the secrets of Primal magic.</p>"
+  classes:
+    - "mage"
+  requirement: "Magic (Primal) focus"
+  degree: "novice"
+  degrees:
+    novice: "<p>You can conjure a small, candle-like flame in your hand without spending mana. Summoning and dismissing it are free actions, and it lasts until you dismiss it. The flame can set ordinary flammable items alight, but it cannot be used in combat.</p>"
+    journeyman: "<p>Your knowledge of Primal magic runs deep. Each Primal spell costs you 1 MP less (minimum 1), and you learn one new Primal spell.</p>"
+    master: "<p>Primal power overflows in you. When you perform the Mighty Spell stunt with a Primal spell, you can apply its extra damage to more than one target of the spell for 1 more SP per additional target (3 SP for two targets, 4 SP for three, and so on). You also learn one new Primal spell.</p>"
+  source:
+    book: "Core Rulebook"
+    page: 63

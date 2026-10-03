@@ -1,0 +1,19 @@
+# packs/spells/death-hex.yaml
+_id: "tqOhpoFO6FInfYJD"
+name: "Death Hex"
+type: "spell"
+img: "icons/magic/death/skull-humanoid-white-red.webp"
+system:
+  description:
+    value: "<p>You curse one enemy within 30 yards so that every blow against it is torment. For a number of rounds equal to your Magic, attacks against the target gain +3 to the attack roll and deal +3 damage, and every hit automatically generates +2 stunt points, even without doubles.</p><p>On its turn the target can end the hex with a successful [[/test mag focus=Entropy]] or [[/test wil focus=Morale]] test vs. your Spellpower.</p>"
+  school: "entropy"
+  spellType: "attack"
+  manaCost: 17
+  manaCostNote: ""
+  castTime: "major"
+  tn: 19
+  requirement: "Misdirection Hex"
+  test: "Magic (Entropy) or Willpower (Morale) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

@@ -3,16 +3,21 @@ import { DARPG } from "../config.mjs";
 const fields = foundry.data.fields;
 
 /**
- * Общее ядро данных актёров: характеристики, фокусы, здоровье, мана, биография.
+ * Общее ядро данных актёров: характеристики, фокусы, здоровье, мана, стант-поинты, биография.
+ * Производные значения (Защита, Скорость, сумма брони, Сила заклинаний) не хранятся.
  */
 export default class ActorBaseData extends foundry.abstract.TypeDataModel {
 
-  /** Схема восьми характеристик AGE. */
+  /**
+   * Схема восьми характеристик AGE. Нижняя граница −5: у персонажей характеристики не
+   * опускаются ниже −2, но у животных и простых существ бестиария бывает −3 (лошади, мул,
+   * собака, крыса, сокол, тень) — прежний min −2 молча обрезал эти значения.
+   */
   static #abilitiesSchema() {
     const abilities = {};
     for ( const key of Object.keys(DARPG.abilities) ) {
       abilities[key] = new fields.SchemaField({
-        value: new fields.NumberField({ required: true, integer: true, nullable: false, initial: 0, min: -2 })
+        value: new fields.NumberField({ required: true, integer: true, nullable: false, initial: 0, min: -5 })
       });
     }
     return new fields.SchemaField(abilities);
@@ -35,7 +40,9 @@ export default class ActorBaseData extends foundry.abstract.TypeDataModel {
       abilities: ActorBaseData.#abilitiesSchema(),
       focuses: new fields.ArrayField(new fields.SchemaField({
         name: new fields.StringField({ required: true, blank: true, initial: "" }),
-        ability: new fields.StringField({ required: true, initial: "communication", choices: Object.keys(DARPG.abilities) })
+        ability: new fields.StringField({ required: true, initial: "communication", choices: () => DARPG.abilities }),
+        // Улучшенный фокус: +3 вместо +2 (с 11 уровня).
+        improved: new fields.BooleanField({ required: true, initial: false })
       })),
       health: this.resourceSchema(20),
       mana: this.resourceSchema(10),
@@ -47,5 +54,14 @@ export default class ActorBaseData extends foundry.abstract.TypeDataModel {
       }),
       biography: new fields.HTMLField({ required: true, blank: true, initial: "" })
     };
+  }
+
+  /**
+   * Общие поля актёров не меняли форму: у фокусов появился флаг improved, его заполняет
+   * начальное значение (false) при очистке.
+   * @inheritDoc
+   */
+  static migrateData(source, options) {
+    return super.migrateData(source, options);
   }
 }

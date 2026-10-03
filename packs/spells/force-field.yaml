@@ -1,0 +1,19 @@
+# packs/spells/force-field.yaml
+_id: "Dj4qWyUouiOmrIwT"
+name: "Force Field"
+type: "spell"
+img: "icons/magic/defensive/barrier-shield-dome-pink.webp"
+system:
+  description:
+    value: "<p>You enclose one target within 25 yards, or yourself, in a field of magical force that absorbs all damage that would reach it. For one round the target is completely immune to damage, but it cannot move (the field is fixed in place), make melee or ranged attacks, or hand over or receive items.</p>"
+  school: "spirit"
+  spellType: "defense"
+  manaCost: 10
+  manaCostNote: ""
+  castTime: "major"
+  tn: 18
+  requirement: "Mind Blast"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

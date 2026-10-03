@@ -1,0 +1,19 @@
+# packs/spells/shock.yaml
+_id: "l2xv89bvRulKngEE"
+name: "Shock"
+type: "spell"
+img: "icons/magic/lightning/bolt-strike-sparks-blue.webp"
+system:
+  description:
+    value: "<p>Electricity crackles from your hands or the tip of your staff and fills an area 6 yards by 6 yards. Everyone in the area takes [[/damage 1d6+@abilities.magic.value penetrating]]{1d6 + Magic} penetrating damage, or only [[/damage 1d6 penetrating]]{1d6} penetrating damage with a successful [[/test con focus=Stamina]] test vs. your Spellpower.</p>"
+  school: "primal"
+  spellType: "attack"
+  manaCost: 4
+  manaCostNote: ""
+  castTime: "major"
+  tn: 13
+  requirement: ""
+  test: "Constitution (Stamina) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

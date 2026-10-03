@@ -1,0 +1,21 @@
+# packs/talents/oratory.yaml
+_id: "1lU0Gigxr4d1hEV4"
+name: "Oratory"
+type: "talent"
+img: "icons/skills/social/diplomacy-peace-alliance.webp"
+system:
+  description:
+    value: "<p>You are a gifted speaker who can sway others with words.</p>"
+  classes:
+    - "mage"
+    - "rogue"
+    - "warrior"
+  requirement: "Communication (Persuasion) focus"
+  degree: "novice"
+  degrees:
+    novice: "<p>You know how to work a crowd. When you fail a [[/test com focus=Persuasion]] test made to convince a group, you may re-roll it, but you must keep the second result. This does not apply in private conversation or when persuading a single person.</p>"
+    journeyman: "<p>Your words work like magic. Whenever you perform the Sway the Crowd roleplaying stunt, it affects three more people instead of one.</p>"
+    master: "<p>You can rouse a crowd. When you succeed on a [[/test com focus=Persuasion]] test before a group and your Dragon Die shows 5 or 6, they are moved to act at once. You cannot dictate what they do (though you may try with [[/test com focus=Leadership]] tests), but they take your words to heart and act on them.</p>"
+  source:
+    book: "Core Rulebook"
+    page: 63

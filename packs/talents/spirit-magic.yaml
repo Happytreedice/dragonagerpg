@@ -1,0 +1,19 @@
+# packs/talents/spirit-magic.yaml
+_id: "Oouqu7B8kj9E3itx"
+name: "Spirit Magic"
+type: "talent"
+img: "icons/magic/perception/eye-ringed-glow-angry-large-teal.webp"
+system:
+  description:
+    value: "<p>You have unlocked the secrets of Spirit magic.</p>"
+  classes:
+    - "mage"
+  requirement: "Magic (Spirit) focus"
+  degree: "novice"
+  degrees:
+    novice: "<p>As a minor action you can sense the mood of an intelligent being within 6 yards. The GM sums it up in a single word, such as 'angry', 'confused' or 'pleased'.</p>"
+    journeyman: "<p>Your knowledge of Spirit magic runs deep. Each Spirit spell costs you 1 MP less (minimum 1), and you learn one new Spirit spell.</p>"
+    master: "<p>Mana flows through you like a river. When you roll to recover mana, you may re-roll the dice, but you must keep the second result. You also learn one new Spirit spell.</p>"
+  source:
+    book: "Core Rulebook"
+    page: 64

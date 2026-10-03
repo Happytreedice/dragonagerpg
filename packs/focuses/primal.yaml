@@ -1,0 +1,13 @@
+# packs/focuses/primal.yaml
+_id: "KG4km9fxGQoqcJPO"
+name: "Primal"
+type: "focus"
+img: "icons/magic/symbols/elements-air-earth-fire-water.webp"
+system:
+  description:
+    value: "<p>Mastery of the Primal school of magic: fire, ice, lightning and earth. Grants +2 to casting rolls and Spellpower for Primal spells; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "magic"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

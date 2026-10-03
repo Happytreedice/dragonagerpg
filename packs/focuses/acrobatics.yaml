@@ -1,0 +1,13 @@
+# packs/focuses/acrobatics.yaml
+_id: "Apl7RmrZzr1Xw0mc"
+name: "Acrobatics"
+type: "focus"
+img: "icons/skills/movement/ball-spinning-blue.webp"
+system:
+  description:
+    value: "<p>Agility and flexibility: tumbling, balancing and other demanding feats of movement. Grants +2 to Dexterity tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "dexterity"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

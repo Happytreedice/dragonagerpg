@@ -1,0 +1,13 @@
+# packs/focuses/performance.yaml
+_id: "KzRRAqSUmyC6jNmk"
+name: "Performance"
+type: "focus"
+img: "icons/skills/trades/music-singing-voice-blue.webp"
+system:
+  description:
+    value: "<p>Singing, playing music, acting and other kinds of public performance. Grants +2 to Communication tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "communication"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

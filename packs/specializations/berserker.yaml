@@ -1,0 +1,20 @@
+# packs/specializations/berserker.yaml
+_id: "8eDHk7nJitZ4EGaI"
+name: "Berserker"
+type: "specialization"
+img: "icons/skills/melee/hand-grip-axe-strike-orange.webp"
+system:
+  description:
+    value: "<p>Berserkers first appeared among the dwarves of the Warrior Caste, who learned to draw strength from battle fury. The Avvar learned the art from the dwarves, and from them it spread to every human people. The most famous berserkers are the Ash Warriors, mercenaries who fight not for coin but for whichever cause they judge most just.</p>"
+  classes:
+    - "warrior"
+  requirement: "Strength 3 or higher and Willpower 3 or higher"
+  degree: "novice"
+  degrees:
+    novice: "<p>With an activate action you enter <strong>Berserk</strong> mode: you gain +2 on Willpower (Courage) and Willpower (Morale) tests and +1 on melee damage, but you suffer -1 to Defense and on Perception tests. The mode ends at the end of the encounter or when you take another activate action.</p>"
+    journeyman: "<p>Your rage burns hotter. While Berserk you keep the Novice bonuses and penalties, but your melee damage bonus rises from +1 to +3.</p>"
+    master: "<p>Your fury is unstoppable. While Berserk, you can perform the Lethal Blow stunt for 4 SP instead of 5.</p>"
+  class: "warrior"
+  source:
+    book: "Core Rulebook"
+    page: 72

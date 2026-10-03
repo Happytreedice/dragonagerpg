@@ -1,0 +1,21 @@
+# packs/talents/contacts.yaml
+_id: "Hgnhjldyw7zGx6s6"
+name: "Contacts"
+type: "talent"
+img: "icons/skills/social/diplomacy-writing-letter.webp"
+system:
+  description:
+    value: "<p>You know the right people, sometimes in the most unlikely places.</p>"
+  classes:
+    - "mage"
+    - "rogue"
+    - "warrior"
+  requirement: "Communication 1 or higher"
+  degree: "novice"
+  degrees:
+    novice: "<p>You can try to make an NPC your contact with a successful [[/test com focus=Persuasion]] test. The GM sets the target number based on the NPC's attitude toward you.</p>"
+    journeyman: "<p>Once you have a contact, you can ask them for a favor with another successful [[/test com focus=Persuasion]] test. The target number depends on the favor and on whether it puts the contact at risk.</p>"
+    master: "<p>Your loyalty turns acquaintances into allies. If you do a contact a significant favor, they treat you as a friend: they will go to great lengths for you, even into danger.</p>"
+  source:
+    book: "Core Rulebook"
+    page: 60

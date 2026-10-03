@@ -1,0 +1,19 @@
+# packs/spells/mind-blast.yaml
+_id: "W9iPQKv3DmnXOL1K"
+name: "Mind Blast"
+type: "spell"
+img: "icons/magic/control/energy-stream-link-blue.webp"
+system:
+  description:
+    value: "<p>A telekinetic shockwave with a 2-yard radius bursts at any visible point within 50 yards. Everyone caught in it is knocked prone and cannot take a major action on their next turn; those who pass a [[/test str focus=Might]] test vs. your Spellpower are only knocked prone. Either way, everyone hit loses any action they had prepared.</p>"
+  school: "spirit"
+  spellType: "attack"
+  manaCost: 3
+  manaCostNote: ""
+  castTime: "major"
+  tn: 12
+  requirement: ""
+  test: "Strength (Might) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

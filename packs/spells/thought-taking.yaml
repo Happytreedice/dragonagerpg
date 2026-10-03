@@ -1,0 +1,19 @@
+# packs/spells/thought-taking.yaml
+_id: "CeXmxE8FnXjDA0Gm"
+name: "Thought-Taking"
+type: "spell"
+img: "icons/magic/perception/hand-eye-pink.webp"
+system:
+  description:
+    value: "<p>You reach deep into a target's mind to lay bare its secrets, desires and fears. Touch the target's forehead and concentrate for one minute while it tests [[/test wil focus=Self-Discipline]] vs. your Spellpower. If it succeeds, you fail to get in, but you can spend 5 more MP to keep casting for another minute and force a new test.</p><p>Once the target fails, its mind is open: for 2 MP per question, the GM gives you the target's truthful answer. You can ask a number of questions equal to your Magic, at most one per minute.</p>"
+  school: "blood"
+  spellType: "attack"
+  manaCost: 15
+  manaCostNote: ""
+  castTime: "1 minute"
+  tn: 17
+  requirement: "Blood Mage Specialization"
+  test: "Willpower (Self-Discipline) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

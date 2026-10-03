@@ -1,0 +1,13 @@
+# packs/focuses/evaluation.yaml
+_id: "hQBTE3RIyV8MP6A3"
+name: "Evaluation"
+type: "focus"
+img: "icons/skills/social/trading-injustice-scale-gray.webp"
+system:
+  description:
+    value: "<p>Judging the authenticity and true worth of goods, jewels and works of art. Grants +2 to Cunning tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "cunning"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

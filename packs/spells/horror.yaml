@@ -1,0 +1,19 @@
+# packs/spells/horror.yaml
+_id: "X6v5ona4xwdVpja6"
+name: "Horror"
+type: "spell"
+img: "icons/magic/unholy/silhouette-robe-evil-glow.webp"
+system:
+  description:
+    value: "<p>You flood one visible target within 20 yards with naked terror. Unless it passes a [[/test wil focus=Courage]] test vs. your Spellpower, it can do nothing but cower in fear. A target that fails may test again at the start of each of its turns until it succeeds.</p>"
+  school: "entropy"
+  spellType: "attack"
+  manaCost: 8
+  manaCostNote: ""
+  castTime: "major"
+  tn: 17
+  requirement: "Daze"
+  test: "Willpower (Courage) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

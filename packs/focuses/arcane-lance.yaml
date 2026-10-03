@@ -1,0 +1,13 @@
+# packs/focuses/arcane-lance.yaml
+_id: "QNGoqwon9wymNr83"
+name: "Arcane Lance"
+type: "focus"
+img: "icons/skills/ranged/wand-attack-beam-blue.webp"
+system:
+  description:
+    value: "<p>Covers Arcane Lance, the mage's ranged attack of raw magical force. Grants +2 to Arcane Lance attack rolls; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "magic"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

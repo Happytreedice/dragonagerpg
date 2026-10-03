@@ -3,17 +3,19 @@
     {{#if abilityLabel}}
     <p class="test-ability">{{localize "DARPG.Roll.Ability"}}: <strong>{{abilityLabel}}</strong></p>
     {{/if}}
+    {{#if withFocus}}
     <div class="form-group">
         <label>{{localize "DARPG.Roll.Focus"}}</label>
         <div class="form-fields">
             <select name="focus">
                 <option value="">{{localize "DARPG.Roll.NoFocus"}}</option>
                 {{#each focuses}}
-                <option value="{{this.name}}" {{#if this.selected}}selected{{/if}}>{{this.name}}</option>
+                <option value="{{this.name}}" {{#if this.selected}}selected{{/if}}>{{this.label}}</option>
                 {{/each}}
             </select>
         </div>
     </div>
+    {{/if}}
     <div class="form-group">
         <label>{{localize "DARPG.Roll.Modifier"}}</label>
         <div class="form-fields">
@@ -23,8 +25,13 @@
     <div class="form-group">
         <label>{{localize "DARPG.Roll.TargetNumber"}}</label>
         <div class="form-fields">
-            <input type="number" name="targetNumber" value="{{targetNumber}}" min="0" step="1"
+            <input type="number" name="targetNumber" value="{{targetNumber}}" min="0" step="1" list="{{listId}}"
                    placeholder="{{localize 'DARPG.Roll.TargetNumberHint'}}">
+            <datalist id="{{listId}}">
+                {{#each difficulties}}
+                <option value="{{this.tn}}">{{this.label}}</option>
+                {{/each}}
+            </datalist>
         </div>
     </div>
 </div>

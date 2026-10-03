@@ -1,0 +1,19 @@
+# packs/spells/anti-magic-burst.yaml
+_id: "ylvLvDsCfzZb0HYt"
+name: "Anti-Magic Burst"
+type: "spell"
+img: "icons/magic/control/debuff-chains-orb-movement-blue.webp"
+system:
+  description:
+    value: "<p>You strip away every magical effect, harmful or helpful, within a 20-yard radius. Make a single [[/test mag focus=Spirit]] test and compare the result with the Spellpower behind each effect in the area: every effect you beat ends, while stronger ones remain.</p>"
+  school: "spirit"
+  spellType: "utility"
+  manaCost: 20
+  manaCostNote: ""
+  castTime: "major"
+  tn: 20
+  requirement: "Anti-Magic Ward"
+  test: "Magic (Spirit) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

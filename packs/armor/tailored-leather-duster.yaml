@@ -1,0 +1,16 @@
+# packs/armor/tailored-leather-duster.yaml
+_id: "VDubPIfalrXbSLyv"
+name: "Tailored Leather Duster"
+type: "armor"
+img: "icons/equipment/chest/breastplate-layered-leather-stitched.webp"
+system:
+  description:
+    value: "<p>A leather duster refitted by a skilled tailor so that it protects better while still letting the wearer move freely. It is an upgrade of an existing duster and costs 45 sp on top of the duster's price.</p><ul><li><strong>Armor Rating 4:</strong> subtract it from the damage of every hit you take; penetrating damage ignores armor.</li><li><strong>Armor Penalty:</strong> none.</li><li><strong>Strain 2:</strong> a mage wearing this armor spends 2 extra mana points on every spell.</li></ul>"
+  armorType: "heavyLeather"
+  armorRating: 4
+  armorPenalty: 0
+  strain: 2
+  cost: "+45 sp"
+  source:
+    book: "Core Rulebook"
+    page: null

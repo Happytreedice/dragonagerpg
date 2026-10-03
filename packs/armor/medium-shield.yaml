@@ -1,0 +1,14 @@
+# packs/armor/medium-shield.yaml
+_id: "8oh1hBkPpnrnIMj1"
+name: "Medium Shield"
+type: "shield"
+img: "icons/equipment/shield/heater-steel-grey.webp"
+system:
+  description:
+    value: "<p>A sturdy heater shield of wood bound with metal.</p><ul><li><strong>Shield Bonus +2:</strong> added to your Defense (10 + Dexterity + shield bonus).</li></ul><p>The full +2 requires the Weapon and Shield Style talent; without it the shield grants only +1.</p>"
+  shieldType: "medium"
+  shieldBonus: 2
+  cost: "30 sp"
+  source:
+    book: "Core Rulebook"
+    page: 76

@@ -1,0 +1,13 @@
+# packs/focuses/empathy.yaml
+_id: "suBeVff5C76H6BMh"
+name: "Empathy"
+type: "focus"
+img: "icons/magic/perception/eye-ringed-green.webp"
+system:
+  description:
+    value: "<p>Sensing other people's feelings and moods, and seeing through lies and hidden motives. Grants +2 to Perception tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "perception"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

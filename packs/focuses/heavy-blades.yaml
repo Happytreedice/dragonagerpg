@@ -1,0 +1,13 @@
+# packs/focuses/heavy-blades.yaml
+_id: "mRpeDA4GdqrMQGck"
+name: "Heavy Blades"
+type: "focus"
+img: "icons/skills/melee/maneuver-greatsword-yellow.webp"
+system:
+  description:
+    value: "<p>Fighting with heavy blades such as the longsword, bastard sword and two-handed sword. Grants +2 to attack rolls with weapons of the Heavy Blades group and to other Strength tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "strength"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

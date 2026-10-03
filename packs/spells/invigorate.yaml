@@ -1,0 +1,19 @@
+# packs/spells/invigorate.yaml
+_id: "aGy9QK2MdWqQBPD2"
+name: "Invigorate"
+type: "spell"
+img: "icons/magic/light/beam-rays-green.webp"
+system:
+  description:
+    value: "<p>Waves of mana roll out from you and spur your allies on: allies within 10 yards of you gain +1 SP whenever they generate stunt points.</p><p>The effect ends at the start of your next turn unless you spend 1 MP then to keep it going for another round; you can do so at the start of each of your turns.</p>"
+  school: "spirit"
+  spellType: "enhancement"
+  manaCost: 4
+  manaCostNote: ""
+  castTime: "major"
+  tn: 14
+  requirement: "Mana Drain"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

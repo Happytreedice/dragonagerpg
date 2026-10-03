@@ -1,0 +1,20 @@
+# packs/specializations/keeper.yaml
+_id: "maObvAPvCC6Tu3M3"
+name: "Keeper"
+type: "specialization"
+img: "icons/magic/nature/leaf-arrowheads-glow-green.webp"
+system:
+  description:
+    value: "<p>A Keeper guides a Dalish clan in both spiritual and worldly matters and is honored for wisdom and knowledge of old elven traditions. Templars regard such ancient, unregulated magic as a threat and hunt Keepers down, which is one reason Dalish clans rarely stay long in one place.</p>"
+  classes:
+    - "mage"
+  requirement: "Dalish elf; Cunning 3 or higher and Magic 3 or higher"
+  degree: "novice"
+  degrees:
+    novice: "<p>You learn the Keeper spell Wrath of the Elvhen.</p>"
+    journeyman: "<p>You learn the Keeper spell Ensnare.</p>"
+    master: "<p>You draw on nature's cycle of death and renewal. When you kill an enemy with Wrath of the Elvhen, you regain [[/heal 1d6]] Health if you are wounded; you gain nothing while at full Health.</p>"
+  class: "mage"
+  source:
+    book: "Core Rulebook"
+    page: 67

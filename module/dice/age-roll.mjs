@@ -1,5 +1,3 @@
-import { DARPG } from "../config.mjs";
-
 /**
  * Бросок AGE: 3d6 + характеристика + фокус + модификатор против TN.
  * Третий куб — Драконий: при любом дубле на трёх кубах он определяет
@@ -10,27 +8,34 @@ export default class AgeRoll extends foundry.dice.Roll {
   /** @override */
   static CHAT_TEMPLATE = "systems/darpg/templates/chat/age-roll.hbs";
 
+  /** Бонус обычного фокуса (+2) из CONFIG.DARPG. */
+  static get defaultFocusBonus() {
+    return CONFIG.DARPG?.focusBonus ?? 2;
+  }
+
   /**
    * Собрать бросок теста AGE.
    * @param {object} config
-   * @param {number} [config.abilityValue=0]      Значение характеристики.
+   * @param {number} [config.abilityValue=0]      Значение характеристики (или итоговый бонус атаки НИП).
    * @param {string} [config.abilityLabel=""]     Локализованное название характеристики.
    * @param {string} [config.focusName=""]        Название применённого фокуса (пусто — без фокуса).
+   * @param {number|null} [config.focusBonus=null]  Бонус фокуса: +2, улучшенный +3 (null — +2 по умолчанию).
    * @param {number} [config.modifier=0]          Ситуативный модификатор.
    * @param {number|null} [config.targetNumber=null]  Целевое число (TN), если задано.
    * @param {string} [config.targetName=""]       Имя цели (для атак).
    * @param {string} [config.flavor=""]           Заголовок карточки в чате.
    * @returns {AgeRoll}
    */
-  static fromTest({ abilityValue = 0, abilityLabel = "", focusName = "", modifier = 0,
+  static fromTest({ abilityValue = 0, abilityLabel = "", focusName = "", focusBonus = null, modifier = 0,
     targetNumber = null, targetName = "", flavor = "" } = {}) {
     // Числа подставляются со знаком, чтобы формула оставалась валидной и читаемой
     const signed = n => (n < 0 ? `- ${Math.abs(n)}` : `+ ${n}`);
+    const bonus = focusName ? (Number.isFinite(focusBonus) ? focusBonus : this.defaultFocusBonus) : 0;
     let formula = `3d6 ${signed(abilityValue)}`;
-    if ( focusName ) formula += ` ${signed(DARPG.focusBonus)}`;
+    if ( bonus ) formula += ` ${signed(bonus)}`;
     if ( modifier ) formula += ` ${signed(modifier)}`;
     return new this(formula, {}, {
-      abilityValue, abilityLabel, focusName, modifier, targetNumber, targetName, flavor
+      abilityValue, abilityLabel, focusName, focusBonus: bonus, modifier, targetNumber, targetName, flavor
     });
   }
 
@@ -70,6 +75,8 @@ export default class AgeRoll extends foundry.dice.Roll {
     const o = this.options;
     const results = this.d6Results;
     const success = this.isSuccess;
+    // Сообщения старых версий не хранят focusBonus — для них фокус давал +2.
+    const focusBonus = o.focusName ? (Number.isFinite(o.focusBonus) ? o.focusBonus : AgeRoll.defaultFocusBonus) : 0;
     return Object.assign(context, {
       isAge: true,
       dice: results.map((value, i) => ({ value, isDragon: i === 2 })),
@@ -77,7 +84,7 @@ export default class AgeRoll extends foundry.dice.Roll {
       abilityLabel: o.abilityLabel || null,
       abilityValue: o.abilityValue ?? 0,
       focusName: o.focusName || null,
-      focusBonus: o.focusName ? DARPG.focusBonus : 0,
+      focusBonus,
       modifier: o.modifier || 0,
       hasDoubles: this.hasDoubles,
       stuntPoints: this.stuntPoints,

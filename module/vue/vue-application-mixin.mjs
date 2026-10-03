@@ -1,5 +1,5 @@
 import * as Vue from "../../lib/vue.esm-browser.prod.js";
-import { registerCommon } from "./components/common.mjs";
+import { registerCommon, labelKey, signed } from "./components/common.mjs";
 
 /**
  * Мост Vue 3 <-> ApplicationV2 (Foundry VTT v14).
@@ -60,11 +60,27 @@ export default function VueApplicationMixin(Base) {
      * @override
      */
     _replaceHTML(context, content, options) {
+      context = VueApplication.#snapshotSource(context);
       // Если контейнер пересоздан ядром (перемонтирование окна) — размонтировать и заново.
       const stale = this.#mountPoint && !content.contains(this.#mountPoint);
       if ( stale ) this.#unmountVue();
       if ( !this.#vueApp ) this.#mount(context, content);
       else this.#sync(context);
+    }
+
+    /**
+     * Снимок system исходных данных документа на каждый рендер.
+     * Ядро обновляет document._source НА МЕСТЕ (DataModel#updateSource; ArrayField#_updateCommit
+     * переиспользует тот же массив), а Vue сравнивает пропсы дочерних компонентов по ссылке:
+     * без снимка списки и поля-массивы (StringList, ObjectList, ChoiceChips, ItemField) получали
+     * прежнюю ссылку и не перерисовывались после добавления/удаления элемента.
+     * @param {object} context
+     * @returns {object}
+     */
+    static #snapshotSource(context) {
+      const source = context?.source;
+      if ( !source?.system ) return context;
+      return { ...context, source: { ...source, system: foundry.utils.deepClone(source.system) } };
     }
 
     /** Создать реактивный стор, приложение Vue и смонтировать его в контейнер. */
@@ -83,9 +99,16 @@ export default function VueApplicationMixin(Base) {
       });
 
       // Глобальные помощники, доступные во всех компонентах как this.$x / инъекции.
-      this.#vueApp.config.globalProperties.$localize = (key, data) =>
-        data ? game.i18n.format(key, data) : game.i18n.localize(key);
-      this.#vueApp.config.globalProperties.$config = CONFIG.DARPG;
+      const globals = this.#vueApp.config.globalProperties;
+      globals.$localize = (key, data) => (data ? game.i18n.format(key, data) : game.i18n.localize(key));
+      // Подпись записи CONFIG-таблицы: строка-ключ (плоские таблицы) или {label} (weaponGroups, classes…).
+      globals.$label = entry => {
+        const key = labelKey(entry);
+        return key ? game.i18n.localize(key) : "";
+      };
+      // Число со знаком: +5 / −1 / 0.
+      globals.$signed = signed;
+      globals.$config = CONFIG.DARPG;
       this.#vueApp.provide("app", this);
 
       // Общие компоненты (сферы, списки предметов, характеристики и т.п.)

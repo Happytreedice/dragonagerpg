@@ -1,0 +1,19 @@
+# packs/spells/death-syphon.yaml
+_id: "ZUVAdCG1Wz1Mzlkl"
+name: "Death Syphon"
+type: "spell"
+img: "icons/magic/unholy/orb-contained-pink.webp"
+system:
+  description:
+    value: "<p>You draw in the energy released by death to refill your own mana. For a number of rounds equal to your Magic, every living creature that dies within 6 yards of you restores spent mana points to you equal to its Magic (minimum 1), up to your normal maximum.</p><p>Death Syphon and Death Magic cannot be active on you at the same time.</p>"
+  school: "spirit"
+  spellType: "utility"
+  manaCost: 7
+  manaCostNote: ""
+  castTime: "major"
+  tn: 15
+  requirement: "Walking Bomb"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

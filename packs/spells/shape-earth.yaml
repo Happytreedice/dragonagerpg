@@ -1,0 +1,19 @@
+# packs/spells/shape-earth.yaml
+_id: "NWhoRpprfKPVOGcX"
+name: "Shape Earth"
+type: "spell"
+img: "icons/magic/earth/strike-fist-stone-gray.webp"
+system:
+  description:
+    value: "<p>You shape and move sand, earth or even stone within 6 yards as if with a Strength equal to twice your Magic. The material does not fly; it is pushed or dragged along the ground, or molded like soft clay. Fine work may call for a [[/test mag focus=Creation]] test at the GM's discretion.</p><p>Maintaining the spell costs 1 MP at the start of each of your turns.</p>"
+  school: "creation"
+  spellType: "utility"
+  manaCost: 6
+  manaCostNote: ""
+  castTime: "major"
+  tn: 15
+  requirement: "Creation Magic (Journeyman)"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

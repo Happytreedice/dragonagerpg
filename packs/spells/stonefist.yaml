@@ -1,0 +1,19 @@
+# packs/spells/stonefist.yaml
+_id: "YRsHoH5vM7amxGOn"
+name: "Stonefist"
+type: "spell"
+img: "icons/magic/earth/projectile-stone-ball-brown.webp"
+system:
+  description:
+    value: "<p>You hurl a magical stone at one visible enemy up to 20 yards away. It deals [[/damage 1d6+@abilities.magic.value penetrating]]{1d6 + Magic} penetrating damage and knocks the target prone. If the target passes a [[/test con focus=Stamina]] test vs. your Spellpower, it takes only [[/damage 1d6 penetrating]]{1d6} penetrating damage and stays on its feet.</p>"
+  school: "primal"
+  spellType: "attack"
+  manaCost: 3
+  manaCostNote: ""
+  castTime: "major"
+  tn: 11
+  requirement: ""
+  test: "Constitution (Stamina) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

@@ -1,0 +1,13 @@
+# packs/focuses/faith.yaml
+_id: "CYGgRCvsYEVMWkru"
+name: "Faith"
+type: "focus"
+img: "icons/magic/holy/chalice-glowing-gold.webp"
+system:
+  description:
+    value: "<p>Firm religious faith that steadies your spirit in hard times. Grants +2 to Willpower tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "willpower"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

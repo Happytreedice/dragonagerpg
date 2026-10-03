@@ -1,0 +1,20 @@
+# packs/specializations/spirit-healer.yaml
+_id: "L2ST1fCWxZN9Fs3K"
+name: "Spirit Healer"
+type: "specialization"
+img: "icons/magic/life/cross-flared-green.webp"
+system:
+  description:
+    value: "<p>Spirit healers are rare mages who have learned to speak with the benevolent spirits of the Fade and call them forth. The path is perilous, because a demon may pose as a kindly spirit and exact a dreadful price, but a successful summoning lets the healer mend wounds beyond the reach of ordinary magic.</p>"
+  classes:
+    - "mage"
+  requirement: "Communication 3 or higher and Magic 3 or higher"
+  degree: "novice"
+  degrees:
+    novice: "<p>You learn the Spirit Healer spell Group Heal. You can cast Spirit Healer spells (Group Heal, Revival and Life Ward) only while in <strong>Summoning</strong> mode. To enter it, take an activate action and succeed at a [[/test mag focus=Spirit tn=14]] test; another activate action ends the mode.</p>"
+    journeyman: "<p>You learn the Spirit Healer spell Revival.</p>"
+    master: "<p>You learn the Spirit Healer spell Life Ward.</p>"
+  class: "mage"
+  source:
+    book: "Core Rulebook"
+    page: 68

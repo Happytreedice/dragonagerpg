@@ -1,0 +1,19 @@
+# packs/spells/dowse.yaml
+_id: "F3B26BqJNKOUytAW"
+name: "Dowse"
+type: "spell"
+img: "icons/magic/perception/orb-crystal-ball-scrying.webp"
+system:
+  description:
+    value: "<p>You cast your senses out over a 100-yard radius in search of something. You can seek either the nearest thing of a general kind, such as clean drinking water, or one particular object, such as your uncle's lost ring, which you must be able to picture clearly.</p><p>If the object is within range, the GM either reveals where it is or gives you 5 stunt points to spend at once on exploration stunts.</p>"
+  school: "spirit"
+  spellType: "utility"
+  manaCost: 10
+  manaCostNote: ""
+  castTime: "1 minute"
+  tn: 17
+  requirement: "Spirit Magic (Journeyman)"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

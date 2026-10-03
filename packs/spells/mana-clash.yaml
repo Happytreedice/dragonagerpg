@@ -1,0 +1,19 @@
+# packs/spells/mana-clash.yaml
+_id: "yomWex4TAAjPtxSh"
+name: "Mana Clash"
+type: "spell"
+img: "icons/magic/lightning/bolt-strike-explosion-purple.webp"
+system:
+  description:
+    value: "<p>You pour your own magical reserves into burning away a foe's mana. One target within 30 yards takes [[/damage 1d6+@abilities.magic.value penetrating]]{1d6 + Magic} penetrating damage, and for every 2 MP you spend beyond the base cost it loses 2 MP and takes +1 penetrating damage.</p><p>If the target passes a [[/test mag focus=Spirit]] test vs. your Spellpower, it avoids the extra damage but still takes the base damage and loses the mana you paid for. The spell has no effect on a target that has no mana.</p>"
+  school: "spirit"
+  spellType: "attack"
+  manaCost: 10
+  manaCostNote: "+"
+  castTime: "major"
+  tn: 19
+  requirement: "Spell Might"
+  test: "Magic (Spirit) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

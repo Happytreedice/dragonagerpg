@@ -1,0 +1,19 @@
+# packs/spells/wrath-of-the-elvhen.yaml
+_id: "p9sXiyVmTWkWLS3V"
+name: "Wrath of the Elvhen"
+type: "spell"
+img: "icons/magic/nature/leaf-elm-beam-green.webp"
+system:
+  description:
+    value: "<p>You surround yourself with a lashing storm of earth, wood, plants and stone. While the spell lasts, every enemy that starts its turn within 4 yards of you must pass a [[/test con focus=Stamina]] test vs. your Spellpower or take penetrating damage equal to half your Magic.</p><p>To maintain the spell, pay 2 MP as a free action at the start of each of your turns.</p>"
+  school: "primal"
+  spellType: "attack"
+  manaCost: 6
+  manaCostNote: ""
+  castTime: "major"
+  tn: 13
+  requirement: "Keeper Specialization"
+  test: "Constitution (Stamina) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

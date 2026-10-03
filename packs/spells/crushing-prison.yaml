@@ -1,0 +1,19 @@
+# packs/spells/crushing-prison.yaml
+_id: "jnYULwmhC2Aarr0E"
+name: "Crushing Prison"
+type: "spell"
+img: "icons/magic/control/encase-creature-humanoid-hold.webp"
+system:
+  description:
+    value: "<p>You trap one enemy within 20 yards in a shrinking cage of force. It immediately takes [[/damage 1d6+@abilities.magic.value]]{1d6 + Magic} damage and must pass a [[/test con focus=Stamina]] test vs. your Spellpower or be immobilized. An immobilized target cannot move but can still attack and cast spells through the cage.</p><p>At the start of its next turn an immobilized target takes [[/damage 2d6+@abilities.magic.value]]{2d6 + Magic} damage, and it stays trapped until it passes a [[/test con focus=Stamina]] or [[/test str focus=Might]] test vs. your Spellpower. If it fails the third test, it takes a final [[/damage 3d6+@abilities.magic.value]]{3d6 + Magic} damage; the prison deals no damage after that.</p>"
+  school: "spirit"
+  spellType: "attack"
+  manaCost: 15
+  manaCostNote: ""
+  castTime: "major"
+  tn: 17
+  requirement: "Telekinetic Weapons"
+  test: "Constitution (Stamina) or Strength (Might) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

@@ -1,0 +1,19 @@
+# packs/spells/entropic-cloud.yaml
+_id: "Ep4wX99vnMYmw4BR"
+name: "Entropic Cloud"
+type: "spell"
+img: "icons/magic/air/fog-gas-smoke-swirling-green.webp"
+system:
+  description:
+    value: "<p>You bend the chaos of battle to your will, spreading a cloud of entropic energy in a 20-yard radius around yourself until the end of the encounter. Allies in the cloud gain +2 to attack rolls and +1 SP on every roll that generates stunt points.</p><p>Enemies in the cloud suffer -2 to attack rolls and -1 SP on such rolls unless they pass a [[/test mag focus=Entropy]] test vs. your Spellpower.</p>"
+  school: "entropy"
+  spellType: "enhancement"
+  manaCost: 20
+  manaCostNote: ""
+  castTime: "major"
+  tn: 19
+  requirement: "Entropy Magic (Master)"
+  test: "Magic (Entropy) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

@@ -1,0 +1,19 @@
+# packs/spells/spirit-mark.yaml
+_id: "cjtFkJeKiPJVnfok"
+name: "Spirit Mark"
+type: "spell"
+img: "icons/magic/death/undead-ghost-scream-teal.webp"
+system:
+  description:
+    value: "<p>You mark one enemy within 30 yards for the spirits to torment. For a number of rounds equal to your Magic, the target takes [[/damage 1d6+@abilities.willpower.value penetrating]]{1d6 + Willpower} penetrating damage each turn, using your Willpower. On its turn it can end the mark with a successful [[/test mag focus=Entropy]] or [[/test wil focus=Morale]] test vs. your Spellpower.</p><p>If the target dies while marked, its spirit rises and fights for you for a number of turns equal to your Willpower. The spirit has the statistics it had in life, ignores terrain and can be harmed only by magical attacks.</p>"
+  school: "entropy"
+  spellType: "attack"
+  manaCost: 18
+  manaCostNote: ""
+  castTime: "major"
+  tn: 17
+  requirement: "Necromancer Specialization"
+  test: "Magic (Entropy) or Willpower (Morale) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

@@ -1,0 +1,20 @@
+# packs/talents/single-weapon-style.yaml
+_id: "3XBGr2VT2wzd7sdA"
+name: "Single Weapon Style"
+type: "talent"
+img: "icons/skills/melee/sword-twirl-orange.webp"
+system:
+  description:
+    value: "<p>You fight with a single one-handed melee weapon and nothing in your other hand, not even a shield.</p>"
+  classes:
+    - "rogue"
+    - "warrior"
+  requirement: "Perception 2 or higher"
+  degree: "novice"
+  degrees:
+    novice: "<p>Fighting with a lone weapon demands extra vigilance. With an activate action you gain +1 to Defense until the end of the encounter, as long as you keep fighting in this style.</p>"
+    journeyman: "<p>You weave a web of steel with a single blade: your Defense bonus from this style rises to +2.</p>"
+    master: "<p>You know how to face many foes at once: enemies attacking you in melee never gain the attack bonus for outnumbering you.</p>"
+  source:
+    book: "Core Rulebook"
+    page: 64

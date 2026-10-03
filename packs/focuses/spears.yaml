@@ -1,0 +1,13 @@
+# packs/focuses/spears.yaml
+_id: "vI0pgny3bHDT3jKA"
+name: "Spears"
+type: "focus"
+img: "icons/skills/melee/strike-spear-red.webp"
+system:
+  description:
+    value: "<p>Fighting on foot with spears such as the spear, throwing spear and two-handed spear. Grants +2 to attack rolls with weapons of the Spears group and to other Strength tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "strength"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

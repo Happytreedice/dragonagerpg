@@ -1,0 +1,19 @@
+# packs/spells/virulent-walking-bomb.yaml
+_id: "F2E6GsK099l0Bbqf"
+name: "Virulent Walking Bomb"
+type: "spell"
+img: "icons/magic/unholy/projectiles-blood-salvo-red.webp"
+system:
+  description:
+    value: "<p>You fill the blood of one target within 10 yards with a deadly magical poison that immediately deals [[/damage 2d6+@abilities.magic.value penetrating]]{2d6 + Magic} penetrating damage. At the start of each of its turns the target tests [[/test con focus=Stamina]] vs. your Spellpower: a success ends the spell, a failure deals another [[/damage 1d6+@abilities.magic.value penetrating]]{1d6 + Magic} penetrating damage.</p><p>If the target dies while the spell lasts, it bursts in a spray of blood that deals [[/damage 2d6]] damage to everyone within 4 yards. Each of them must pass a [[/test con focus=Stamina]] test vs. your Spellpower at -2 or become a secondary target of the spell; secondary targets cannot spread it further.</p>"
+  school: "spirit"
+  spellType: "attack"
+  manaCost: 13
+  manaCostNote: ""
+  castTime: "major"
+  tn: 17
+  requirement: "Death Syphon"
+  test: "Constitution (Stamina) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

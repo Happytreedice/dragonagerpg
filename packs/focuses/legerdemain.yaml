@@ -1,0 +1,13 @@
+# packs/focuses/legerdemain.yaml
+_id: "0z614lO1jINGDjon"
+name: "Legerdemain"
+type: "focus"
+img: "icons/skills/social/theft-pickpocket-bribery-brown.webp"
+system:
+  description:
+    value: "<p>Nimble fingers: picking pockets, sleight-of-hand tricks and other covert handling of objects. Grants +2 to Dexterity tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "dexterity"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

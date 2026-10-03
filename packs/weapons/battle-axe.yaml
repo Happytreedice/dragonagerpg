@@ -1,0 +1,25 @@
+# packs/weapons/battle-axe.yaml
+_id: "l5gjsB42cieT642S"
+name: "Battle Axe"
+type: "weapon"
+img: "icons/weapons/axes/axe-battle-black.webp"
+system:
+  description:
+    value: "<p>A one-handed war axe, a trusted weapon of Thedosian infantry.</p><p><strong>Attack:</strong> Strength (Axes). <strong>Damage:</strong> [[/damage 2d6]] + Strength.</p><p><strong>Minimum Strength:</strong> 1. With lower Strength the weapon deals only [[/damage 1d6-1]] + Strength.</p>"
+  weaponGroup: "axes"
+  type: "melee"
+  damage:
+    dice: "2d6"
+    ability: "strength"
+  minStrength: 1
+  range:
+    short: null
+    long: null
+  reload: ""
+  twoHanded: false
+  cost: "14 sp"
+  penetrating: false
+  quantity: 1
+  source:
+    book: "Core Rulebook"
+    page: 74

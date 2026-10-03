@@ -1,0 +1,19 @@
+# packs/spells/lightning.yaml
+_id: "mAJOZoYo2xke8imY"
+name: "Lightning"
+type: "spell"
+img: "icons/magic/lightning/bolt-forked-large-blue.webp"
+system:
+  description:
+    value: "<p>A bolt of lightning leaps from your outstretched hand or staff and strikes one target within 30 yards for [[/damage 2d6+@abilities.magic.value penetrating]]{2d6 + Magic} penetrating damage. A target that passes a [[/test con focus=Stamina]] test vs. your Spellpower takes [[/damage 1d6+@abilities.magic.value penetrating]]{1d6 + Magic} penetrating damage instead.</p>"
+  school: "primal"
+  spellType: "attack"
+  manaCost: 6
+  manaCostNote: ""
+  castTime: "major"
+  tn: 16
+  requirement: "Shock"
+  test: "Constitution (Stamina) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

@@ -1,0 +1,20 @@
+# packs/specializations/necromancer.yaml
+_id: "OiYk8Toke0svd6xH"
+name: "Necromancer"
+type: "specialization"
+img: "icons/magic/death/hand-undead-skeleton-fire-green.webp"
+system:
+  description:
+    value: "<p>Necromancers master the spirits drawn to the dead and dying and turn them into a source of magical power. They can spread paralyzing terror, call spirits to fight for them and even turn a foe's soul against it. A necromancer need not be evil, but many people fear and despise them for their ties to death and spirits.</p>"
+  classes:
+    - "mage"
+  requirement: "Willpower 3 or higher; Entropy Magic talent (Novice)"
+  degree: "novice"
+  degrees:
+    novice: "<p>Whenever you kill an enemy, your Spellpower increases by 2 for a number of turns equal to your Willpower. Killing another enemy during that time resets the duration but does not increase the bonus.</p>"
+    journeyman: "<p>You learn the spell Death Syphon, whether or not you meet its requirements, and you can cast it for 4 MP instead of 7.</p>"
+    master: "<p>When you drop to 0 Health, a spirit takes your shape as a simulacrum that cannot be harmed. It lasts for a number of turns equal to your Magic or until the combat ends, and it can cast any spell you know at no mana cost. While the simulacrum protects you, you do not die, but you cannot be healed until the spirit returns to the Fade.</p>"
+  class: "mage"
+  source:
+    book: "Core Rulebook"
+    page: 67

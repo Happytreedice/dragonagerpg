@@ -1,0 +1,19 @@
+# packs/spells/winter-s-grasp.yaml
+_id: "NMDcRXvKoB4wvdW8"
+name: "Winter's Grasp"
+type: "spell"
+img: "icons/magic/water/heart-ice-freeze.webp"
+system:
+  description:
+    value: "<p>You wrap one visible target within 20 yards in a cloud of frost and ice that lasts for a number of rounds equal to your Magic. It deals [[/damage 1d6 penetrating]]{1d6} penetrating damage in the round you cast it.</p><p>At the start of each of the target's turns while the spell lasts, it tests [[/test con focus=Stamina]] vs. your Spellpower: on a success the spell ends; on a failure it takes another [[/damage 1d6 penetrating]]{1d6} penetrating damage and a cumulative -2 to Speed. A creature slain by Winter's Grasp freezes to death.</p>"
+  school: "primal"
+  spellType: "attack"
+  manaCost: 3
+  manaCostNote: ""
+  castTime: "major"
+  tn: 12
+  requirement: ""
+  test: "Constitution (Stamina) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

@@ -1,0 +1,13 @@
+# packs/focuses/stealth.yaml
+_id: "WavYnej5XxoxirBE"
+name: "Stealth"
+type: "focus"
+img: "icons/skills/melee/strike-dagger-skull-white.webp"
+system:
+  description:
+    value: "<p>Moving silently and staying unseen in the shadows. Grants +2 to Dexterity tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "dexterity"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

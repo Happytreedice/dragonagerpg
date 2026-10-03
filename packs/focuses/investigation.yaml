@@ -1,0 +1,13 @@
+# packs/focuses/investigation.yaml
+_id: "wkK4stAkB9nY01o8"
+name: "Investigation"
+type: "focus"
+img: "icons/skills/social/symbol-pyramid-eye.webp"
+system:
+  description:
+    value: "<p>Asking questions, gathering rumors and unraveling mysteries by talking to people. Grants +2 to Communication tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "communication"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

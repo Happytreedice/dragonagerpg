@@ -1,0 +1,13 @@
+# packs/focuses/bludgeons.yaml
+_id: "xyp8fENvq9x0DKha"
+name: "Bludgeons"
+type: "focus"
+img: "icons/skills/melee/strike-hammer-destructive-orange.webp"
+system:
+  description:
+    value: "<p>Fighting with bludgeons such as the mace, maul and two-handed maul. Grants +2 to attack rolls with weapons of the Bludgeons group and to other Strength tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "strength"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

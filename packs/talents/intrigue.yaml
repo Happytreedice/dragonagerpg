@@ -1,0 +1,21 @@
+# packs/talents/intrigue.yaml
+_id: "F6if9m64YgFfriwT"
+name: "Intrigue"
+type: "talent"
+img: "icons/skills/social/symbol-pyramid-eye.webp"
+system:
+  description:
+    value: "<p>You are a master of secrets and courtly scheming.</p>"
+  classes:
+    - "mage"
+    - "rogue"
+    - "warrior"
+  requirement: "Communication 2 or higher"
+  degree: "novice"
+  degrees:
+    novice: "<p>You know how to play the Game. Choose the Etiquette, Deception or Seduction focus: when you fail a Communication test with that focus, you may re-roll it, but you must keep the second result.</p>"
+    journeyman: "<p>You always learn more than you reveal. You can perform the And Another Thing roleplaying stunt for 1 SP instead of 2, and you gain +1 on every further test the stunt allows.</p>"
+    master: "<p>You know how to end a conversation. You can perform the Stunned Silence roleplaying stunt for 2 SP instead of 3, and you can turn the scene into a fight on the spot: you and one ally for each extra stunt point you spend act in the first round, while everyone else is surprised.</p>"
+  source:
+    book: "Core Rulebook"
+    page: 61

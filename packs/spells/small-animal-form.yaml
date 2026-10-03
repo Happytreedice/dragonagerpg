@@ -1,0 +1,19 @@
+# packs/spells/small-animal-form.yaml
+_id: "49pqOi87ylX8Le8W"
+name: "Small Animal Form"
+type: "spell"
+img: "icons/magic/nature/plant-sprout-hand-blue.webp"
+system:
+  description:
+    value: "<p>You transform into a small animal, such as a dog or a falcon, for a number of rounds equal to your Magic, and you can extend the form by paying 1 MP per additional round. You keep your own Cunning, Magic and Willpower, but otherwise use the animal's game statistics.</p>"
+  school: "creation"
+  spellType: "utility"
+  manaCost: 5
+  manaCostNote: "+"
+  castTime: "major"
+  tn: 12
+  requirement: "Shapeshifter Specialization"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

@@ -28,6 +28,7 @@ import DarpgItem from "./documents/item.mjs";
 import AgeRoll from "./dice/age-roll.mjs";
 import { registerEnrichers } from "./enrichers.mjs";
 import { registerDamageApplication } from "./dice/damage.mjs";
+import { migrateWorld, registerMigrationSetting } from "./world-migration.mjs";
 
 import CharacterSheet from "./sheets/character-sheet.mjs";
 import NpcSheet from "./sheets/npc-sheet.mjs";
@@ -100,4 +101,11 @@ Hooks.once("init", () => {
   registerEnrichers();
   // Кнопки «Нанести урон»/«Исцелить» в карточках чата
   registerDamageApplication();
+});
+
+// Однократная запись мигрированных данных в базу мира (активный ГМ, см. module/world-migration.mjs).
+// Служебная настройка версии данных нужна только этой миграции, поэтому регистрируется здесь же.
+Hooks.once("ready", () => {
+  registerMigrationSetting();
+  migrateWorld();
 });

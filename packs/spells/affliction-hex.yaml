@@ -1,0 +1,19 @@
+# packs/spells/affliction-hex.yaml
+_id: "hFWT4jVqZuDcAr8G"
+name: "Affliction Hex"
+type: "spell"
+img: "icons/magic/unholy/beam-impact-green.webp"
+system:
+  description:
+    value: "<p>You curse one visible target within 30 yards and every other enemy within 10 yards of it. Until the end of the encounter, all of them suffer -2 on tests to resist Spellpower.</p><p>If the primary target passes a [[/test mag focus=Entropy]] test vs. your Spellpower, its own penalty drops to -1 and the hex is lifted from all secondary targets. Secondary targets may test for themselves, but a success helps only the character who rolled it.</p>"
+  school: "entropy"
+  spellType: "attack"
+  manaCost: 7
+  manaCostNote: ""
+  castTime: "major"
+  tn: 14
+  requirement: "Vulnerability Hex"
+  test: "Magic (Entropy) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

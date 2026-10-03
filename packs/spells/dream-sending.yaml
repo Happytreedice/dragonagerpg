@@ -1,0 +1,19 @@
+# packs/spells/dream-sending.yaml
+_id: "KjOOPP2PFg2MxL5N"
+name: "Dream Sending"
+type: "spell"
+img: "icons/magic/perception/orb-eye-scrying.webp"
+system:
+  description:
+    value: "<p>You send a dream through the Fade to someone you know. The next time the recipient sleeps, they dream what you sent. You can script the general course of the dream, conversations included, but you do not see their reactions or truly interact with them.</p><p>Use it to deliver a message or to stir emotions; the dream lasts no more than about an hour. It has no effect on those who do not dream, such as dwarves and the Tranquil.</p>"
+  school: "spirit"
+  spellType: "utility"
+  manaCost: 7
+  manaCostNote: ""
+  castTime: "5 minutes"
+  tn: 15
+  requirement: "Spirit Magic (Journeyman)"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

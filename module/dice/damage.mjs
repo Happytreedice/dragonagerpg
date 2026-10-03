@@ -1,5 +1,3 @@
-import { DARPG } from "../config.mjs";
-
 /**
  * Броски урона/лечения и их применение к актёрам.
  *
@@ -75,22 +73,18 @@ async function rollAndPost({ kind, formula, actor = null, penetrating = false, f
     icon: isHeal ? "fa-heart" : "fa-heart-crack"
   });
 
+  // Содержимое карточки — штатная разметка броска (кубы, подсказка, итог) и кнопка применения.
+  // Ядро (ChatMessage##renderRollContent) показывает content как есть, если в нём уже есть
+  // элементы, — поэтому разметку броска кладём в content сами, иначе от броска остался бы
+  // голый итог. Скрытые броски ядро само заменяет приватной разметкой (кнопка не видна).
+  // Режим видимости — штатный core.messageMode (Roll#toMessage берёт его по умолчанию;
+  // опция rollMode и настройка core.rollMode устарели в v14).
+  const rollHTML = await roll.render();
   return roll.toMessage({
     speaker: chatMessageCls().getSpeaker(actor ? { actor } : {}),
-    flavor: cardFlavor
-  }, { rollMode: game.settings.get("core", "rollMode") }).then(msg => appendButton(msg, button));
-}
-
-/**
- * Дописать HTML кнопки к готовому сообщению броска (rollMode учитывается ядром).
- * @param {ChatMessage} message
- * @param {string} buttonHtml
- * @returns {Promise<ChatMessage>}
- */
-async function appendButton(message, buttonHtml) {
-  if ( !message ) return message;
-  await message.update({ content: `${message.content}${buttonHtml}` });
-  return message;
+    flavor: cardFlavor,
+    content: `${rollHTML}${button}`
+  });
 }
 
 /**

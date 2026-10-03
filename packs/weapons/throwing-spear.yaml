@@ -1,0 +1,25 @@
+# packs/weapons/throwing-spear.yaml
+_id: "XEmSo6JCui5nkkqK"
+name: "Throwing Spear"
+type: "weapon"
+img: "icons/weapons/polearms/spear-barbed-silver.webp"
+system:
+  description:
+    value: "<p>A light javelin balanced for throwing.</p><p><strong>Attack:</strong> Strength (Spears). <strong>Damage:</strong> [[/damage 1d6+3]] + Strength.</p><p><strong>Range:</strong> 8 yards, or up to 16 yards at -2 to the attack roll; no attack beyond 16 yards. <strong>Reload:</strong> minor action to ready another.</p><p><strong>Minimum Strength:</strong> 0. With lower Strength the weapon deals only [[/damage 1d6-1]] + Strength.</p>"
+  weaponGroup: "spears"
+  type: "ranged"
+  damage:
+    dice: "1d6+3"
+    ability: "strength"
+  minStrength: 0
+  range:
+    short: 8
+    long: 16
+  reload: "minor"
+  twoHanded: false
+  cost: "12 sp"
+  penetrating: false
+  quantity: 1
+  source:
+    book: "Core Rulebook"
+    page: 74

@@ -1,0 +1,19 @@
+# packs/spells/blizzard.yaml
+_id: "b7FQzyghPmIE6NXX"
+name: "Blizzard"
+type: "spell"
+img: "icons/magic/water/barrier-ice-wall-snow.webp"
+system:
+  description:
+    value: "<p>A howling blizzard with a 5-yard radius rages around any point within 50 yards. Everyone caught in it takes [[/damage 2d6+@abilities.magic.value penetrating]]{2d6 + Magic} penetrating damage and must pass a [[/test dex focus=Acrobatics]] test vs. your Spellpower or slip and fall prone on the ice. A character who starts their turn in the blizzard takes another [[/damage 1d6 penetrating]]{1d6} penetrating damage and must test again at once to stay standing.</p><p>Melee attacks into or out of the storm suffer -2, ranged attacks -4. The blizzard lasts one round. You can extend it by one round at a time by paying 10 MP as a free action at the start of each of your following turns.</p>"
+  school: "primal"
+  spellType: "attack"
+  manaCost: 20
+  manaCostNote: "+"
+  castTime: "major"
+  tn: 17
+  requirement: "Cone of Cold"
+  test: "Dexterity (Acrobatics) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

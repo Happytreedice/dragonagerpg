@@ -1,0 +1,19 @@
+# packs/talents/armor-training.yaml
+_id: "T8pxMR7xiDC9X4gO"
+name: "Armor Training"
+type: "talent"
+img: "icons/skills/melee/shield-block-gray-yellow.webp"
+system:
+  description:
+    value: "<p>You are trained to fight in armor. When your training covers the armor you wear, its armor penalty applies only to your Speed; otherwise the penalty applies to your Dexterity, and so to every test and value based on it, Speed included.</p>"
+  classes:
+    - "warrior"
+  requirement: ""
+  degree: "novice"
+  degrees:
+    novice: "<p>You can wear leather and mail armor without suffering its armor penalty to Dexterity; the penalty reduces only your Speed.</p>"
+    journeyman: "<p>You can also wear plate armor without suffering its armor penalty to Dexterity; again, only your Speed is reduced.</p>"
+    master: "<p>You get the most out of your armor: half its armor rating (rounded down) protects you against penetrating damage, which normally ignores armor entirely.</p>"
+  source:
+    book: "Core Rulebook"
+    page: 59

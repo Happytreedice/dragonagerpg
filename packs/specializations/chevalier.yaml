@@ -1,0 +1,20 @@
+# packs/specializations/chevalier.yaml
+_id: "kSpxSIJI4DMfytge"
+name: "Chevalier"
+type: "specialization"
+img: "icons/skills/melee/hand-grip-sword-white-brown.webp"
+system:
+  description:
+    value: "<p>Chevaliers are the elite knights of the Orlesian Empire, a formidable force on the battlefield and in society alike. Noble families dominate their ranks, and the order's prestige draws many landless nobles. In Orlais chevaliers are used to getting their way; other lands welcome them far less warmly, yet no one denies that they are unequaled on horseback.</p>"
+  classes:
+    - "warrior"
+  requirement: "Strength 3 or higher and Dexterity 3 or higher; Mounted Combat Style (Journeyman)"
+  degree: "novice"
+  degrees:
+    novice: "<p>You learn the <strong>Lances</strong> weapon group. You also know how to provoke enemies with well-aimed insults: you can perform the Taunt stunt for 1 SP, and in the stunt's opposed test you can use Communication (Etiquette) instead of Communication (Deception).</p>"
+    journeyman: "<p>Your lance strikes with tremendous force. When you make a mounted charge, you add [[/damage 1d6]] to the damage if you wield a Lances weapon, or +1 damage with any other melee weapon.</p>"
+    master: "<p>You and your mount move as one. While mounted, you can take the Run action as a minor action, and you gain +1 to Defense when you do so.</p>"
+  class: "warrior"
+  source:
+    book: "Core Rulebook"
+    page: 72

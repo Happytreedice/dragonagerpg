@@ -1,0 +1,13 @@
+# packs/focuses/courage.yaml
+_id: "WDAx4E9RUwWTIbDf"
+name: "Courage"
+type: "focus"
+img: "icons/magic/holy/prayer-hands-glowing-yellow.webp"
+system:
+  description:
+    value: "<p>Bravery in the face of danger and the strength to resist fear. Grants +2 to Willpower tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "willpower"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

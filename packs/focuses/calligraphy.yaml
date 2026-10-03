@@ -1,0 +1,13 @@
+# packs/focuses/calligraphy.yaml
+_id: "Zre1cxZGfdjJmfFD"
+name: "Calligraphy"
+type: "focus"
+img: "icons/skills/trades/academics-scribe-quill-gray.webp"
+system:
+  description:
+    value: "<p>Fine, precise handwriting and the decoration of manuscripts and documents. Grants +2 to Dexterity tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "dexterity"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

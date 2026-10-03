@@ -1,0 +1,16 @@
+{
+  "name": "darpg",
+  "private": true,
+  "type": "module",
+  "description": "Dragon Age RPG (AGE System) for Foundry VTT: compendium build tooling (YAML <-> LevelDB, validation).",
+  "scripts": {
+    "build:packs": "node tools/packs.mjs build all",
+    "format:packs": "node tools/packs.mjs format all",
+    "validate": "node tools/validate.mjs all",
+    "extract:packs": "node tools/packs.mjs extract all --out"
+  },
+  "devDependencies": {
+    "classic-level": "^3.0.0",
+    "js-yaml": "^5.4.2"
+  }
+}

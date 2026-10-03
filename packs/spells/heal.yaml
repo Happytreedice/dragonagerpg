@@ -1,0 +1,19 @@
+# packs/spells/heal.yaml
+_id: "Dfm89FAUhqB525FS"
+name: "Heal"
+type: "spell"
+img: "icons/magic/life/heart-cross-green.webp"
+system:
+  description:
+    value: "<p>Your touch closes wounds and restores vigor to one injured target, which may be you. Spend 1 to 3 MP as you cast it: the target regains [[/heal 1d6]] Health per mana point spent, up to [[/heal 3d6]] for 3 MP.</p>"
+  school: "creation"
+  spellType: "utility"
+  manaCost: 1
+  manaCostNote: "-3"
+  castTime: "major"
+  tn: 10
+  requirement: ""
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

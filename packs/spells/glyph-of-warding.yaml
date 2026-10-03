@@ -1,0 +1,19 @@
+# packs/spells/glyph-of-warding.yaml
+_id: "u9LyDtBgW2WZALsr"
+name: "Glyph of Warding"
+type: "spell"
+img: "icons/magic/defensive/shield-hex-gold.webp"
+system:
+  description:
+    value: "<p>You trace a glyph on the ground beneath you. While they stay within 3 yards of it, allies gain +2 to Willpower tests and +2 to Defense against ranged attacks. The glyph lasts until the end of the current encounter.</p><p>You can maintain a number of Glyphs of Warding equal to your Magic, but a character covered by more than one gains the bonuses only once.</p>"
+  school: "creation"
+  spellType: "defense"
+  manaCost: 5
+  manaCostNote: ""
+  castTime: "major"
+  tn: 15
+  requirement: "Glyph of Paralysis"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

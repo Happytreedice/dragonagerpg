@@ -1,0 +1,19 @@
+# packs/spells/revival.yaml
+_id: "4Tx6BTtL4q0VtmR7"
+name: "Revival"
+type: "spell"
+img: "icons/magic/holy/angel-wings-gray.webp"
+system:
+  description:
+    value: "<p>You touch a dying character next to you and pour spirit energy into them. The subject immediately regains Health equal to 10 + their Constitution + your Magic.</p><p>You cannot cast this spell on yourself, since a dying character cannot act.</p>"
+  school: "creation"
+  spellType: "utility"
+  manaCost: 5
+  manaCostNote: ""
+  castTime: "major"
+  tn: 14
+  requirement: "Spirit Healer Specialization (Journeyman)"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

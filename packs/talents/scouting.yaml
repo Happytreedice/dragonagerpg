@@ -1,0 +1,19 @@
+# packs/talents/scouting.yaml
+_id: "C2SzJfEgxuHFbiZB"
+name: "Scouting"
+type: "talent"
+img: "icons/skills/movement/figure-running-gray.webp"
+system:
+  description:
+    value: "<p>You are skilled at scouting and reconnaissance.</p>"
+  classes:
+    - "rogue"
+  requirement: "Dexterity 2 or higher"
+  degree: "novice"
+  degrees:
+    novice: "<p>You move unseen: when you fail a [[/test dex focus=Stealth]] test, you may re-roll it, but you must keep the second result.</p>"
+    journeyman: "<p>You know how to catch the enemy unprepared: you can perform the Seize the Initiative stunt for 2 SP instead of the usual 4.</p>"
+    master: "<p>You are a keen observer: when you fail a [[/test per focus=Seeing]] test, you may re-roll it, but you must keep the second result.</p>"
+  source:
+    book: "Core Rulebook"
+    page: 64

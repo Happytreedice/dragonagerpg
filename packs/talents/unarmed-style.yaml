@@ -1,0 +1,21 @@
+# packs/talents/unarmed-style.yaml
+_id: "bhYr03cHwORQlymJ"
+name: "Unarmed Style"
+type: "talent"
+img: "icons/skills/melee/unarmed-punch-fist.webp"
+system:
+  description:
+    value: "<p>You know a thing or two about fighting with your fists.</p>"
+  classes:
+    - "mage"
+    - "rogue"
+    - "warrior"
+  requirement: "Brawling weapon group"
+  degree: "novice"
+  degrees:
+    novice: "<p>Your fists are as hard as iron: a punch deals [[/damage 1d6]] damage instead of 1d3.</p>"
+    journeyman: "<p>Your punches can floor the toughest foes: when you attack with a fist or gauntlet, you can perform the Knock Prone stunt for 1 SP instead of 2.</p>"
+    master: "<p>Taking weapons away from your foes is your specialty: when you perform the Disarm stunt, you gain +2 on your attack roll in its opposed test.</p>"
+  source:
+    book: "Core Rulebook"
+    page: 65

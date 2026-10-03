@@ -1,0 +1,19 @@
+# packs/spells/hallucination.yaml
+_id: "eaa1bbcPcn7BuqPR"
+name: "Hallucination"
+type: "spell"
+img: "icons/magic/perception/orb-crystal-ball-scrying-blue.webp"
+system:
+  description:
+    value: "<p>You plant a hallucination of sight, sound and smell, no larger than your Magic in yards, in the mind of one target within 30 yards; each additional target costs 5 MP. A target sees through the illusion with a [[/test per focus=Hearing]], [[/test per focus=Seeing]] or [[/test per focus=Smelling]] test vs. your Spellpower.</p><p>Touching the hallucination automatically reveals it as false, but the spell continues unless you choose to end it. It lasts as long as you spend free actions to concentrate on it.</p>"
+  school: "entropy"
+  spellType: "attack"
+  manaCost: 15
+  manaCostNote: ""
+  castTime: "1 minute"
+  tn: 15
+  requirement: "Entropy Magic (Journeyman)"
+  test: "Perception (Hearing, Seeing, or Smelling) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

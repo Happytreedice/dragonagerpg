@@ -1,0 +1,19 @@
+# packs/spells/ensnare.yaml
+_id: "EnWGpnDn4rBgmnXr"
+name: "Ensnare"
+type: "spell"
+img: "icons/magic/control/debuff-energy-snare-green.webp"
+system:
+  description:
+    value: "<p>Tendrils of primal nature magic lash out and drag your foes toward you. Choose a number of enemies equal to your Magic, each within 8 yards. Each must pass a [[/test str focus=Might]] test vs. your Spellpower or be pulled adjacent to you.</p><p>A target that fails with a 1, 2 or 3 on its Dragon Die also takes penetrating damage equal to half your Magic as the tendrils whip and crush it.</p>"
+  school: "primal"
+  spellType: "attack"
+  manaCost: 8
+  manaCostNote: ""
+  castTime: "major"
+  tn: 17
+  requirement: "Keeper Specialization (Journeyman)"
+  test: "Strength (Might) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

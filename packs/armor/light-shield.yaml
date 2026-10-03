@@ -1,0 +1,14 @@
+# packs/armor/light-shield.yaml
+_id: "MW6KEkaiqPHbdThv"
+name: "Light Shield"
+type: "shield"
+img: "icons/equipment/shield/buckler-wooden-boss.webp"
+system:
+  description:
+    value: "<p>A small round shield, light enough to carry all day and quick to raise.</p><ul><li><strong>Shield Bonus +1:</strong> added to your Defense (10 + Dexterity + shield bonus).</li></ul><p>Without the Weapon and Shield Style talent no shield grants more than +1, so this shield's bonus does not depend on that talent.</p>"
+  shieldType: "light"
+  shieldBonus: 1
+  cost: "15 sp"
+  source:
+    book: "Core Rulebook"
+    page: 76

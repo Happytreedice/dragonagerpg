@@ -1,0 +1,19 @@
+# packs/spells/mana-drain.yaml
+_id: "ShXUd0RuQeaoUYRc"
+name: "Mana Drain"
+type: "spell"
+img: "icons/magic/unholy/orb-colllecting-energy-green.webp"
+system:
+  description:
+    value: "<p>You forge a parasitic link with one visible spellcaster within 30 yards unless it passes a [[/test mag focus=Spirit]] test vs. your Spellpower. Until the end of the encounter, the target pays 1 extra MP for every spell it casts, and you gain that mana point each time.</p>"
+  school: "spirit"
+  spellType: "utility"
+  manaCost: 3
+  manaCostNote: ""
+  castTime: "major"
+  tn: 12
+  requirement: ""
+  test: "Magic (Spirit) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

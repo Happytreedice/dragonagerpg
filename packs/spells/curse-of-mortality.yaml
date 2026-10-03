@@ -1,0 +1,19 @@
+# packs/spells/curse-of-mortality.yaml
+_id: "CF7GxL9Asbw3RVS8"
+name: "Curse of Mortality"
+type: "spell"
+img: "icons/magic/death/skull-humanoid-white-blue.webp"
+system:
+  description:
+    value: "<p>You drive one enemy closer to its inevitable end. The target immediately takes [[/damage 2d6+@abilities.magic.value penetrating]]{2d6 + Magic} penetrating damage, then [[/damage 1d6+@abilities.magic.value]]{1d6 + Magic} damage at the start of each of its turns, and it cannot regain Health by any means. The curse lasts for a number of rounds equal to your Magic.</p><p>If the target passes a [[/test con focus=Stamina]] test vs. your Spellpower when the spell is cast, it instead takes only [[/damage 1d6 penetrating]]{1d6} penetrating damage per turn and can regain Health normally.</p>"
+  school: "entropy"
+  spellType: "attack"
+  manaCost: 15
+  manaCostNote: ""
+  castTime: "major"
+  tn: 19
+  requirement: "Death Magic"
+  test: "Constitution (Stamina) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

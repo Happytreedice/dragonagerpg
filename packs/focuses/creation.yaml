@@ -1,0 +1,13 @@
+# packs/focuses/creation.yaml
+_id: "flS7qIAR2UUk86uH"
+name: "Creation"
+type: "focus"
+img: "icons/magic/life/heart-cross-strong-green.webp"
+system:
+  description:
+    value: "<p>Mastery of the Creation school of magic: healing, strengthening and making. Grants +2 to casting rolls and Spellpower for Creation spells; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "magic"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

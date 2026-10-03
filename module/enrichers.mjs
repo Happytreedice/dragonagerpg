@@ -1,14 +1,15 @@
-import { DARPG } from "./config.mjs";
+import DarpgActor from "./documents/actor.mjs";
 import { rollDamageFormula, rollHealFormula } from "./dice/damage.mjs";
 
 /**
  * Энричеры описаний darpg (принципы п.6, п.7, п.12): кликабельные тесты AGE,
  * броски урона и лечения прямо в тексте предметов/заклинаний.
  *
- * Синтаксис (кириллица «к» в костях → латинская «d»):
+ * Синтаксис (кириллица «к» в костях → латинская «d»; характеристика — ключ или
+ * сокращение из CONFIG.DARPG.abilityAbbreviations: com con cun dex mag per str wil, wp = wil):
  *   [[/test str]]                 — тест Силы (диалог параметров)
  *   [[/test con tn=15]]           — тест Телосложения против TN 15
- *   [[/test con focus=Выносливость tn=15]] — с предвыбранным фокусом
+ *   [[/test con focus=Stamina tn=13]] / [[/test dex focus="Animal Handling"]] — с предвыбранным фокусом
  *   [[/damage 2d6]] / [[/damage 2d6 penetrating]] — бросок урона (с кнопкой «Нанести урон»)
  *   [[/heal 1d6]]                 — бросок лечения (с кнопкой «Исцелить»)
  * В формулах урона/лечения `@dragonDie` заменяется реальным броском 1d6 (Драконий куб).
@@ -19,11 +20,6 @@ import { rollDamageFormula, rollHealFormula } from "./dice/damage.mjs";
  * onRender при появлении в DOM — навешиваем клик прямо на элемент, не полагаясь только
  * на делегирование от document.body.
  */
-
-const ABIL_ALIASES = {
-  com: "communication", con: "constitution", cun: "cunning", dex: "dexterity",
-  mag: "magic", per: "perception", str: "strength", wp: "willpower"
-};
 
 /** Разобрать `key=value` токены хвоста. */
 function parseArgs(str) {
@@ -58,10 +54,10 @@ function enrichDarpg(match) {
 
   if ( kind === "test" ) {
     const [abilToken, ...rest] = body.split(/\s+/);
-    const abil = ABIL_ALIASES[abilToken.toLowerCase()] ?? abilToken.toLowerCase();
-    if ( !DARPG.abilities[abil] ) return null;
+    const abil = DarpgActor.resolveAbility(abilToken);
+    if ( !abil ) return null;
     const args = parseArgs(rest.join(" "));
-    const label = custom || (game.i18n.localize(DARPG.abilities[abil])
+    const label = custom || (DarpgActor.abilityLabel(abil)
       + (args.focus ? ` (${args.focus})` : "") + (args.tn ? ` TN ${args.tn}` : ""));
     return anchor({ label, icon: "fa-dice-d6", dataset: {
       darpgTest: abil, focus: args.focus ?? "", tn: args.tn ?? ""

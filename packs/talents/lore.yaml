@@ -1,0 +1,21 @@
+# packs/talents/lore.yaml
+_id: "zZOOiuEWuUqOiPqH"
+name: "Lore"
+type: "talent"
+img: "icons/skills/trades/academics-study-reading-book.webp"
+system:
+  description:
+    value: "<p>You have an inquisitive mind that soaks up knowledge.</p>"
+  classes:
+    - "mage"
+    - "rogue"
+    - "warrior"
+  requirement: "Cunning 2 or higher"
+  degree: "novice"
+  degrees:
+    novice: "<p>When you succeed on a Cunning test with a lore focus (any Cunning focus with Lore in its name, such as Cultural Lore or Historical Lore), the GM tells you an extra fact about the subject, not necessarily related to your main question.</p>"
+    journeyman: "<p>You are a skilled researcher. In advanced [[/test cun focus=Research]] tests, add 1 to the result of each Dragon Die, so you reach the success threshold sooner.</p>"
+    master: "<p>Your knowledge is broad, and two fields run especially deep. Choose two of your lore focuses: when you fail a Cunning test with either of them, you may re-roll it, but you must keep the second result.</p>"
+  source:
+    book: "Core Rulebook"
+    page: 62

@@ -1,0 +1,19 @@
+# packs/spells/repulsion-field.yaml
+_id: "qYgpfe3x7cpvAkpJ"
+name: "Repulsion Field"
+type: "spell"
+img: "icons/magic/defensive/barrier-shield-dome-deflect-blue.webp"
+system:
+  description:
+    value: "<p>A field of repelling energy surrounds you. At the end of your turn every second round, starting with the round you cast it, the field releases a pulse: each enemy within 6 yards must pass a [[/test str focus=Might]] test vs. your Spellpower or be pushed 4 yards away and knocked prone.</p><p>Maintaining the field costs 1 MP at the start of each of your turns, including rounds without a pulse.</p>"
+  school: "spirit"
+  spellType: "defense"
+  manaCost: 6
+  manaCostNote: ""
+  castTime: "major"
+  tn: 16
+  requirement: "Force Field"
+  test: "Strength (Might) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

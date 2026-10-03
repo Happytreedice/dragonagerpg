@@ -1,0 +1,25 @@
+# packs/weapons/bastard-sword.yaml
+_id: "hJhDRB1vGs2jui30"
+name: "Bastard Sword"
+type: "weapon"
+img: "icons/weapons/swords/sword-broad-red.webp"
+system:
+  description:
+    value: "<p>A long-hilted sword that can be swung with one hand or with two.</p><p><strong>Attack:</strong> Strength (Heavy Blades). <strong>Damage:</strong> [[/damage 2d6+1]] + Strength.</p><p><strong>Minimum Strength:</strong> 2. With lower Strength the weapon deals only [[/damage 1d6-1]] + Strength.</p>"
+  weaponGroup: "heavyBlades"
+  type: "melee"
+  damage:
+    dice: "2d6+1"
+    ability: "strength"
+  minStrength: 2
+  range:
+    short: null
+    long: null
+  reload: ""
+  twoHanded: false
+  cost: "20 sp"
+  penetrating: false
+  quantity: 1
+  source:
+    book: "Core Rulebook"
+    page: 74

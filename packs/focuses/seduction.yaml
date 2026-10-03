@@ -1,0 +1,13 @@
+# packs/focuses/seduction.yaml
+_id: "4AEjWPxBTTk3ENxK"
+name: "Seduction"
+type: "focus"
+img: "icons/skills/social/diplomacy-handshake-yellow.webp"
+system:
+  description:
+    value: "<p>Charming and seducing others by playing on attraction and affection. Grants +2 to Communication tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "communication"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

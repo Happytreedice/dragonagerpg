@@ -1,0 +1,13 @@
+# packs/focuses/gambling.yaml
+_id: "rQlRxcC9wW7USSmj"
+name: "Gambling"
+type: "focus"
+img: "icons/skills/trades/gaming-gambling-dice-gray.webp"
+system:
+  description:
+    value: "<p>Skill at cards, dice and other games of chance, including reading your opponents. Grants +2 to Communication tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "communication"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

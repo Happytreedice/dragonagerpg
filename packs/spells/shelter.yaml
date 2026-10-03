@@ -1,0 +1,19 @@
+# packs/spells/shelter.yaml
+_id: "HgdCtQM7N1csfShG"
+name: "Shelter"
+type: "spell"
+img: "icons/magic/defensive/barrier-shield-dome-blue-purple.webp"
+system:
+  description:
+    value: "<p>A glyph traced on the ground with your hand or staff raises a faintly shimmering dome up to 6 yards across and 3 yards high at the center. Whatever the weather outside, the air within stays cool, dry and comfortable: rain, snow and small debris are kept out, yet fresh air flows in and smoke, such as from a campfire, escapes.</p><p>You can set the light inside anywhere from shadowy to as bright as a lantern. The dome is completely useless in combat.</p>"
+  school: "primal"
+  spellType: "utility"
+  manaCost: 2
+  manaCostNote: ""
+  castTime: "major"
+  tn: 12
+  requirement: "Primal Magic (Novice)"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

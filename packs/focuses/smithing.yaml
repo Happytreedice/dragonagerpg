@@ -1,0 +1,13 @@
+# packs/focuses/smithing.yaml
+_id: "6LEbepU4g0XJIQnX"
+name: "Smithing"
+type: "focus"
+img: "icons/skills/trades/smithing-anvil-silver-red.webp"
+system:
+  description:
+    value: "<p>Forging weapons, armor and other metalwork at the anvil. Grants +2 to Strength tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "strength"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

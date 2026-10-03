@@ -1,0 +1,19 @@
+# packs/spells/flame-blast.yaml
+_id: "0zSySJvSTe8TXvXq"
+name: "Flame Blast"
+type: "spell"
+img: "icons/magic/fire/beam-jet-stream-yellow.webp"
+system:
+  description:
+    value: "<p>Gouts of flame pour from your outstretched hands in an area 8 yards long and 2 yards wide. Everyone in it takes [[/damage 2d6+1]] damage, or only [[/damage 1d6+1]] with a successful [[/test dex focus=Acrobatics]] test vs. your Spellpower.</p>"
+  school: "primal"
+  spellType: "attack"
+  manaCost: 3
+  manaCostNote: ""
+  castTime: "major"
+  tn: 12
+  requirement: ""
+  test: "Dexterity (Acrobatics) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

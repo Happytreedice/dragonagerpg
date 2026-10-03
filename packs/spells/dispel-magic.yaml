@@ -1,0 +1,19 @@
+# packs/spells/dispel-magic.yaml
+_id: "OyjyD8HmDTDtsWYO"
+name: "Dispel Magic"
+type: "spell"
+img: "icons/magic/control/debuff-energy-hold-teal-blue.webp"
+system:
+  description:
+    value: "<p>You try to strip all spell effects from one visible target within 25 yards. Make a single [[/test mag focus=Spirit]] test for everything affecting the target and compare the result with the Spellpower of each effect: every effect you beat ends, while stronger ones remain.</p>"
+  school: "spirit"
+  spellType: "utility"
+  manaCost: 8
+  manaCostNote: ""
+  castTime: "major"
+  tn: 17
+  requirement: "Spell Shield"
+  test: "Magic (Spirit) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

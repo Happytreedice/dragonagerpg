@@ -1,0 +1,13 @@
+# packs/focuses/staves.yaml
+_id: "VIdywhxz1kNb9w1R"
+name: "Staves"
+type: "focus"
+img: "icons/skills/melee/hand-grip-staff-blue.webp"
+system:
+  description:
+    value: "<p>Fighting with staves and similar weapons such as the quarterstaff, club and morningstar. Grants +2 to attack rolls with weapons of the Staves group and to other Dexterity tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "dexterity"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

@@ -1,0 +1,13 @@
+# packs/focuses/navigation.yaml
+_id: "TzpBRtktHoBTtvfK"
+name: "Navigation"
+type: "focus"
+img: "icons/skills/trades/academics-astronomy-navigation-blue.webp"
+system:
+  description:
+    value: "<p>Finding your way by the stars, the sun and landmarks. Grants +2 to Cunning tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "cunning"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

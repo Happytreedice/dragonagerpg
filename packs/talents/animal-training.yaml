@@ -1,0 +1,21 @@
+# packs/talents/animal-training.yaml
+_id: "5Z710rEQLxeCAj7U"
+name: "Animal Training"
+type: "talent"
+img: "icons/skills/social/diplomacy-offering-ritual.webp"
+system:
+  description:
+    value: "<p>You know how to handle animals and train them to obey commands, much as Fereldans train their dogs and the Avvar their falcons and other birds of prey.</p>"
+  classes:
+    - "mage"
+    - "rogue"
+    - "warrior"
+  requirement: ""
+  degree: "novice"
+  degrees:
+    novice: "<p>You can teach an animal simple one-word commands such as 'come', 'follow' or 'attack'. Each command takes one week of training, and a single animal can learn no more commands than your Communication.</p>"
+    journeyman: "<p>You can also teach complex commands such as 'guard this place' or 'come back if strangers approach'. Each complex command takes two weeks of training, and a single animal can know up to your Communication + 2 commands in total.</p>"
+    master: "<p>With one month of training you can raise an animal's Dexterity or Strength by 1 and give it the Willpower (Morale) focus. An animal can receive this training only once.</p>"
+  source:
+    book: "Core Rulebook"
+    page: 59

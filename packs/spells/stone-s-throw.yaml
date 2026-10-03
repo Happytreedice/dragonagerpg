@@ -1,0 +1,19 @@
+# packs/spells/stone-s-throw.yaml
+_id: "PsgBcxPlBO5DdDrl"
+name: "Stone's Throw"
+type: "spell"
+img: "icons/magic/movement/portal-vortex-orange.webp"
+system:
+  description:
+    value: "<p>You sink into the earth or stone beneath your feet and burst out of the ground without warning at any point within 24 yards. This is not teleportation: you travel through the ground itself, so there must be unbroken earth or stone between the two points (you cannot, for example, pass from one wooden roof to another). Most masonry serves as well as natural stone.</p>"
+  school: "primal"
+  spellType: "utility"
+  manaCost: 4
+  manaCostNote: ""
+  castTime: "major"
+  tn: 13
+  requirement: "Ensnare"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

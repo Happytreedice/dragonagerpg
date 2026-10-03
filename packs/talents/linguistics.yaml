@@ -1,0 +1,21 @@
+# packs/talents/linguistics.yaml
+_id: "vUXnwPPnHdcUjhix"
+name: "Linguistics"
+type: "talent"
+img: "icons/skills/trades/academics-book-study-runes.webp"
+system:
+  description:
+    value: "<p>You pick up new languages easily. Learning a language lets you both speak and read it, with two exceptions: Ancient Tevene can only be read, and Elven can only be spoken.</p>"
+  classes:
+    - "mage"
+    - "rogue"
+    - "warrior"
+  requirement: "Cunning 1 or higher"
+  degree: "novice"
+  degrees:
+    novice: "<p>You learn one additional language from this list: Ancient Tevene, Ander, Antivan, Arcanum, Dwarven, Elven, Orlesian, Qunlat, Rivaini or Trade Tongue.</p>"
+    journeyman: "<p>You learn one more language from the list. You can also imitate a specific dialect with a successful [[/test com focus=Performance]] test.</p>"
+    master: "<p>You learn two more languages from the list, and you can speak one language you know like a native, without an accent.</p>"
+  source:
+    book: "Core Rulebook"
+    page: 61

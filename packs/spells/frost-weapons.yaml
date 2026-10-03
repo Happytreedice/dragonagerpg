@@ -1,0 +1,19 @@
+# packs/spells/frost-weapons.yaml
+_id: "f6Eq8NTuBjinD7mj"
+name: "Frost Weapons"
+type: "spell"
+img: "icons/magic/water/barrier-ice-shield.webp"
+system:
+  description:
+    value: "<p>The readied melee weapons of all allies within 10 yards of you radiate bitter cold and deal +2 penetrating damage on every successful hit; only this extra damage is penetrating. The effect lasts one minute; you can extend it as you cast it by spending 3 MP per additional minute.</p><p>The cold does not harm the weapons, and the spell can be combined with Flaming Weapons.</p>"
+  school: "primal"
+  spellType: "enhancement"
+  manaCost: 6
+  manaCostNote: ""
+  castTime: "major"
+  tn: 15
+  requirement: "Winter's Grasp"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

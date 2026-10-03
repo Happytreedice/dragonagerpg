@@ -1,0 +1,19 @@
+# packs/spells/petrify.yaml
+_id: "FLeOSqRiOhoQNZZU"
+name: "Petrify"
+type: "spell"
+img: "icons/magic/earth/construct-stone.webp"
+system:
+  description:
+    value: "<p>You turn one target within 30 yards to stone unless it passes a [[/test con focus=Stamina]] test vs. your Spellpower. A petrified creature gains +5 to Armor Rating, but its Defense drops to 7 and it cannot take actions; it cannot be finished with a coup de grace.</p><p>All a petrified creature can do is test again at the start of each of its turns until it succeeds and breaks free.</p>"
+  school: "primal"
+  spellType: "attack"
+  manaCost: 15
+  manaCostNote: ""
+  castTime: "major"
+  tn: 19
+  requirement: "Earthquake"
+  test: "Constitution (Stamina) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

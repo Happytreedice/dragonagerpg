@@ -1,0 +1,19 @@
+# packs/spells/memory.yaml
+_id: "0ongUvLUqBzzFpD0"
+name: "Memory"
+type: "spell"
+img: "icons/magic/perception/third-eye-blue-red.webp"
+system:
+  description:
+    value: "<p>You touch a target and make them forget, or recall, a particular memory. You can erase the memory of an event that happened no more than a number of hours ago equal to your Magic, but you can restore a memory of any age, provided it is of something that truly happened.</p><p>A target resists losing a memory with a [[/test wil focus=Self-Discipline]] test vs. your Spellpower; restoring a lost memory calls for no test.</p>"
+  school: "spirit"
+  spellType: "utility"
+  manaCost: 6
+  manaCostNote: ""
+  castTime: "major"
+  tn: 16
+  requirement: "Mind Blast"
+  test: "Willpower (Self-Discipline) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

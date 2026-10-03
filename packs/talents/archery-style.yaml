@@ -1,0 +1,20 @@
+# packs/talents/archery-style.yaml
+_id: "ikdMKTGc7y9L5MV0"
+name: "Archery Style"
+type: "talent"
+img: "icons/skills/ranged/archery-bow-attack-yellow.webp"
+system:
+  description:
+    value: "<p>You are an expert with bows and crossbows.</p>"
+  classes:
+    - "rogue"
+    - "warrior"
+  requirement: "Bows weapon group"
+  degree: "novice"
+  degrees:
+    novice: "<p>Your aim is true. When you take the aim action with a bow or crossbow, you gain +2 to your attack roll instead of the usual +1.</p>"
+    journeyman: "<p>Long hours of practice let you reload faster than others: reloading a bow is a free action for you, and reloading a crossbow is a minor action.</p>"
+    master: "<p>When you shoot a bow or crossbow, you can perform the Lightning Attack stunt for 2 SP instead of 3. With a crossbow you also need the Rapid Reload stunt, because the extra attack requires a loaded weapon.</p>"
+  source:
+    book: "Core Rulebook"
+    page: 60

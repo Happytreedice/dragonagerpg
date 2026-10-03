@@ -1,0 +1,19 @@
+# packs/spells/regeneration.yaml
+_id: "1VJG6PeLZMAx7R2n"
+name: "Regeneration"
+type: "spell"
+img: "icons/magic/life/cross-explosion-burst-green.webp"
+system:
+  description:
+    value: "<p>Over an hour of casting you speed a subject's natural healing, doing what would normally take weeks. The subject regains [[/heal 3d6+@abilities.magic.value]]{3d6 + Magic} Health and recovers from serious injuries such as broken bones and damaged organs.</p><p>The spell cannot restore lost body parts, cure disease or neutralize poison.</p>"
+  school: "creation"
+  spellType: "utility"
+  manaCost: 15
+  manaCostNote: ""
+  castTime: "1 hour"
+  tn: 15
+  requirement: "Creation Magic (Master)"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

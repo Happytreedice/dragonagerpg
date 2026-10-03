@@ -1,0 +1,19 @@
+# packs/spells/glyph-of-preservation.yaml
+_id: "fLzWNYrccY4m8BVC"
+name: "Glyph of Preservation"
+type: "spell"
+img: "icons/magic/symbols/rune-sigil-green.webp"
+system:
+  description:
+    value: "<p>You trace a faint glyph on any piece of dead organic matter, halting its decay and keeping it fresh for one month. Renewing the glyph before it expires extends the effect by another month.</p><p>It is used to preserve food, corpses and valuable goods made of wood, paper or leather.</p>"
+  school: "creation"
+  spellType: "utility"
+  manaCost: 1
+  manaCostNote: ""
+  castTime: "5 minutes"
+  tn: 10
+  requirement: ""
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

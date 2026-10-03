@@ -1,0 +1,19 @@
+# packs/spells/blood-wound.yaml
+_id: "nxKFixpGznGQjNvW"
+name: "Blood Wound"
+type: "spell"
+img: "icons/magic/unholy/strike-beam-blood-red-purple.webp"
+system:
+  description:
+    value: "<p>You make the blood of every enemy within 12 yards of you boil in agony. Each takes [[/damage 1d6+@abilities.magic.value penetrating]]{1d6 + Magic} penetrating damage and must pass a [[/test con focus=Stamina]] test vs. your Spellpower or be able to take only a minor action on its next turn.</p><p>Creatures without blood or something like it are unaffected: golems are immune, but wild sylvans suffer through their sap. Incorporeal beings such as shades and ash wraiths are also unaffected.</p>"
+  school: "blood"
+  spellType: "attack"
+  manaCost: 8
+  manaCostNote: ""
+  castTime: "major"
+  tn: 17
+  requirement: "Blood Mage Specialization"
+  test: "Constitution (Stamina) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

@@ -1,0 +1,13 @@
+# packs/focuses/jumping.yaml
+_id: "fvbKEzsNDBr1irDA"
+name: "Jumping"
+type: "focus"
+img: "icons/skills/movement/arrow-upward-white.webp"
+system:
+  description:
+    value: "<p>Leaping for distance or height to clear obstacles. Grants +2 to Strength tests where it applies; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "strength"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

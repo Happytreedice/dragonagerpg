@@ -1,0 +1,19 @@
+# packs/talents/spell-expertise.yaml
+_id: "nSALRIH4IFP4Bfn2"
+name: "Spell Expertise"
+type: "talent"
+img: "icons/skills/melee/strike-sword-dagger-runes-gold.webp"
+system:
+  description:
+    value: "<p>An optional talent from the magic rules of Chapter 5 that grants access to advanced spell stunts.</p>"
+  classes:
+    - "mage"
+  requirement: "Magic 4 or higher; at least one Magic focus; Novice degree in a magic-school talent"
+  degree: "novice"
+  degrees:
+    novice: "<p>You can use the advanced spell stunts of the schools whose talents you have.</p>"
+    journeyman: "<p>You can also use the general advanced spell stunts, which are not tied to any school.</p>"
+    master: "<p>You can use the advanced spell stunts of any school in which you have a Magic focus.</p>"
+  source:
+    book: "Core Rulebook"
+    page: null

@@ -1,0 +1,21 @@
+# packs/talents/quick-reflexes.yaml
+_id: "Z6fPjXMWlCWO79YK"
+name: "Quick Reflexes"
+type: "talent"
+img: "icons/skills/movement/feet-winged-boots-blue.webp"
+system:
+  description:
+    value: "<p>You react to danger quickly and instinctively.</p>"
+  classes:
+    - "mage"
+    - "rogue"
+    - "warrior"
+  requirement: "Dexterity 2 or higher"
+  degree: "novice"
+  degrees:
+    novice: "<p>You are ready in an instant: once per round, on your turn, you can take the ready action as a free action.</p>"
+    journeyman: "<p>You drop and spring up with lightning speed: going prone or standing up is a free action for you (normally it is part of a move action).</p>"
+    master: "<p>You are hard to catch off guard. At the start of a combat encounter you may re-roll your initiative, but you must keep the second result.</p>"
+  source:
+    book: "Core Rulebook"
+    page: 64

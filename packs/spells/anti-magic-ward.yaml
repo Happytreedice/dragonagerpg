@@ -1,0 +1,19 @@
+# packs/spells/anti-magic-ward.yaml
+_id: "GirYQIYzWs6QY4F7"
+name: "Anti-Magic Ward"
+type: "spell"
+img: "icons/magic/defensive/shield-barrier-flaming-pentagon-blue.webp"
+system:
+  description:
+    value: "<p>You shield one ally against hostile magic until the end of the encounter: the ally gains +5 on all tests made to resist Spellpower.</p>"
+  school: "spirit"
+  spellType: "enhancement"
+  manaCost: 10
+  manaCostNote: ""
+  castTime: "major"
+  tn: 17
+  requirement: "Dispel Magic"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

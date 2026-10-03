@@ -1,0 +1,16 @@
+# packs/armor/heavy-plate.yaml
+_id: "LtTESWYmlLxX75RK"
+name: "Heavy Plate"
+type: "armor"
+img: "icons/equipment/chest/breastplate-layered-gilded-black.webp"
+system:
+  description:
+    value: "<p>A complete harness of articulated steel plate, the heaviest protection a knight can wear.</p><ul><li><strong>Armor Rating 10:</strong> subtract it from the damage of every hit you take; penetrating damage ignores armor.</li><li><strong>Armor Penalty -5:</strong> with the Armor Training talent it reduces only your Speed; without that talent it applies to your Dexterity, and so to Dexterity tests, Defense and Speed.</li><li><strong>Strain 6:</strong> a mage wearing this armor spends 6 extra mana points on every spell.</li></ul>"
+  armorType: "heavyPlate"
+  armorRating: 10
+  armorPenalty: 5
+  strain: 6
+  cost: "150 sp"
+  source:
+    book: "Core Rulebook"
+    page: 76

@@ -1,0 +1,19 @@
+# packs/spells/mana-cleanse.yaml
+_id: "CQViE9wt23AkHHK9"
+name: "Mana Cleanse"
+type: "spell"
+img: "icons/magic/control/debuff-energy-hold-pink.webp"
+system:
+  description:
+    value: "<p>You turn your own mana against other spellcasters. Until the end of the encounter, whenever anyone spends mana within 16 yards of you, you can spend the same number of mana points to cancel that spell; for example, 4 MP to negate a 4 MP casting. If you cannot pay the full amount, the counterspell fails.</p><p>You learn only how many mana points the other caster is spending, not which spell they are casting.</p>"
+  school: "spirit"
+  spellType: "defense"
+  manaCost: 7
+  manaCostNote: ""
+  castTime: "major"
+  tn: 17
+  requirement: "Mana Drain"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

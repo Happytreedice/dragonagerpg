@@ -1,0 +1,19 @@
+# packs/spells/spellbloom.yaml
+_id: "OdLajAzVR9SEALjT"
+name: "Spellbloom"
+type: "spell"
+img: "icons/magic/nature/lotus-glow-pink.webp"
+system:
+  description:
+    value: "<p>A wellspring of magical energy with a 4-yard radius blooms at any visible point within 50 yards and lasts for a number of rounds equal to your Magic. Every mage inside it at the start of their turn, friend or foe, regains [[/r 1d6]] MP.</p><p>As a free action you can end the bloom early to gain stunt points equal to its remaining rounds; you must spend them on spell stunts that same turn.</p>"
+  school: "creation"
+  spellType: "utility"
+  manaCost: 8
+  manaCostNote: ""
+  castTime: "major"
+  tn: 15
+  requirement: "Grease"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

@@ -1,0 +1,13 @@
+# packs/focuses/spirit.yaml
+_id: "TxDX4nQq4DUzV32W"
+name: "Spirit"
+type: "focus"
+img: "icons/magic/holy/meditation-chi-focus-blue.webp"
+system:
+  description:
+    value: "<p>Mastery of the Spirit school of magic: protection, telekinesis and powers drawn from the Fade. Grants +2 to casting rolls and Spellpower for Spirit spells; from level 11 you may spend a new focus to improve it to +3.</p>"
+  ability: "magic"
+  improved: false
+  source:
+    book: "Core Rulebook"
+    page: null

@@ -479,6 +479,19 @@
   min-height: 100%;
 }
 
+/* Контейнер редактора (Vue-компонент DarpgProseMirror): <prose-mirror> создаётся
+   императивно внутри и растягивается на всю высоту контейнера. */
+.darpg .darpg-editor {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+.darpg .tab.biography .darpg-editor {
+  min-height: 100%;
+}
+
 /* ---- Лист предмета ------------------------------------------------------- */
 .darpg.item .sheet-body {
   overflow-y: auto;
@@ -525,6 +538,10 @@
 
 .darpg.item .form-group > label {
   flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.25rem;
   color: var(--darpg-text-muted);
   font-size: var(--font-size-12);
 }
@@ -951,3 +968,272 @@
 .darpg .item-detail.degree.novice { color: #b9c7d6; border-color: #4a5a6a; }
 .darpg .item-detail.degree.journeyman { color: var(--darpg-gold); border-color: rgba(201 166 107 / 45%); }
 .darpg .item-detail.degree.master { color: #e8b04a; border-color: #a97a1e; background: rgba(168 122 30 / 15%); }
+
+/* ========================================================================== */
+/* Stage 1: новые элементы листов (массивы, переключатели, опыт, статблок НИП) */
+/* ========================================================================== */
+
+/* ---- Улучшенный фокус (+3) ------------------------------------------------ */
+.darpg .focus-row .focus-improved {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  font-size: var(--font-size-11);
+  color: var(--darpg-text-muted);
+  cursor: pointer;
+}
+
+.darpg .focus-row .focus-improved input {
+  margin: 0;
+  accent-color: var(--darpg-gold);
+}
+
+.darpg .focus-row.improved .focus-improved {
+  color: var(--darpg-gold);
+  font-weight: 700;
+}
+
+/* ---- Переключатели значений enum-массива (классы, характеристики, группы) - */
+.darpg .choice-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.darpg .choice-chip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--darpg-border-soft);
+  background: var(--darpg-bg-input);
+  color: var(--darpg-text-muted);
+  font-size: var(--font-size-12);
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Чекбокс визуально скрыт: клик по подписи переключает его (data-action toggleChoice). */
+.darpg .choice-chip input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.darpg .choice-chip:hover {
+  border-color: var(--darpg-accent-bright);
+  color: var(--darpg-text);
+}
+
+.darpg .choice-chip.active {
+  border-color: rgba(201 166 107 / 55%);
+  background: rgba(201 166 107 / 15%);
+  color: var(--darpg-gold);
+  font-weight: 600;
+}
+
+.darpg .choice-chip:has(input:focus-visible) {
+  outline: 1px solid var(--darpg-accent-bright);
+}
+
+/* ---- Редакторы массивов (строки и объекты) -------------------------------- */
+.darpg .array-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  width: 100%;
+}
+
+.darpg .array-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  width: 100%;
+}
+
+.darpg .array-head,
+.darpg .array-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.darpg .array-head {
+  padding: 0 0.25rem;
+  color: var(--darpg-text-muted);
+  font-size: var(--font-size-10);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.darpg .array-row {
+  padding: 0.15rem 0.25rem;
+  border-radius: 4px;
+}
+
+.darpg .array-list.objects > .array-row:not(.empty) {
+  background: var(--darpg-bg-panel);
+  border: 1px solid var(--darpg-border-soft);
+}
+
+.darpg .array-row:hover {
+  background: var(--darpg-bg-panel);
+}
+
+.darpg .array-row.empty {
+  justify-content: center;
+  color: var(--darpg-text-muted);
+  font-style: italic;
+  font-size: var(--font-size-12);
+}
+
+.darpg .array-cell {
+  flex: 1 1 5rem;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+}
+
+.darpg .array-cell > input:not([type="checkbox"]),
+.darpg .array-cell > select,
+.darpg input.array-cell {
+  width: 100%;
+  min-width: 0;
+}
+
+.darpg .array-cell.grow { flex: 3 1 8rem; }
+.darpg .array-cell.medium { flex: 0 0 5rem; }
+.darpg .array-cell.narrow { flex: 0 0 3.5rem; }
+.darpg .array-cell.tiny,
+.darpg .array-cell.checkbox { flex: 0 0 auto; justify-content: center; }
+.darpg .array-cell.checkbox input { margin: 0; accent-color: var(--darpg-accent-bright); }
+
+.darpg .array-cell.controls {
+  flex: 0 0 auto;
+  justify-content: flex-end;
+  gap: 0.1rem;
+}
+
+.darpg .array-head .array-cell.controls {
+  visibility: hidden;
+}
+
+/* Колонка prose (описание силы класса) — на всю ширину под строкой. */
+.darpg .array-cell.prose {
+  flex: 1 0 100%;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.15rem;
+}
+
+.darpg .array-prose-label {
+  color: var(--darpg-text-muted);
+  font-size: var(--font-size-10);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.darpg .array-cell.prose prose-mirror {
+  min-height: 3.5rem;
+}
+
+/* ---- Лист предмета: поля-массивы на всю ширину ---------------------------- */
+.darpg.item .form-group.stacked > label {
+  justify-content: space-between;
+}
+
+.darpg.item .item-source .form-group > input {
+  flex: 1;
+}
+
+/* ---- Лист персонажа: шапка, четыре плитки боя, опыт, сводка происхождения - */
+.darpg .meta-field.xp-field input[type="number"] {
+  width: 5.5rem;
+}
+
+.darpg .stats-row.four .stat-tile {
+  min-width: 4.25rem;
+  padding: 0.3rem 0.25rem;
+}
+
+.darpg .stats-row.four .stat-tile .stat-label {
+  white-space: normal;
+  text-align: center;
+  line-height: 1.1;
+}
+
+.darpg .xp-bar {
+  position: relative;
+  height: 1.4rem;
+  border: 1px solid var(--darpg-gold);
+  border-radius: 999px;
+  background: rgba(0 0 0 / 40%);
+  overflow: hidden;
+  box-shadow: inset 0 0 6px rgba(0 0 0 / 60%);
+}
+
+.darpg .xp-bar .xp-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: var(--fill, 0%);
+  background: linear-gradient(90deg, #8a5a12, #e0b64a);
+  transition: width 0.4s ease;
+}
+
+.darpg .xp-bar .xp-text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: var(--font-size-12);
+  font-weight: 700;
+  color: #f4e9d5;
+  text-shadow: 0 1px 2px rgba(0 0 0 / 90%);
+}
+
+.darpg .identity-list {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.2rem 0.75rem;
+  margin: 0;
+  font-size: var(--font-size-13);
+}
+
+.darpg .identity-list dt {
+  color: var(--darpg-text-muted);
+  font-size: var(--font-size-11);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.darpg .identity-list dd {
+  margin: 0;
+  color: var(--darpg-gold);
+}
+
+/* ---- Лист НИП: статблок ---------------------------------------------------- */
+.darpg .statblock-lists {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 0 0.75rem;
+}
+
+.darpg .statblock-list {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.darpg .statblock-attacks .array-cell.narrow input {
+  text-align: center;
+}

@@ -1,0 +1,19 @@
+# packs/talents/mounted-combat-style.yaml
+_id: "lpJxeDCWniWIL9kX"
+name: "Mounted Combat Style"
+type: "talent"
+img: "icons/skills/movement/feet-bladed-boots-fire.webp"
+system:
+  description:
+    value: "<p>You are a trained cavalry fighter, skilled at fighting from the saddle. Note that no one can properly use two-handed weapons or long bows on horseback: there they count as improvised weapons.</p>"
+  classes:
+    - "warrior"
+  requirement: "Dexterity (Riding) focus"
+  degree: "novice"
+  degrees:
+    novice: "<p>You turn your mount's mobility to your advantage. When you take a move action while mounted, you can ride part of the distance, attack in melee or at range as your major action, and then ride the rest. The total distance cannot exceed your mount's Speed.</p>"
+    journeyman: "<p>Your mounted charge is fearsome. When you take the charge action while mounted, you move up to your mount's full Speed and deal +1 damage if the attack hits.</p>"
+    master: "<p>You and your mount are as one: the Knock Prone stunt cannot unseat you.</p>"
+  source:
+    book: "Core Rulebook"
+    page: 62

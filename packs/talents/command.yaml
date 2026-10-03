@@ -1,0 +1,20 @@
+# packs/talents/command.yaml
+_id: "dscl62U3MGvinWUq"
+name: "Command"
+type: "talent"
+img: "icons/skills/social/diplomacy-unity-alliance.webp"
+system:
+  description:
+    value: "<p>You are a natural leader whom others follow.</p>"
+  classes:
+    - "mage"
+    - "warrior"
+  requirement: "Communication 2 or higher"
+  degree: "novice"
+  degrees:
+    novice: "<p>Your presence inspires your allies. If you spend a major action on a heroic gesture, such as raising your sword, shouting a battle cry or waving a banner, all your allies gain +1 on [[/test wil focus=Courage]] tests for the rest of the encounter.</p>"
+    journeyman: "<p>Your allies follow your lead: NPCs under your command gain +1 on their initiative rolls.</p>"
+    master: "<p>When you stand firm, your allies stand with you. NPCs you lead do not make [[/test wil focus=Morale]] tests until more than two-thirds of the combatants on your side are killed or incapacitated. The benefit ends if you leave the battle or fall.</p>"
+  source:
+    book: "Core Rulebook"
+    page: 60

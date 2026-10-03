@@ -1,0 +1,19 @@
+# packs/spells/misdirection-hex.yaml
+_id: "s3ONhMGdOsHxyjVC"
+name: "Misdirection Hex"
+type: "spell"
+img: "icons/magic/unholy/orb-smoking-green.webp"
+system:
+  description:
+    value: "<p>Luck turns against the target at every opportunity, leaving its attacks nearly useless. For a number of rounds equal to your Magic, one enemy within 30 yards suffers -2 to attack rolls and cannot generate stunt points.</p><p>At the start of each of its turns, as a free action, the target can attempt a [[/test mag focus=Entropy]] or [[/test wil focus=Courage]] test vs. your Spellpower to end the hex.</p>"
+  school: "entropy"
+  spellType: "attack"
+  manaCost: 10
+  manaCostNote: ""
+  castTime: "major"
+  tn: 15
+  requirement: "Affliction Hex"
+  test: "Magic (Entropy) or Willpower (Courage) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

@@ -1,0 +1,19 @@
+# packs/spells/miasma.yaml
+_id: "CVrY9x75oxEQeIK1"
+name: "Miasma"
+type: "spell"
+img: "icons/magic/air/fog-gas-smoke-dense-green.webp"
+system:
+  description:
+    value: "<p>A sickly green mist spreads across the ground from your feet. Every enemy within 10 yards of you must pass a [[/test con focus=Stamina]] test vs. your Spellpower each time it starts its turn in the mist or enters it, or suffer -2 to Defense and -2 to attack rolls.</p><p>The miasma lasts one round. You can extend it by one round at a time by paying 2 MP as a free action at the start of each of your following turns.</p>"
+  school: "entropy"
+  spellType: "attack"
+  manaCost: 8
+  manaCostNote: ""
+  castTime: "major"
+  tn: 15
+  requirement: "Paralyze"
+  test: "Constitution (Stamina) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

@@ -1,0 +1,19 @@
+# packs/spells/glyph-of-neutralization.yaml
+_id: "hhGIE7s7BzVx1e7G"
+name: "Glyph of Neutralization"
+type: "spell"
+img: "icons/magic/symbols/rune-sigil-black-pink.webp"
+system:
+  description:
+    value: "<p>A trap glyph that is the bane of every mage: it drains mana and briefly cuts its victims off from magic. The first enemy to come within 2 yards of the glyph sets it off.</p><p>That enemy and everyone within 10 yards of it lose [[/r 3d6]] + your Magic mana points, and each must pass a [[/test mag focus=Creation]] test vs. your Spellpower or be unable to cast spells for [[/r 1d3]] rounds.</p><p>You can have a number of these glyphs active at once equal to your Magic; each glyph triggers only once.</p>"
+  school: "creation"
+  spellType: "utility"
+  manaCost: 20
+  manaCostNote: ""
+  castTime: "1 minute"
+  tn: 17
+  requirement: "Glyph of Repulsion"
+  test: "Magic (Creation) vs. Spellpower"
+  source:
+    book: "Core Rulebook"
+    page: null

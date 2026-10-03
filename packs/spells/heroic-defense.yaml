@@ -1,0 +1,19 @@
+# packs/spells/heroic-defense.yaml
+_id: "nFfQtjnrX2tXRWo1"
+name: "Heroic Defense"
+type: "spell"
+img: "icons/magic/defensive/shield-barrier-deflect-gold.webp"
+system:
+  description:
+    value: "<p>Bands of protective force wrap one ally within 30 yards, or you, stopping all but the heaviest blows. The subject gains +5 to Defense and +2 to Armor Rating for a number of rounds equal to half your Magic.</p><p>You can extend the spell by one round at a time by paying 4 MP as a free action at the start of each of your following turns. It does not stack with spells that make Defense equal to Spellpower.</p>"
+  school: "creation"
+  spellType: "defense"
+  manaCost: 8
+  manaCostNote: "+"
+  castTime: "major"
+  tn: 15
+  requirement: "Heroic Aura"
+  test: "None"
+  source:
+    book: "Core Rulebook"
+    page: null

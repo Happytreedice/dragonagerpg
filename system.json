@@ -2,7 +2,7 @@
   "id": "darpg",
   "title": "Dragon Age RPG",
   "description": "Неофициальная реализация настольной ролевой игры Dragon Age RPG (AGE System, Green Ronin) для Foundry VTT: тесты 3d6 с Драконьим кубом и стант-поинтами, персонажи и НИП, оружие, броня, заклинания, таланты и специализации.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "authors": [
     {
       "name": "DARPG",
@@ -13,7 +13,7 @@
   "manifest": "https://raw.githubusercontent.com/Happytreedice/dragonagerpg/main/system.json",
   "download": "https://github.com/Happytreedice/dragonagerpg/archive/refs/heads/main.zip",
   "compatibility": {
-    "minimum": "13",
+    "minimum": "14",
     "verified": "14"
   },
   "esmodules": [
@@ -42,74 +42,74 @@
         "htmlFields": ["biography"]
       },
       "npc": {
-        "htmlFields": ["biography"]
+        "htmlFields": ["biography", "powers"]
       }
     },
     "Item": {
       "weapon": {
-        "htmlFields": ["description"]
+        "htmlFields": ["description.value"]
       },
       "armor": {
-        "htmlFields": ["description"]
+        "htmlFields": ["description.value"]
       },
       "shield": {
-        "htmlFields": ["description"]
+        "htmlFields": ["description.value"]
       },
       "talent": {
-        "htmlFields": ["description", "descriptionNovice", "descriptionJourneyman", "descriptionMaster"]
+        "htmlFields": ["description.value", "degrees.novice", "degrees.journeyman", "degrees.master"]
       },
       "specialization": {
-        "htmlFields": ["description", "descriptionNovice", "descriptionJourneyman", "descriptionMaster"]
+        "htmlFields": ["description.value", "degrees.novice", "degrees.journeyman", "degrees.master"]
       },
       "spell": {
-        "htmlFields": ["description"]
+        "htmlFields": ["description.value"]
       },
       "equipment": {
-        "htmlFields": ["description"]
+        "htmlFields": ["description.value"]
       },
       "focus": {
-        "htmlFields": ["description"]
+        "htmlFields": ["description.value"]
       },
       "background": {
-        "htmlFields": ["description", "benefits"]
+        "htmlFields": ["description.value"]
       },
       "class": {
-        "htmlFields": ["description", "powers"]
+        "htmlFields": ["description.value", "powers.description"]
       },
       "stunt": {
-        "htmlFields": ["description"]
+        "htmlFields": ["description.value"]
       },
       "consumable": {
-        "htmlFields": ["description"]
+        "htmlFields": ["description.value"]
       },
       "rune": {
-        "htmlFields": ["description"]
+        "htmlFields": ["description.value"]
       },
       "honorific": {
-        "htmlFields": ["description"]
+        "htmlFields": ["description.value"]
       },
       "title": {
-        "htmlFields": ["description"]
+        "htmlFields": ["description.value"]
       }
     }
   },
   "packs": [
-    { "name": "classes", "label": "Классы", "system": "darpg", "path": "packs/classes", "type": "Item", "private": false, "flags": { "darpg": { "types": ["class"] } } },
-    { "name": "backgrounds", "label": "Происхождения", "system": "darpg", "path": "packs/backgrounds", "type": "Item", "private": false, "flags": { "darpg": { "types": ["background"] } } },
-    { "name": "focuses", "label": "Фокусы", "system": "darpg", "path": "packs/focuses", "type": "Item", "private": false, "flags": { "darpg": { "types": ["focus"] } } },
-    { "name": "talents", "label": "Таланты", "system": "darpg", "path": "packs/talents", "type": "Item", "private": false, "flags": { "darpg": { "types": ["talent"] } } },
-    { "name": "specializations", "label": "Специализации", "system": "darpg", "path": "packs/specializations", "type": "Item", "private": false, "flags": { "darpg": { "types": ["specialization"] } } },
-    { "name": "spells", "label": "Заклинания", "system": "darpg", "path": "packs/spells", "type": "Item", "private": false, "flags": { "darpg": { "types": ["spell"] } } },
-    { "name": "stunts", "label": "Приёмы (стант-поинты)", "system": "darpg", "path": "packs/stunts", "type": "Item", "private": false, "flags": { "darpg": { "types": ["stunt"] } } },
-    { "name": "weapons", "label": "Оружие", "system": "darpg", "path": "packs/weapons", "type": "Item", "private": false, "flags": { "darpg": { "types": ["weapon"] } } },
-    { "name": "armor", "label": "Броня и щиты", "system": "darpg", "path": "packs/armor", "type": "Item", "private": false, "flags": { "darpg": { "types": ["armor", "shield"] } } },
-    { "name": "consumables", "label": "Зелья, яды, гранаты", "system": "darpg", "path": "packs/consumables", "type": "Item", "private": false, "flags": { "darpg": { "types": ["consumable"] } } },
-    { "name": "runes", "label": "Руны", "system": "darpg", "path": "packs/runes", "type": "Item", "private": false, "flags": { "darpg": { "types": ["rune"] } } },
-    { "name": "masterworks", "label": "Шедевры и превосходные предметы", "system": "darpg", "path": "packs/masterworks", "type": "Item", "private": false, "flags": { "darpg": { "types": ["equipment"] } } },
-    { "name": "honorifics", "label": "Хонорифики", "system": "darpg", "path": "packs/honorifics", "type": "Item", "private": false, "flags": { "darpg": { "types": ["honorific"] } } },
-    { "name": "titles", "label": "Титулы", "system": "darpg", "path": "packs/titles", "type": "Item", "private": false, "flags": { "darpg": { "types": ["title"] } } },
-    { "name": "tables", "label": "Таблицы", "system": "darpg", "path": "packs/tables", "type": "RollTable", "private": false, "flags": {} },
-    { "name": "bestiary", "label": "Бестиарий", "system": "darpg", "path": "packs/bestiary", "type": "Actor", "private": false, "flags": { "darpg": { "types": ["npc"] } } }
+    { "name": "classes", "label": "DARPG.Pack.Classes", "system": "darpg", "path": "packs/classes", "type": "Item", "private": false, "flags": { "darpg": { "types": ["class"] } } },
+    { "name": "backgrounds", "label": "DARPG.Pack.Backgrounds", "system": "darpg", "path": "packs/backgrounds", "type": "Item", "private": false, "flags": { "darpg": { "types": ["background"] } } },
+    { "name": "focuses", "label": "DARPG.Pack.Focuses", "system": "darpg", "path": "packs/focuses", "type": "Item", "private": false, "flags": { "darpg": { "types": ["focus"] } } },
+    { "name": "talents", "label": "DARPG.Pack.Talents", "system": "darpg", "path": "packs/talents", "type": "Item", "private": false, "flags": { "darpg": { "types": ["talent"] } } },
+    { "name": "specializations", "label": "DARPG.Pack.Specializations", "system": "darpg", "path": "packs/specializations", "type": "Item", "private": false, "flags": { "darpg": { "types": ["specialization"] } } },
+    { "name": "spells", "label": "DARPG.Pack.Spells", "system": "darpg", "path": "packs/spells", "type": "Item", "private": false, "flags": { "darpg": { "types": ["spell"] } } },
+    { "name": "stunts", "label": "DARPG.Pack.Stunts", "system": "darpg", "path": "packs/stunts", "type": "Item", "private": false, "flags": { "darpg": { "types": ["stunt"] } } },
+    { "name": "weapons", "label": "DARPG.Pack.Weapons", "system": "darpg", "path": "packs/weapons", "type": "Item", "private": false, "flags": { "darpg": { "types": ["weapon"] } } },
+    { "name": "armor", "label": "DARPG.Pack.Armor", "system": "darpg", "path": "packs/armor", "type": "Item", "private": false, "flags": { "darpg": { "types": ["armor", "shield"] } } },
+    { "name": "consumables", "label": "DARPG.Pack.Consumables", "system": "darpg", "path": "packs/consumables", "type": "Item", "private": false, "flags": { "darpg": { "types": ["consumable"] } } },
+    { "name": "runes", "label": "DARPG.Pack.Runes", "system": "darpg", "path": "packs/runes", "type": "Item", "private": false, "flags": { "darpg": { "types": ["rune"] } } },
+    { "name": "masterworks", "label": "DARPG.Pack.Masterworks", "system": "darpg", "path": "packs/masterworks", "type": "Item", "private": false, "flags": { "darpg": { "types": ["equipment"] } } },
+    { "name": "honorifics", "label": "DARPG.Pack.Honorifics", "system": "darpg", "path": "packs/honorifics", "type": "Item", "private": false, "flags": { "darpg": { "types": ["honorific"] } } },
+    { "name": "titles", "label": "DARPG.Pack.Titles", "system": "darpg", "path": "packs/titles", "type": "Item", "private": false, "flags": { "darpg": { "types": ["title"] } } },
+    { "name": "tables", "label": "DARPG.Pack.Tables", "system": "darpg", "path": "packs/tables", "type": "RollTable", "private": false, "flags": {} },
+    { "name": "bestiary", "label": "DARPG.Pack.Bestiary", "system": "darpg", "path": "packs/bestiary", "type": "Actor", "private": false, "flags": { "darpg": { "types": ["npc"] } } }
   ],
   "packFolders": [
     {
