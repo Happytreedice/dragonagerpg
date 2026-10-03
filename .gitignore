@@ -1,0 +1,20 @@
+# Temporary and sync files
+*.sync-conflict*
+.syncthing*
+*.tmp
+*.old
+*.bak
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# LevelDB runtime lock files
+LOCK
+
+# Editor / Node
+.vscode/
+.idea/
+node_modules/
+
+# Archives
+*.zip

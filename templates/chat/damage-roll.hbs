@@ -1,0 +1,8 @@
+{{!-- Кнопка применения урона/лечения под карточкой броска --}}
+<div class="darpg-apply-row">
+    <button type="button" class="darpg-apply {{kind}}" data-kind="{{kind}}"
+            data-amount="{{total}}" data-penetrating="{{#if penetrating}}1{{else}}0{{/if}}">
+        <i class="fa-solid {{icon}}" inert></i>
+        <span>{{label}}</span>
+    </button>
+</div>

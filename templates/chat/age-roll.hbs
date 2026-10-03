@@ -1,0 +1,57 @@
+{{!-- Карточка броска AGE: три куба, разбивка, TN, стант-поинты --}}
+<div class="dice-roll darpg-age-roll" data-action="expandRoll">
+    <div class="dice-result">
+
+        <div class="age-dice">
+            {{#each dice}}
+            <span class="die{{#if this.isDragon}} dragon{{/if}}"
+                  {{#if this.isDragon}}data-tooltip="{{localize 'DARPG.Roll.DragonDie'}}"{{/if}}>{{this.value}}</span>
+            {{/each}}
+        </div>
+
+        <div class="age-breakdown">
+            <span class="part">
+                <span class="part-label">{{localize "DARPG.Roll.Dice"}}</span>
+                <span class="part-value">{{diceTotal}}</span>
+            </span>
+            {{#if abilityLabel}}
+            <span class="part">
+                <span class="part-label">{{abilityLabel}}</span>
+                <span class="part-value">{{numberFormat abilityValue sign=true}}</span>
+            </span>
+            {{/if}}
+            {{#if focusName}}
+            <span class="part">
+                <span class="part-label">{{focusName}}</span>
+                <span class="part-value">{{numberFormat focusBonus sign=true}}</span>
+            </span>
+            {{/if}}
+            {{#if modifier}}
+            <span class="part">
+                <span class="part-label">{{localize "DARPG.Roll.Modifier"}}</span>
+                <span class="part-value">{{numberFormat modifier sign=true}}</span>
+            </span>
+            {{/if}}
+        </div>
+
+        {{{tooltip}}}
+
+        <h4 class="dice-total{{#if outcome}} {{outcome}}{{/if}}">{{total}}</h4>
+
+        {{#if targetNumber}}
+        <div class="age-target">
+            <span>{{localize "DARPG.Roll.VsTn" tn=targetNumber}}</span>
+            {{#if targetName}}<span class="target-name">({{localize "DARPG.Roll.VsTarget" name=targetName}})</span>{{/if}}
+            {{#if outcomeLabel}}<span class="outcome {{outcome}}">{{outcomeLabel}}</span>{{/if}}
+        </div>
+        {{/if}}
+
+        {{#if hasDoubles}}
+        <div class="age-stunt-badge">
+            <i class="fa-solid fa-bolt" inert></i>
+            {{localize "DARPG.Roll.StuntPoints" points=stuntPoints}}
+        </div>
+        {{/if}}
+
+    </div>
+</div>

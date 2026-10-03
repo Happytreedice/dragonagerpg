@@ -1,0 +1,953 @@
+/* ========================================================================== */
+/* Dragon Age RPG — тёмная тема системы                                       */
+/* ========================================================================== */
+
+/* ---- Параметры темы ------------------------------------------------------ */
+.application.darpg {
+  --darpg-bg: #1e2027;
+  --darpg-bg-header: rgba(0 0 0 / 22%);
+  --darpg-bg-panel: rgba(255 255 255 / 4%);
+  --darpg-bg-input: rgba(0 0 0 / 28%);
+  --darpg-border: #41444f;
+  --darpg-border-soft: rgba(255 255 255 / 10%);
+  --darpg-accent: #8f2731;
+  --darpg-accent-bright: #c43b47;
+  --darpg-gold: #c9a66b;
+  --darpg-text: #e8e3d9;
+  --darpg-text-muted: #a09c92;
+  --darpg-success: #6dbb72;
+  --darpg-failure: #d8636d;
+
+  color-scheme: dark;
+  background: linear-gradient(180deg, #262932 0%, var(--darpg-bg) 30%);
+  color: var(--darpg-text);
+  font-family: var(--font-primary);
+  border: 1px solid var(--darpg-border);
+}
+
+.application.darpg .window-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  overflow: hidden;
+}
+
+/* Контейнер монтирования Vue: прозрачный flex-проброс между .window-content и листом. */
+.application.darpg .darpg-vue-root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+/* Единый корневой контейнер листа наследует flex-раскладку окна */
+.application.darpg .darpg-sheet-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+  min-height: 0;
+}
+
+.application.darpg input,
+.application.darpg select {
+  background: var(--darpg-bg-input);
+  border: 1px solid var(--darpg-border-soft);
+  border-radius: 4px;
+  color: var(--darpg-text);
+}
+
+.application.darpg input:focus,
+.application.darpg select:focus {
+  outline: 1px solid var(--darpg-accent-bright);
+  box-shadow: 0 0 6px rgba(196 59 71 / 45%);
+}
+
+.application.darpg select option {
+  background: var(--darpg-bg);
+}
+
+/* ---- Шапка листа --------------------------------------------------------- */
+.darpg .sheet-header {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  padding: 0.5rem;
+  background: var(--darpg-bg-header);
+  border: 1px solid var(--darpg-border-soft);
+  border-radius: 6px;
+}
+
+.darpg .sheet-header .profile-img {
+  width: 96px;
+  height: 96px;
+  flex: 0 0 96px;
+  object-fit: cover;
+  border: 2px solid var(--darpg-accent);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.darpg .sheet-header .header-fields {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.darpg .sheet-header .charname {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--darpg-border);
+  border-radius: 0;
+  color: var(--darpg-text);
+}
+
+.darpg .sheet-header .charname:focus {
+  outline: none;
+  border-bottom-color: var(--darpg-accent-bright);
+  box-shadow: none;
+}
+
+.darpg .meta-row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-end;
+}
+
+.darpg .meta-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  font-size: var(--font-size-12);
+}
+
+.darpg .meta-field.grow {
+  flex: 1;
+}
+
+.darpg .meta-field > span {
+  color: var(--darpg-text-muted);
+  text-transform: uppercase;
+  font-size: var(--font-size-10);
+  letter-spacing: 0.04em;
+}
+
+.darpg .meta-field input[type="number"] {
+  width: 4rem;
+  text-align: center;
+}
+
+/* ---- Плитки показателей -------------------------------------------------- */
+.darpg .stats-row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.darpg .stat-tile {
+  flex: 1 1 0;
+  min-width: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.125rem;
+  padding: 0.375rem 0.5rem;
+  background: var(--darpg-bg-panel);
+  border: 1px solid var(--darpg-border-soft);
+  border-radius: 6px;
+}
+
+.darpg .stat-tile .stat-label {
+  font-size: var(--font-size-10);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--darpg-text-muted);
+  white-space: nowrap;
+}
+
+.darpg .stat-tile .stat-value {
+  display: flex;
+  align-items: center;
+  gap: 0.125rem;
+  font-size: var(--font-size-20);
+  font-weight: 700;
+  color: var(--darpg-gold);
+}
+
+.darpg .stat-tile .stat-value input {
+  width: 3rem;
+  text-align: center;
+  font-size: var(--font-size-16);
+  font-weight: 700;
+}
+
+.darpg .stat-tile .sep {
+  color: var(--darpg-text-muted);
+}
+
+.darpg .stat-tile.derived .stat-value {
+  color: var(--darpg-text);
+}
+
+/* ---- Вкладки ------------------------------------------------------------- */
+.darpg nav.sheet-tabs {
+  display: flex;
+  gap: 0.25rem;
+  border-bottom: 1px solid var(--darpg-border);
+  padding: 0 0.25rem;
+}
+
+.darpg nav.sheet-tabs a {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+  padding: 0.375rem 0.5rem;
+  color: var(--darpg-text-muted);
+  border: 1px solid transparent;
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+  text-align: center;
+  font-size: var(--font-size-13);
+}
+
+.darpg nav.sheet-tabs a:hover {
+  color: var(--darpg-text);
+  text-shadow: none;
+}
+
+.darpg nav.sheet-tabs a.active {
+  color: var(--darpg-text);
+  background: var(--darpg-bg-panel);
+  border-color: var(--darpg-border);
+  border-bottom: 2px solid var(--darpg-accent-bright);
+}
+
+/* ---- Тело листа ---------------------------------------------------------- */
+.darpg .sheet-body {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.darpg .sheet-body > .tab {
+  display: none;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow-y: auto;
+  padding-right: 0.25rem;
+  min-height: 0;
+}
+
+.darpg .sheet-body > .tab.active {
+  display: flex;
+}
+
+.darpg .section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem 0 0.25rem;
+  padding-bottom: 0.125rem;
+  border-bottom: 1px solid var(--darpg-border);
+  font-size: var(--font-size-14);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--darpg-gold);
+}
+
+/* ---- Кнопки-контролы ----------------------------------------------------- */
+.darpg .control-btn {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 4px;
+  color: var(--darpg-text-muted);
+  cursor: pointer;
+}
+
+.darpg .control-btn:hover {
+  color: var(--darpg-text);
+  background: var(--darpg-bg-panel);
+  text-shadow: none;
+}
+
+.darpg .control-btn.danger:hover {
+  color: var(--darpg-failure);
+}
+
+.darpg .control-btn.cast:hover {
+  color: var(--darpg-accent-bright);
+}
+
+/* ---- Сетка характеристик 4x2 -------------------------------------------- */
+.darpg .abilities-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.darpg .ability-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem 0.25rem;
+  background: var(--darpg-bg-panel);
+  border: 1px solid var(--darpg-border-soft);
+  border-radius: 8px;
+  transition: border-color 0.15s;
+}
+
+.darpg .ability-tile:hover {
+  border-color: var(--darpg-accent-bright);
+}
+
+.darpg .ability-tile .ability-name {
+  font-size: var(--font-size-12);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--darpg-text);
+  cursor: pointer;
+  text-align: center;
+}
+
+.darpg .ability-tile .ability-name:hover {
+  color: var(--darpg-accent-bright);
+  text-shadow: none;
+}
+
+.darpg .ability-tile .ability-value {
+  width: 3.25rem;
+  height: 2.25rem;
+  text-align: center;
+  font-size: var(--font-size-20);
+  font-weight: 700;
+  color: var(--darpg-gold);
+}
+
+.darpg .abilities-grid.compact .ability-tile {
+  padding: 0.25rem;
+}
+
+.darpg .abilities-grid.compact .ability-value {
+  height: 1.75rem;
+  font-size: var(--font-size-16);
+}
+
+/* ---- Фокусы -------------------------------------------------------------- */
+.darpg .focus-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.darpg .focus-row {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.125rem 0.25rem;
+  border-radius: 4px;
+}
+
+.darpg .focus-row:hover {
+  background: var(--darpg-bg-panel);
+}
+
+.darpg .focus-row .focus-name {
+  flex: 2;
+}
+
+.darpg .focus-row .focus-ability {
+  flex: 1;
+}
+
+/* ---- Списки предметов ---------------------------------------------------- */
+.darpg .item-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.darpg .item-row {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.2rem 0.25rem;
+  border-radius: 4px;
+  font-size: var(--font-size-13);
+}
+
+.darpg .item-row:hover {
+  background: var(--darpg-bg-panel);
+}
+
+.darpg .item-row.empty {
+  color: var(--darpg-text-muted);
+  font-style: italic;
+  justify-content: center;
+}
+
+.darpg .item-row .item-img {
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px;
+  object-fit: cover;
+  border: none;
+  border-radius: 4px;
+}
+
+.darpg .item-row .item-name {
+  flex: 2;
+  min-width: 6rem;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.darpg .item-row .item-name:hover {
+  color: var(--darpg-accent-bright);
+  text-shadow: none;
+}
+
+.darpg .item-row .item-detail {
+  flex: 1;
+  color: var(--darpg-text-muted);
+  font-size: var(--font-size-12);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.darpg .item-row .equip-toggle {
+  flex: 0 0 auto;
+  margin: 0;
+  accent-color: var(--darpg-accent-bright);
+}
+
+/* ---- Кошелёк ------------------------------------------------------------- */
+.darpg .currency-row {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.darpg .currency-row .meta-field {
+  flex: 1;
+}
+
+.darpg .currency-row input {
+  text-align: center;
+  width: 100%;
+}
+
+/* ---- Биография и редакторы ----------------------------------------------- */
+.darpg prose-mirror {
+  flex: 1;
+  min-height: 8rem;
+  background: var(--darpg-bg-panel);
+  border: 1px solid var(--darpg-border-soft);
+  border-radius: 6px;
+  padding: 0.375rem;
+}
+
+.darpg .tab.biography prose-mirror {
+  min-height: 100%;
+}
+
+/* ---- Лист предмета ------------------------------------------------------- */
+.darpg.item .sheet-body {
+  overflow-y: auto;
+  gap: 0.5rem;
+}
+
+.darpg.item .sheet-header .profile-img {
+  width: 64px;
+  height: 64px;
+  flex: 0 0 64px;
+}
+
+.darpg.item .item-type-label {
+  color: var(--darpg-text-muted);
+  font-size: var(--font-size-12);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.darpg.item fieldset {
+  border: 1px solid var(--darpg-border-soft);
+  border-radius: 6px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  margin: 0 0 0.5rem;
+}
+
+.darpg.item fieldset legend {
+  color: var(--darpg-gold);
+  text-transform: uppercase;
+  font-size: var(--font-size-11);
+  letter-spacing: 0.05em;
+  padding: 0 0.375rem;
+}
+
+.darpg.item .form-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.darpg.item .form-group > label {
+  flex: 0 0 40%;
+  color: var(--darpg-text-muted);
+  font-size: var(--font-size-12);
+}
+
+.darpg.item .form-group > input,
+.darpg.item .form-group > select {
+  flex: 1;
+}
+
+.darpg.item .form-group > input[type="checkbox"] {
+  flex: 0 0 auto;
+  accent-color: var(--darpg-accent-bright);
+}
+
+.darpg.item .form-group.stacked {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.darpg.item .form-group.stacked > label {
+  flex: none;
+}
+
+.darpg.item .form-group.stacked prose-mirror {
+  min-height: 5rem;
+}
+
+/* ---- Диалог теста -------------------------------------------------------- */
+.application.darpg.dialog .test-dialog {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.application.darpg.dialog .test-ability {
+  margin: 0;
+  color: var(--darpg-text-muted);
+}
+
+.application.darpg.dialog .test-ability strong {
+  color: var(--darpg-gold);
+}
+
+/* ========================================================================== */
+/* Карточка броска AGE в чате                                                 */
+/* ========================================================================== */
+.chat-message .darpg-age-roll {
+  --darpg-chat-accent: #8f2731;
+  --darpg-chat-accent-bright: #c43b47;
+  cursor: pointer;
+}
+
+.darpg-age-roll .dice-result {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+/* Три куба, Драконий выделен бордовым */
+.darpg-age-roll .age-dice {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0;
+}
+
+.darpg-age-roll .age-dice .die {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 6px;
+  background: #2b2d35;
+  border: 1px solid #4a4d58;
+  color: #e8e3d9;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.darpg-age-roll .age-dice .die.dragon {
+  background: linear-gradient(160deg, var(--darpg-chat-accent-bright), var(--darpg-chat-accent));
+  border-color: var(--darpg-chat-accent-bright);
+  color: #fff;
+  box-shadow: 0 0 8px rgba(196 59 71 / 55%);
+}
+
+/* Разбивка суммы */
+.darpg-age-roll .age-breakdown {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem 0.75rem;
+  font-size: var(--font-size-11, 0.6875rem);
+}
+
+.darpg-age-roll .age-breakdown .part {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.darpg-age-roll .age-breakdown .part-label {
+  opacity: 0.7;
+}
+
+.darpg-age-roll .age-breakdown .part-value {
+  font-weight: 700;
+}
+
+/* Итог */
+.darpg-age-roll .dice-total {
+  margin: 0;
+  padding: 0.25rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: 1px solid #4a4d58;
+  border-radius: 6px;
+  background: rgba(0 0 0 / 15%);
+}
+
+.darpg-age-roll .dice-total.success {
+  color: #3f9c47;
+  border-color: #3f9c47;
+}
+
+.darpg-age-roll .dice-total.failure {
+  color: #c43b47;
+  border-color: #c43b47;
+}
+
+/* Строка TN */
+.darpg-age-roll .age-target {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: var(--font-size-12, 0.75rem);
+}
+
+.darpg-age-roll .age-target .target-name {
+  opacity: 0.75;
+}
+
+.darpg-age-roll .age-target .outcome {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.darpg-age-roll .age-target .outcome.success {
+  color: #3f9c47;
+}
+
+.darpg-age-roll .age-target .outcome.failure {
+  color: #c43b47;
+}
+
+/* Бейдж стант-поинтов */
+.darpg-age-roll .age-stunt-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.375rem;
+  border-radius: 6px;
+  background: linear-gradient(160deg, var(--darpg-chat-accent-bright), var(--darpg-chat-accent));
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 0 0 10px rgba(196 59 71 / 45%);
+}
+
+/* ========================================================================== */
+/* Кнопка «Нанести урон» / «Исцелить» под карточкой броска                    */
+/* ========================================================================== */
+.chat-message .darpg-apply-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.375rem;
+}
+
+.chat-message .darpg-apply {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.9rem;
+  border-radius: 5px;
+  border: 1px solid #6c2a30;
+  background: linear-gradient(160deg, #b3323d, #7d1f27);
+  color: #f6ede0;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.chat-message .darpg-apply.heal {
+  border-color: #2f6d43;
+  background: linear-gradient(160deg, #3f9c58, #226138);
+}
+
+.chat-message .darpg-apply:hover {
+  filter: brightness(1.15);
+  box-shadow: 0 0 8px rgba(0 0 0 / 45%);
+}
+
+/* ========================================================================== */
+/* Разворот книги (Dragon Age: Origins), лист персонажа — README ЭТАП 5       */
+/* ========================================================================== */
+
+/* Тёмно-каменный фон разворота с кожаным корешком по центру. */
+.application.darpg.darpg-book {
+  --darpg-leather: #2a211a;
+  --darpg-parchment: #221f1b;
+  --darpg-spine: #14100c;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(201 166 107 / 6%), transparent 60%),
+    linear-gradient(180deg, #211d18 0%, #17130f 100%);
+}
+
+.darpg-book .book-header {
+  background: linear-gradient(180deg, rgba(201 166 107 / 10%), rgba(0 0 0 / 25%));
+  border: 1px solid rgba(201 166 107 / 22%);
+}
+
+.darpg-book .book-header .profile-img {
+  /* Соотношение сторон портрета 2:3 — каноничные арты DAO (README §5.1). */
+  width: 84px;
+  height: 126px;
+  flex: 0 0 84px;
+  border: 2px solid var(--darpg-gold);
+  box-shadow: 0 0 10px rgba(0 0 0 / 55%);
+}
+
+/* Готические закладки-вкладки. */
+.darpg-book nav.book-tabs {
+  gap: 0.35rem;
+  border-bottom: 2px solid var(--darpg-gold);
+  padding: 0 0.5rem;
+}
+
+.darpg-book nav.book-tabs a {
+  flex: 1;
+  border: 1px solid rgba(201 166 107 / 30%);
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+  background: linear-gradient(180deg, rgba(201 166 107 / 8%), rgba(0 0 0 / 20%));
+  color: var(--darpg-gold);
+  font-family: var(--font-h1, Georgia, serif);
+  font-variant: small-caps;
+  letter-spacing: 0.08em;
+}
+
+.darpg-book nav.book-tabs a.active {
+  background: linear-gradient(180deg, rgba(201 166 107 / 24%), rgba(143 39 49 / 22%));
+  border-color: var(--darpg-gold);
+  border-bottom: 2px solid var(--darpg-accent-bright);
+  color: #f4e9d5;
+  box-shadow: 0 -2px 8px rgba(201 166 107 / 25%);
+}
+
+/* Тело: развороты. Каждая активная вкладка — две страницы бок о бок. */
+.darpg-book .book-body > .tab.spread.active {
+  display: grid;
+  grid-template-columns: 1fr 2px 1fr;
+  gap: 0;
+  overflow: hidden;
+}
+
+.darpg-book .book-body > .tab.spread::before {
+  content: "";
+}
+
+/* Кожаный корешок между страницами (средняя колонка грид-разворота). */
+.darpg-book .book-body > .tab.spread.active::after {
+  content: "";
+  grid-column: 2;
+  grid-row: 1;
+  background: linear-gradient(90deg, transparent, var(--darpg-spine) 40%, #000 50%, var(--darpg-spine) 60%, transparent);
+  box-shadow: 0 0 12px rgba(0 0 0 / 70%);
+}
+
+.darpg-book .book-page {
+  overflow-y: auto;
+  padding: 0.5rem 0.85rem;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.darpg-book .book-page.left { grid-column: 1; grid-row: 1; }
+.darpg-book .book-page.right { grid-column: 3; grid-row: 1; }
+
+/* Подзаголовки групп (школы, характеристики фокусов). */
+.darpg .subsection-title {
+  margin: 0.35rem 0 0.1rem;
+  color: var(--darpg-gold);
+  font-size: var(--font-size-12);
+  font-variant: small-caps;
+  letter-spacing: 0.06em;
+  opacity: 0.85;
+}
+
+/* ---- Сферы жизненных сил (liquid fill, README §5.2) ---------------------- */
+.darpg .vitals-row {
+  display: flex;
+  justify-content: space-around;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.darpg .vital-sphere {
+  position: relative;
+  width: 5.4rem;
+  height: 5.4rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--darpg-gold);
+  background: radial-gradient(circle at 38% 30%, rgba(255 255 255 / 12%), rgba(0 0 0 / 55%));
+  box-shadow: inset 0 0 14px rgba(0 0 0 / 70%), 0 0 6px rgba(0 0 0 / 45%);
+}
+
+.darpg .vital-sphere .sphere-liquid {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: var(--fill, 0%);
+  transition: height 0.4s ease;
+}
+
+.darpg .vital-sphere.health .sphere-liquid {
+  background: linear-gradient(180deg, #d8434f, #7d1017);
+}
+
+.darpg .vital-sphere.mana .sphere-liquid {
+  background: linear-gradient(180deg, #4aa3e0, #12406e);
+}
+
+.darpg .vital-sphere.stunt .sphere-liquid {
+  background: linear-gradient(180deg, #e0b64a, #8a5a12);
+}
+
+.darpg .vital-sphere .sphere-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1rem;
+  text-shadow: 0 1px 3px rgba(0 0 0 / 90%);
+}
+
+.darpg .vital-sphere .sphere-label {
+  font-size: var(--font-size-10);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #f4e9d5;
+}
+
+.darpg .vital-sphere .sphere-value {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.darpg .vital-sphere .sphere-value input {
+  width: 2rem;
+  padding: 0;
+  text-align: center;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: var(--font-size-14);
+}
+
+.darpg .vital-sphere .sphere-value input:focus {
+  outline: none;
+  box-shadow: none;
+  background: rgba(0 0 0 / 30%);
+  border-radius: 3px;
+}
+
+/* ---- Школы магии (чипы) -------------------------------------------------- */
+.darpg .school-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.darpg .school-chip {
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid rgba(201 166 107 / 35%);
+  background: rgba(201 166 107 / 10%);
+  color: var(--darpg-gold);
+  font-size: var(--font-size-11);
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+}
+
+/* ---- Степень таланта (пилюля) -------------------------------------------- */
+.darpg .item-detail.degree {
+  flex: 0 0 auto;
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+  font-variant: small-caps;
+  border: 1px solid var(--darpg-border);
+}
+
+.darpg .item-detail.degree.novice { color: #b9c7d6; border-color: #4a5a6a; }
+.darpg .item-detail.degree.journeyman { color: var(--darpg-gold); border-color: rgba(201 166 107 / 45%); }
+.darpg .item-detail.degree.master { color: #e8b04a; border-color: #a97a1e; background: rgba(168 122 30 / 15%); }
